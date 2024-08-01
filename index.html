@@ -148,7 +148,7 @@
                     </div>
                     <!-- Right Part -->
                     <div class="header_right_part d-flex align-items-center">
-                        <a class="button-two aside_open wptb-element" href="#">
+                        <a class="button-two aside_open wptb-element d-none d-md-block" href="#">
                             Contact Us
                         </a>
                         <button type="button" class="mr_menu_toggle wptb-element d-xl-none">
@@ -196,7 +196,6 @@
                 </div>
             </div>
         </div>
-
         <h6>Find Our Page</h6>
         <div class="social-box">
             <ul>
@@ -326,20 +325,61 @@
         </div>
     </div>
 
+    <style>
+        .video-banner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            /* Full viewport height */
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .video-banner video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: 50%;
+            height: auto;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const section1 = document.getElementById('section2');
+            const scrollPosition = window.scrollY;
+            console.log(scrollPosition, section1);
+            // section1.style.marginTop = `-${scrollPosition * 2}px`;
+        });
+    </script>
+
     <!-- Main Wrapper-->
     <main class="wrapper">
         <!-- Slider Section -->
-        <section class="wptb-slider style3">
-            <div class="swiper-container wptb-swiper-slider-three">
-                <!-- swiper slides -->
-                <div class="swiper-wrapper">
-                    <!-- Slide Item -->
-                    <div class="swiper-slide">
-                        <div class="wptb-slider--item">
-                            <div class="wptb-slider--image" style="background-image: url('assets/images/banner.png');">
-                            </div>
+        <section class="wptb-slider style3" id="section1">
+            <!-- <div class="swiper-container wptb-swiper-slider-three"> -->
+            <!-- swiper slides -->
+            <!-- <div class="swiper-wrapper"> -->
+            <!-- Slide Item -->
+            <!-- <div class="swiper-slide"> -->
+            <div class="wptb-slider--item">
+                <!-- <div class="wptb-slider--image" style="background-image: url('assets/images/banner.png');">
+                            </div> -->
+                <!-- <video src="assets/images/video.mp4" autoplay mute loop
+                                style="transform: scale(2);"></video> -->
 
-                            <div class="wptb-slider--inner">
+                <div class="video-banner">
+                    <video autoplay muted loop id="bannerVideo">
+                        <source src="assets/images/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- <div class="wptb-slider--inner">
                                 <div class="wptb-item--inner">
                                     <div class="container">
                                         <div class="row">
@@ -363,9 +403,9 @@
                                                                             class="bi bi-arrow-up-right"></i> <i
                                                                             class="bi bi-arrow-up-right"></i> </span>
                                                                 </span>
-                                                            </a>
+                                                            </a> -->
 
-                                                            <!-- <a class="btn btn-two white-opacity creative" href="#">
+                <!-- <a class="btn btn-two white-opacity creative" href="#">
                                                                 <span class="btn-wrap">
                                                                     <span class="text-first">Explore Now</span>
                                                                     <span class="text-second"> <i
@@ -373,25 +413,25 @@
                                                                             class="bi bi-arrow-up-right"></i> </span>
                                                                 </span>
                                                             </a> -->
-                                                        </div>
+                <!-- </div>
                                                     </div>
                                                 </center>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
-                            <div class="wptb-item-layer wptb-item-layer-one">
-                                <img src="assets/img/slider/layer-4.png" alt="img">
-                            </div>
-
-                            <div class="wptb-item-layer wptb-item-layer-two">
-                                <img src="assets/img/slider/layer-5.png" alt="img">
-                            </div>
-                        </div>
-                    </div>
+                <div class="wptb-item-layer wptb-item-layer-one">
+                    <img src="assets/img/slider/layer-4.png" alt="img">
                 </div>
+
+                <div class="wptb-item-layer wptb-item-layer-two">
+                    <img src="assets/img/slider/layer-5.png" alt="img">
+                </div>
+                <!-- </div> -->
+                <!-- </div> -->
+                <!-- </div> -->
             </div>
 
             <!-- Bottom Pane -->
@@ -409,7 +449,7 @@
         </section>
         <!-- About M-one -->
         <br><br><br>
-        <section class="wptb-about-two bg-transparent pt-0 mt-5">
+        <section class="wptb-about-two  pt-5 " style="background: #151515;z-index: 1;" id="section2">
             <div class="container">
                 <div class="wptb-heading">
                     <div class="wptb-item--inner">
