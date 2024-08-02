@@ -325,130 +325,144 @@
         </div>
     </div>
 
-    <style>
-        .video-banner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            /* Full viewport height */
-            overflow: hidden;
-            z-index: 1;
-        }
 
-        .video-banner video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: 50%;
-            height: auto;
-            z-index: -1;
-            transform: translate(-50%, -50%);
+    <style>
+        .wptb-slider--image img {
+            aspect-ratio: 1 / 1;
         }
     </style>
 
-    <script>
-        window.addEventListener('scroll', function () {
-            const section1 = document.getElementById('section2');
-            const scrollPosition = window.scrollY;
-            console.log(scrollPosition, section1);
-            // section1.style.marginTop = `-${scrollPosition * 2}px`;
-        });
-    </script>
 
     <!-- Main Wrapper-->
     <main class="wrapper">
         <!-- Slider Section -->
-        <section class="wptb-slider style3" id="section1">
-            <!-- <div class="swiper-container wptb-swiper-slider-three"> -->
-            <!-- swiper slides -->
-            <!-- <div class="swiper-wrapper"> -->
-            <!-- Slide Item -->
-            <!-- <div class="swiper-slide"> -->
-            <div class="wptb-slider--item">
-                <!-- <div class="wptb-slider--image" style="background-image: url('assets/images/banner.png');">
-                            </div> -->
-                <!-- <video src="assets/images/video.mp4" autoplay mute loop
-                                style="transform: scale(2);"></video> -->
-
-                <div class="video-banner">
-                    <video autoplay muted loop id="bannerVideo">
-                        <source src="assets/images/video.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+        <section class="wptb-slider style4">
+            <div class="wptb-heading-two">
+                <div class="wptb-item--inner text-center">
+                    <h6 class="wptb-item--subtitle text-white">Business Solutions</h6>
+                    <h1 class="wptb-item--title"> Crafting Tomorrow's Success <br> <span>M One Business Solutions</span>
+                    </h1>
+                    <div class="wptb-item--description">
+                        M One Business Solutions: Redefining possibilities with innovative strategies. <br> Where your
+                        boldest ideas turn into extraordinary success.
+                    </div>
                 </div>
-
-                <!-- <div class="wptb-slider--inner">
-                                <div class="wptb-item--inner">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <center>
-                                                    <div class="wptb-heading">
-                                                        <h6 class="wptb-item--subtitle">DIGITAL AGENCY</h6>
-                                                        <h1 class="wptb-item--title"><b>Elevate Your Brand <br>
-                                                                Amplify Your Success</b>
-                                                        </h1>
-                                                        <p class="wptb-item--description">Excellence inherited,
-                                                            innovation ignited, success envisioned
-                                                        </p>
-
-                                                        <div class="wptb-item--button">
-                                                            <a class="btn btn-two white" style="border-radius: 50px;"
-                                                                href="#">
-                                                                <span class="btn-wrap">
-                                                                    <span class="text-first">Get Started</span>
-                                                                    <span class="text-second"> <i
-                                                                            class="bi bi-arrow-up-right"></i> <i
-                                                                            class="bi bi-arrow-up-right"></i> </span>
-                                                                </span>
-                                                            </a> -->
-
-                <!-- <a class="btn btn-two white-opacity creative" href="#">
-                                                                <span class="btn-wrap">
-                                                                    <span class="text-first">Explore Now</span>
-                                                                    <span class="text-second"> <i
-                                                                            class="bi bi-arrow-up-right"></i> <i
-                                                                            class="bi bi-arrow-up-right"></i> </span>
-                                                                </span>
-                                                            </a> -->
-                <!-- </div>
-                                                    </div>
-                                                </center>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
-
-                <div class="wptb-item-layer wptb-item-layer-one">
-                    <img src="assets/img/slider/layer-4.png" alt="img">
-                </div>
-
-                <div class="wptb-item-layer wptb-item-layer-two">
-                    <img src="assets/img/slider/layer-5.png" alt="img">
-                </div>
-                <!-- </div> -->
-                <!-- </div> -->
-                <!-- </div> -->
             </div>
 
-            <!-- Bottom Pane -->
-            <!-- <div class="wptb-bottom-pane justify-content-center">
-                <div class="wptb-swiper-dots style2">
-                    <div class="swiper-pagination"></div>
-                </div>
+            <div class="swiper-container wptb-swiper-slider-four">
+                <!-- swiper slides -->
+                <div class="swiper-wrapper">
+                    <!-- Slide Item -->
+                    <div class="swiper-slide">
+                        <div class="wptb-slider--item">
+                            <div class="wptb-slider--image">
+                                <img src="https://www.monks.com/data/styles/645x750/s3/2023-12/BMW_LilMiquela_MakeitReal_Main_image.jpg?VersionId=JCOUUEzs66x5youFvrzFL.2LjCQTwodU&h=d1cb525d&itok=qIDZyvZo"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Slide Item -->
 
-                <div class="wptb-swiper-navigation style3">
-                    <div class="wptb-swiper-arrow swiper-button-prev"></div>
-                    <div class="wptb-swiper-arrow swiper-button-next"></div>
+                    <!-- Slide Item -->
+                    <div class="swiper-slide">
+                        <div class="wptb-slider--item">
+                            <div class="wptb-slider--image">
+                                <img src="https://www.monks.com/data/styles/645x750/s3/2023-10/StJames-Case%20Study-Main%20Image_02.jpg?VersionId=H32k573dZ.rL9xTkm6RDIlRVLaQ1EkDw&h=d1cb525d&itok=z_adMnN7"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Slide Item -->
+
+                    <!-- Slide Item -->
+                    <div class="swiper-slide">
+                        <div class="wptb-slider--item">
+                            <div class="wptb-slider--image">
+                                <img src="https://www.monks.com/data/styles/645x750/s3/2022-10/uni-media.monks-platform-main.jpeg?VersionId=6UfbdEONfoUp6fss1Aote9C6kLrEWphH&h=a1e1a043&itok=46YVN3S5"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Slide Item -->
+
+                    <!-- Slide Item -->
+                    <div class="swiper-slide">
+                        <div class="wptb-slider--item">
+                            <div class="wptb-slider--image">
+                                <img src="https://pilotpmr.com/static/498396712793af75144d96a83ea4d71c/80ef3/BERAbrand_CaseStudy_3-scaled.webp"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Slide Item -->
+
+                    <!-- Slide Item -->
+                    <div class="swiper-slide">
+                        <div class="wptb-slider--item">
+                            <div class="wptb-slider--image">
+                                <img src="	https://pilotpmr.com/static/9771e83ef235cfee7f51c6c67c6f6e59/98fb3/cdl-phone-2.webp
+                                " alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Slide Item -->
+
+                    <!-- Slide Item -->
+                    <div class="swiper-slide">
+                        <div class="wptb-slider--item">
+                            <div class="wptb-slider--image">
+                                <img src="https://pilotpmr.com/static/2e972cce0e6c3b35d6e99ce7b3f69550/80ef3/pilotpmr_HPRO_7-1-scaled.webp"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Slide Item -->
+
+                    <!-- Slide Item -->
+                    <div class="swiper-slide">
+                        <div class="wptb-slider--item">
+                            <div class="wptb-slider--image">
+                                <img src="https://cdn.prod.website-files.com/5e3801cb69b4c2ea8ff22593/634fce5757515c97ff0bb907_Desolenator-Homepage.webp"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Slide Item -->
+
+                    <!-- Slide Item -->
+                    <div class="swiper-slide">
+                        <div class="wptb-slider--item">
+                            <div class="wptb-slider--image">
+                                <img src="https://cdn.prod.website-files.com/5e3801cb69b4c2ea8ff22593/6568b84e9030bb149f1561cd_Thumb.webp"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Slide Item -->
                 </div>
-            </div> -->
+            </div>
+
+            <!-- Layer Image -->
+            <div class="wptb-item-layer wptb-item-layer-one both-version">
+                <img src="../assets/img/slider/texture-1.png" alt="img">
+                <img src="../assets/img/slider/texture-1-light.png" alt="img">
+            </div>
+
+            <!-- Layer Image -->
+            <div class="wptb-item-layer wptb-item-layer-two both-version">
+                <img src="../assets/img/slider/round.png" alt="img">
+                <img src="../assets/img/slider/round-light.png" alt="img">
+            </div>
+
+            <!-- Layer Image -->
+            <div class="wptb-item-layer wptb-item-layer-three both-version">
+                <img src="../assets/img/slider/overlay.png" alt="img">
+                <img src="../assets/img/slider/overlay-light.png" alt="img">
+            </div>
 
         </section>
         <!-- About M-one -->
-        <br><br><br>
+
         <section class="wptb-about-two  pt-5 " style="background: #151515;z-index: 1;" id="section2">
             <div class="container">
                 <div class="wptb-heading">
@@ -479,7 +493,7 @@
                                 <div class="wptb-item--image position-relative">
                                     <img src="assets/img/more/7.png" alt="img">
 
-                                    <div class="wptb-item--button round-button">
+                                    <!-- <div class="wptb-item--button round-button">
                                         <a class="btn btn-two" href="about.html">
                                             <span class="btn-wrap">
                                                 <span class="text-first">Explore Us</span>
@@ -487,7 +501,7 @@
                                                         class="bi bi-arrow-up-right"></i> </span>
                                             </span>
                                         </a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
 
@@ -507,6 +521,9 @@
                             <p>We push the boundaries of conventional thinking, turning ambitious ideas into reality.
                                 Our expertise spans from crafting unforgettable brands to executing impactful digital
                                 marketing strategies, redefining the possible for our clients</p>
+
+                            <a href="about.html" class="wptb-item--link">Read More </a>
+
                         </div>
                     </div>
                 </div>
@@ -602,7 +619,7 @@
         </style>
 
         <!-- Our Projects -->
-        <section style="background-image: linear-gradient(rgb(0, 0, 0), rgba(255, 0, 0, 0.526));">
+        <!-- <section style="background-image: linear-gradient(rgb(0, 0, 0), rgba(255, 0, 0, 0.526));">
             <div class="container">
                 <div class="wptb-project--inner">
                     <div class="wptb-heading-two">
@@ -631,8 +648,10 @@
                                     <div class="wptb-item--holder">
                                         <div class="wptb-item--meta">
                                             <h4><a href="#!">Brand Development</a></h4>
-                                            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                                do eiusmod tempor incididunt ut labore </p>
+                                            <p class="mt-2">Dream up your ideal brend-we'll bring it to life with flair
+                                                and finesse. As experts in branding, we are the orchitects of your
+                                                brand, creating identities that stick in people's minds and convey your
+                                                message clearly. and powerfully. </p>
                                         </div>
                                     </div>
                                 </div>
@@ -648,8 +667,10 @@
                                     <div class="wptb-item--holder">
                                         <div class="wptb-item--meta">
                                             <h4><a href="#!">Digital Marketing</a></h4>
-                                            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                                do eiusmod tempor incididunt ut labore </p>
+                                            <p class="mt-2">From websites that wow to SEO that sours, our digital magic
+                                                drives your business success with tailor-made solutions. Our approach is
+                                                based on a deep understanding of your goals, environment, business
+                                                model, and customers</p>
                                         </div>
                                     </div>
                                 </div>
@@ -665,8 +686,9 @@
                                     <div class="wptb-item--holder">
                                         <div class="wptb-item--meta">
                                             <h4><a href="#!">Traditional Marketing </a></h4>
-                                            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                                do eiusmod tempor incididunt ut labore </p>
+                                            <p class="mt-2">In a digital age, we still cherish the classics. Believing
+                                                that advertising must be impactful & straightforward, we captivate
+                                                audiences with proven tactics that resonate deeply. </p>
                                         </div>
                                     </div>
                                 </div>
@@ -682,8 +704,10 @@
                                     <div class="wptb-item--holder">
                                         <div class="wptb-item--meta">
                                             <h4><a href="#!">Public Relations</a></h4>
-                                            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                                do eiusmod tempor incididunt ut labore </p>
+                                            <p class="mt-2">We'll get people talking about you for all the right
+                                                reasons. Our team of savvy PR and communications professionals bring
+                                                diverse yet complementary skills and experience to deliver fast,
+                                                flexible, and effective results </p>
                                         </div>
                                     </div>
                                 </div>
@@ -699,8 +723,9 @@
                                     <div class="wptb-item--holder">
                                         <div class="wptb-item--meta">
                                             <h4><a href="#!">Influencer Marketing</a></h4>
-                                            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                                do eiusmod tempor incididunt ut labore </p>
+                                            <p class="mt-2">We specialize in connecting your brand with influential
+                                                voices that resonate deeply with your target audience, ensuring maximum
+                                                impact and engagement across global markets. </p>
                                         </div>
                                     </div>
                                 </div>
@@ -716,8 +741,11 @@
                                     <div class="wptb-item--holder">
                                         <div class="wptb-item--meta">
                                             <h4><a href="#!">Video & Multimedia</a></h4>
-                                            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                                do eiusmod tempor incididunt ut labore </p>
+                                            <p class="mt-2">We cut through the noise of an ad-saturated market with
+                                                engaging visuals that leave a lasting impression. By collaborating
+                                                closely with our clients, we develop video marketing strategies that
+                                                deliver real results-increasing soles, boosting brand recognition, and
+                                                engaging users</p>
                                         </div>
                                     </div>
                                 </div>
@@ -734,8 +762,10 @@
                                     <div class="wptb-item--holder">
                                         <div class="wptb-item--meta">
                                             <h4><a href="#!">OOH Services</a></h4>
-                                            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                                do eiusmod tempor incididunt ut labore </p>
+                                            <p class="mt-2">Reach your audience wherever they are with our strategic OOH
+                                                morketing solutions. We leverage high impact outdoor advertising
+                                                channels such as billboards, transit ads, and street furniture to
+                                                maximize your brand's visibility. </p>
                                         </div>
                                     </div>
                                 </div>
@@ -751,8 +781,9 @@
                                     <div class="wptb-item--holder">
                                         <div class="wptb-item--meta">
                                             <h4><a href="#!">Event Management</a></h4>
-                                            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                                do eiusmod tempor incididunt ut labore </p>
+                                            <p class="mt-2">Create unforgettable experiences with our expert event
+                                                management services. From corporate events to product launches, we
+                                                handle every deta I to ensure your event is a resounding success. </p>
                                         </div>
                                     </div>
                                 </div>
@@ -768,8 +799,9 @@
                                     <div class="wptb-item--holder">
                                         <div class="wptb-item--meta">
                                             <h4><a href="#!">Website Solution</a></h4>
-                                            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                                do eiusmod tempor incididunt ut labore </p>
+                                            <p class="mt-2">Transform your online presence into a digital sensation. We
+                                                offer expert website solutions, including custom web design, e-commerce
+                                                integration, SEO optimization, and responsive design. </p>
                                         </div>
                                     </div>
                                 </div>
@@ -778,10 +810,246 @@
                     </div>
                 </div>
             </div>
+        </section> -->
+
+        <!-- services -->
+
+
+        <section class="wptb-services-one pd-bottom-80 bg-image-4"
+            style="background-image: url('../assets/img/more/texture-3.png'); background-position: 50% -16%;">
+            <div class="container position-relative">
+                <div class="wptb-heading-two">
+                    <div class="wptb-item--inner text-center">
+                        <h6 class="wptb-item--subtitle text-white">Our Services</h6>
+                        <h1 class="wptb-item--title"> Explore Our <span>Services</span> </h1>
+                        <div class="wptb-item--description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Iconbox -->
+                    <div class="col-md-4 pd-left-25 pd-right-25 wow fadeInLeft">
+                        <div class="wptb-icon-box7 mb-0">
+                            <div class="wptb-item--inner">
+                                <div class="wptb-item--icon">
+                                    <img src="https://wpthemebooster.com/demo/themeforest/html/kimono/assets/img/services/icon-9.svg"
+                                        alt="img">
+                                </div>
+                                <div class="wptb-item--holder">
+                                    <h4 class="wptb-item--title"><a href="service-details.html">Brand Development</a>
+                                    </h4>
+                                    <p class="wptb-item--description truncated-description">Dream up your ideal brend-we'll bring it to life
+                                        with flair
+                                        and finesse. As experts in branding, we are the orchitects of your
+                                        brand, creating identities that stick in people's minds and convey your
+                                        message clearly. and powerfully.</p>
+                                    <h6 class="wptb-item--count text-outline">01</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Iconbox -->
+                    <div class="col-md-4 pd-left-25 pd-right-25 wow fadeInLeft">
+                        <div class="wptb-icon-box7 mb-0 active highlight">
+                            <div class="wptb-item--inner">
+                                <div class="wptb-item--icon">
+                                    <img src="https://wpthemebooster.com/demo/themeforest/html/kimono/assets/img/services/icon-10.svg"
+                                        alt="img">
+                                </div>
+                                <div class="wptb-item--holder">
+                                    <h4 class="wptb-item--title"><a href="service-details.html">Digital Marketing</a>
+                                    </h4>
+                                    <p class="wptb-item--description truncated-description">From websites that wow to SEO that sours, our
+                                        digital magic
+                                        drives your business success with tailor-made solutions. Our approach is
+                                        based on a deep understanding of your goals, environment, business
+                                        model, and customers</p>
+                                    <h6 class="wptb-item--count text-outline">02</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Iconbox -->
+                    <div class="col-md-4 pd-left-25 pd-right-25 wow fadeInLeft">
+                        <div class="wptb-icon-box7 mb-0">
+                            <div class="wptb-item--inner">
+                                <div class="wptb-item--icon">
+                                    <img src="https://wpthemebooster.com/demo/themeforest/html/kimono/assets/img/services/icon-11.svg"
+                                        alt="img">
+                                </div>
+                                <div class="wptb-item--holder">
+                                    <h4 class="wptb-item--title"><a href="service-details.html">Traditional
+                                            Marketing</a></h4>
+                                    <p class="wptb-item--description truncated-description">In a digital age, we still cherish the classics.
+                                        Believing
+                                        that advertising must be impactful & straightforward, we captivate
+                                        audiences with proven tactics that resonate deeply. </p>
+                                    </p>
+                                    <h6 class="wptb-item--count text-outline">03</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Iconbox -->
+                    <div class="col-md-4 pd-left-25 pd-right-25 wow fadeInLeft">
+                        <div class="wptb-icon-box7 mb-0">
+                            <div class="wptb-item--inner">
+                                <div class="wptb-item--icon">
+                                    <img src="https://wpthemebooster.com/demo/themeforest/html/kimono/assets/img/services/icon-12.svg"
+                                        alt="img">
+                                </div>
+                                <div class="wptb-item--holder">
+                                    <h4 class="wptb-item--title"><a href="service-details.html">Public Relations</a>
+                                    </h4>
+                                    <p class="wptb-item--description truncated-description">We'll get people talking about you for all the
+                                        right
+                                        reasons. Our team of savvy PR and communications professionals bring
+                                        diverse yet complementary skills and experience to deliver fast,
+                                        flexible, and effective results</p>
+                                    <h6 class="wptb-item--count text-outline">04</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Iconbox -->
+                    <div class="col-md-4 pd-left-25 pd-right-25 wow fadeInLeft">
+                        <div class="wptb-icon-box7 mb-0">
+                            <div class="wptb-item--inner">
+                                <div class="wptb-item--icon">
+                                    <img src="https://wpthemebooster.com/demo/themeforest/html/kimono/assets/img/services/icon-13.svg"
+                                        alt="img">
+                                </div>
+                                <div class="wptb-item--holder">
+                                    <h4 class="wptb-item--title"><a href="service-details.html">Influencer Marketing</a>
+                                    </h4>
+                                    <p class="wptb-item--description truncated-description">We specialize in connecting your brand with
+                                        influential
+                                        voices that resonate deeply with your target audience, ensuring maximum
+                                        impact and engagement across global markets. </p>
+                                    </p>
+                                    <h6 class="wptb-item--count text-outline">05</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Iconbox -->
+                    <div class="col-md-4 pd-left-25 pd-right-25 wow fadeInLeft">
+                        <div class="wptb-icon-box7 mb-0">
+                            <div class="wptb-item--inner">
+                                <div class="wptb-item--icon">
+                                    <img src="https://wpthemebooster.com/demo/themeforest/html/kimono/assets/img/services/icon-14.svg"
+                                        alt="img">
+                                </div>
+                                <div class="wptb-item--holder">
+                                    <h4 class="wptb-item--title"><a href="service-details.html">Video & Multimedia</a>
+                                    </h4>
+                                    <p class="wptb-item--description truncated-description">We cut through the noise of an ad-saturated market
+                                        with
+                                        engaging visuals that leave a lasting impression. By collaborating
+                                        closely with our clients, we develop video marketing strategies that
+                                        deliver real results-increasing soles, boosting brand recognition, and
+                                        engaging users</p>
+                                    <h6 class="wptb-item--count text-outline">06</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Iconbox -->
+                    <div class="col-md-4 pd-left-25 pd-right-25 wow fadeInLeft">
+                        <div class="wptb-icon-box7 mb-0">
+                            <div class="wptb-item--inner">
+                                <div class="wptb-item--icon">
+                                    <img src="https://wpthemebooster.com/demo/themeforest/html/kimono/assets/img/services/icon-14.svg"
+                                        alt="img">
+                                </div>
+                                <div class="wptb-item--holder">
+                                    <h4 class="wptb-item--title"><a href="service-details.html">OOH Services</a></h4>
+                                    <p class="wptb-item--description truncated-description">Reach your audience wherever they are with our
+                                        strategic OOH
+                                        morketing solutions. We leverage high impact outdoor advertising
+                                        channels such as billboards, transit ads, and street furniture to
+                                        maximize your brand's visibility.</p>
+                                    <h6 class="wptb-item--count text-outline">07</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Iconbox -->
+                    <div class="col-md-4 pd-left-25 pd-right-25 wow fadeInLeft">
+                        <div class="wptb-icon-box7 mb-0">
+                            <div class="wptb-item--inner">
+                                <div class="wptb-item--icon">
+                                    <img src="https://wpthemebooster.com/demo/themeforest/html/kimono/assets/img/services/icon-14.svg"
+                                        alt="img">
+                                </div>
+                                <div class="wptb-item--holder">
+                                    <h4 class="wptb-item--title"><a href="service-details.html">Event Management</a>
+                                    </h4>
+                                    <p class="wptb-item--description truncated-description">Create unforgettable experiences with our expert
+                                        event
+                                        management services. From corporate events to product launches, we
+                                        handle every deta I to ensure your event is a resounding success. </p>
+                                    </p>
+                                    <h6 class="wptb-item--count text-outline">08</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Iconbox -->
+                    <div class="col-md-4 pd-left-25 pd-right-25 wow fadeInLeft">
+                        <div class="wptb-icon-box7 mb-0">
+                            <div class="wptb-item--inner">
+                                <div class="wptb-item--icon">
+                                    <img src="https://wpthemebooster.com/demo/themeforest/html/kimono/assets/img/services/icon-14.svg"
+                                        alt="img">
+                                </div>
+                                <div class="wptb-item--holder">
+                                    <h4 class="wptb-item--title"><a href="service-details.html">Website Solution</a>
+                                    </h4>
+                                    <p class="wptb-item--description truncated-description">Transform your online presence into a digital
+                                        sensation. We
+                                        offer expert website solutions, including custom web design, e-commerce
+                                        integration, SEO optimization, and responsive design. </p>
+                                    </p>
+                                    <h6 class="wptb-item--count text-outline">09</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid_lines">
+                    <div class="grid_line"></div>
+                    <div class="grid_line"></div>
+                    <div class="grid_line"></div>
+                    <div class="grid_line"></div>
+                </div>
+            </div>
         </section>
 
+        <div class="divider-line-hr"></div>
 
-
+        <style>
+            .truncated-description {
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                /* Number of lines to show */
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                line-height: 1.4em;
+                /* Adjust based on your font size */
+            }
+        </style>
+        <!-- services -->
 
 
         <section class="wptb-project">
