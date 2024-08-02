@@ -659,7 +659,7 @@
   background: var(--gradient-one-180);
   transition: var(--transition-base);
 }
-.effect-gradient .grid-item .wptb-item--holder {
+.effect-gradient .grid-item:hover .wptb-item--holder {
   bottom: 0%;
 }
 .effect-gradient .grid-item .wptb-item--meta h4 {
@@ -667,7 +667,7 @@
   transition: var(--transition-base);
   opacity: 0;
 }
-.effect-gradient .grid-item .wptb-item--meta h4 {
+.effect-gradient .grid-item:hover .wptb-item--meta h4 {
   transform: translateY(0px);
   opacity: 1;
 }
@@ -703,7 +703,7 @@
   transition: var(--transition-base);
   opacity: 0;
 }
-.effect-gradient .grid-item .wptb-item--link {
+.effect-gradient .grid-item:hover .wptb-item--link {
   transform: translateX(0px);
   opacity: 1;
 }
