@@ -2140,7 +2140,15 @@ Ready Components Stylesheet
 .wptb-slider .localvideo-bg {
   position: relative;
   height: 100vh;
+  background: #000;
 }
+
+@media screen and (max-width: 600px) {
+  .wptb-slider .localvideo-bg {
+    height: 50vh;
+  }
+}
+
 
 .wptb-slider .localvideo-bg video {
   position: absolute;
@@ -2148,7 +2156,7 @@ Ready Components Stylesheet
   right: 0;
   top: 0;
   bottom: 0;
-  width: auto;
+  width: 100%;
   height: auto;
   min-width: 100%;
   min-height: 100%;
