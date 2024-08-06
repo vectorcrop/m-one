@@ -28,6 +28,8 @@
     <!-- Styles Include -->
     <link rel="stylesheet" href="assets/css/main.css">
 
+    <link rel="stylesheet" href="assets/css/custom.css">
+
 </head>
 <style>
     .social-box.style-oval ul li a {
@@ -140,6 +142,120 @@
 </style>
 
 <body>
+
+    <div class="contact-modal" id="contact-modal">
+        <div class="contact-modal__content">
+            <div class="contact-modal__logo">
+                <img src="assets/images/logo.png" alt="logo">
+            </div>
+            <!-- <div class="contact-modal__close">
+                &times;
+            </div> -->
+            <form action="#" class="contact-modal__form">
+                <!-- Name Field -->
+                <div class="contact-modal__form-group" id="name-group">
+                    <label for="name">Your Good Name</label>
+                    <div class="contact-modal__form-input">
+                        <input type="text" id="name" name="name">
+                        <svg class="prev-svg" width="24" height="20" viewBox="0 0 24 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-180deg);opacity: 0.5;">
+                            <path
+                                d="M24 9.99185C23.9917 9.11438 23.6283 8.27544 22.9886 7.65684L15.6343 0.485004C15.3131 0.174362 14.8786 0 14.4257 0C13.9728 0 13.5383 0.174362 13.2171 0.485004C13.0565 0.640054 12.9289 0.824522 12.8419 1.02777C12.7549 1.23101 12.7101 1.44901 12.7101 1.66919C12.7101 1.88937 12.7549 2.10737 12.8419 2.31061C12.9289 2.51386 13.0565 2.69833 13.2171 2.85338L18.8571 8.32398H1.71429C1.25963 8.32398 0.823594 8.49971 0.502103 8.81249C0.180612 9.12528 0 9.54951 0 9.99185C0 10.4342 0.180612 10.8584 0.502103 11.1712C0.823594 11.484 1.25963 11.6597 1.71429 11.6597H18.8571L13.2171 17.147C12.8943 17.4589 12.7121 17.8827 12.7105 18.3253C12.7089 18.7679 12.888 19.193 13.2086 19.507C13.5291 19.8211 13.9647 19.9984 14.4197 20C14.8746 20.0016 15.3115 19.8272 15.6343 19.5154L22.9886 12.3435C23.6324 11.7208 23.9962 10.8751 24 9.99185Z"
+                                fill="white" />
+                        </svg>
+                        <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            onclick="showNextField('email-group')">
+                            <path
+                                d="M24 9.99185C23.9917 9.11438 23.6283 8.27544 22.9886 7.65684L15.6343 0.485004C15.3131 0.174362 14.8786 0 14.4257 0C13.9728 0 13.5383 0.174362 13.2171 0.485004C13.0565 0.640054 12.9289 0.824522 12.8419 1.02777C12.7549 1.23101 12.7101 1.44901 12.7101 1.66919C12.7101 1.88937 12.7549 2.10737 12.8419 2.31061C12.9289 2.51386 13.0565 2.69833 13.2171 2.85338L18.8571 8.32398H1.71429C1.25963 8.32398 0.823594 8.49971 0.502103 8.81249C0.180612 9.12528 0 9.54951 0 9.99185C0 10.4342 0.180612 10.8584 0.502103 11.1712C0.823594 11.484 1.25963 11.6597 1.71429 11.6597H18.8571L13.2171 17.147C12.8943 17.4589 12.7121 17.8827 12.7105 18.3253C12.7089 18.7679 12.888 19.193 13.2086 19.507C13.5291 19.8211 13.9647 19.9984 14.4197 20C14.8746 20.0016 15.3115 19.8272 15.6343 19.5154L22.9886 12.3435C23.6324 11.7208 23.9962 10.8751 24 9.99185Z"
+                                fill="white" />
+                        </svg>
+                        <div class="contact-modal__form-input-line"></div>
+                    </div>
+                    <span class="error-message" style="display: none; color: red;">This field is required.</span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="contact-modal__form-group" id="email-group" style="display: none;">
+                    <label for="email">Your Email</label>
+                    <div class="contact-modal__form-input">
+                        <input type="email" id="email" name="email">
+                        <svg class="prev-svg" width="24" height="20" viewBox="0 0 24 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-180deg);"
+                            onclick="showNextField('name-group')">
+                            <path
+                                d="M24 9.99185C23.9917 9.11438 23.6283 8.27544 22.9886 7.65684L15.6343 0.485004C15.3131 0.174362 14.8786 0 14.4257 0C13.9728 0 13.5383 0.174362 13.2171 0.485004C13.0565 0.640054 12.9289 0.824522 12.8419 1.02777C12.7549 1.23101 12.7101 1.44901 12.7101 1.66919C12.7101 1.88937 12.7549 2.10737 12.8419 2.31061C12.9289 2.51386 13.0565 2.69833 13.2171 2.85338L18.8571 8.32398H1.71429C1.25963 8.32398 0.823594 8.49971 0.502103 8.81249C0.180612 9.12528 0 9.54951 0 9.99185C0 10.4342 0.180612 10.8584 0.502103 11.1712C0.823594 11.484 1.25963 11.6597 1.71429 11.6597H18.8571L13.2171 17.147C12.8943 17.4589 12.7121 17.8827 12.7105 18.3253C12.7089 18.7679 12.888 19.193 13.2086 19.507C13.5291 19.8211 13.9647 19.9984 14.4197 20C14.8746 20.0016 15.3115 19.8272 15.6343 19.5154L22.9886 12.3435C23.6324 11.7208 23.9962 10.8751 24 9.99185Z"
+                                fill="white" />
+                        </svg>
+                        <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            onclick="showNextField('phone-group')">
+                            <!-- Replace with appropriate SVG icon for email -->
+                            <path
+                                d="M24 9.99185C23.9917 9.11438 23.6283 8.27544 22.9886 7.65684L15.6343 0.485004C15.3131 0.174362 14.8786 0 14.4257 0C13.9728 0 13.5383 0.174362 13.2171 0.485004C13.0565 0.640054 12.9289 0.824522 12.8419 1.02777C12.7549 1.23101 12.7101 1.44901 12.7101 1.66919C12.7101 1.88937 12.7549 2.10737 12.8419 2.31061C12.9289 2.51386 13.0565 2.69833 13.2171 2.85338L18.8571 8.32398H1.71429C1.25963 8.32398 0.823594 8.49971 0.502103 8.81249C0.180612 9.12528 0 9.54951 0 9.99185C0 10.4342 0.180612 10.8584 0.502103 11.1712C0.823594 11.484 1.25963 11.6597 1.71429 11.6597H18.8571L13.2171 17.147C12.8943 17.4589 12.7121 17.8827 12.7105 18.3253C12.7089 18.7679 12.888 19.193 13.2086 19.507C13.5291 19.8211 13.9647 19.9984 14.4197 20C14.8746 20.0016 15.3115 19.8272 15.6343 19.5154L22.9886 12.3435C23.6324 11.7208 23.9962 10.8751 24 9.99185Z"
+                                fill="white" />
+                        </svg>
+                        <div class="contact-modal__form-input-line"></div>
+                    </div>
+                    <span class="error-message" style="display: none; color: red;">This field is required.</span>
+                </div>
+
+                <!-- Phone Number Field -->
+                <div class="contact-modal__form-group" id="phone-group" style="display: none;">
+                    <label for="phone">Your Phone Number</label>
+                    <div class="contact-modal__form-input">
+                        <input type="number" id="phone" name="phone">
+                        <svg class="prev-svg" width="24" height="20" viewBox="0 0 24 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-180deg);"
+                            onclick="showNextField('email-group')">
+                            <path
+                                d="M24 9.99185C23.9917 9.11438 23.6283 8.27544 22.9886 7.65684L15.6343 0.485004C15.3131 0.174362 14.8786 0 14.4257 0C13.9728 0 13.5383 0.174362 13.2171 0.485004C13.0565 0.640054 12.9289 0.824522 12.8419 1.02777C12.7549 1.23101 12.7101 1.44901 12.7101 1.66919C12.7101 1.88937 12.7549 2.10737 12.8419 2.31061C12.9289 2.51386 13.0565 2.69833 13.2171 2.85338L18.8571 8.32398H1.71429C1.25963 8.32398 0.823594 8.49971 0.502103 8.81249C0.180612 9.12528 0 9.54951 0 9.99185C0 10.4342 0.180612 10.8584 0.502103 11.1712C0.823594 11.484 1.25963 11.6597 1.71429 11.6597H18.8571L13.2171 17.147C12.8943 17.4589 12.7121 17.8827 12.7105 18.3253C12.7089 18.7679 12.888 19.193 13.2086 19.507C13.5291 19.8211 13.9647 19.9984 14.4197 20C14.8746 20.0016 15.3115 19.8272 15.6343 19.5154L22.9886 12.3435C23.6324 11.7208 23.9962 10.8751 24 9.99185Z"
+                                fill="white" />
+                        </svg>
+                        <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            onclick="showNextField('message-group')">
+                            <!-- Replace with appropriate SVG icon for phone -->
+                            <path
+                                d="M24 9.99185C23.9917 9.11438 23.6283 8.27544 22.9886 7.65684L15.6343 0.485004C15.3131 0.174362 14.8786 0 14.4257 0C13.9728 0 13.5383 0.174362 13.2171 0.485004C13.0565 0.640054 12.9289 0.824522 12.8419 1.02777C12.7549 1.23101 12.7101 1.44901 12.7101 1.66919C12.7101 1.88937 12.7549 2.10737 12.8419 2.31061C12.9289 2.51386 13.0565 2.69833 13.2171 2.85338L18.8571 8.32398H1.71429C1.25963 8.32398 0.823594 8.49971 0.502103 8.81249C0.180612 9.12528 0 9.54951 0 9.99185C0 10.4342 0.180612 10.8584 0.502103 11.1712C0.823594 11.484 1.25963 11.6597 1.71429 11.6597H18.8571L13.2171 17.147C12.8943 17.4589 12.7121 17.8827 12.7105 18.3253C12.7089 18.7679 12.888 19.193 13.2086 19.507C13.5291 19.8211 13.9647 19.9984 14.4197 20C14.8746 20.0016 15.3115 19.8272 15.6343 19.5154L22.9886 12.3435C23.6324 11.7208 23.9962 10.8751 24 9.99185Z"
+                                fill="white" />
+                        </svg>
+                        <div class="contact-modal__form-input-line"></div>
+                    </div>
+                    <span class="error-message" style="display: none; color: red;">This field is required.</span>
+                </div>
+
+                <!-- Message Field -->
+                <div class="contact-modal__form-group" id="message-group" style="display: none;">
+                    <label for="message">Your Message</label>
+                    <div class="contact-modal__form-input">
+                        <textarea id="message" name="message"></textarea>
+                        <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            style="transform: rotate(-180deg);" onclick="showNextField('phone-group')">
+                            <path
+                                d="M24 9.99185C23.9917 9.11438 23.6283 8.27544 22.9886 7.65684L15.6343 0.485004C15.3131 0.174362 14.8786 0 14.4257 0C13.9728 0 13.5383 0.174362 13.2171 0.485004C13.0565 0.640054 12.9289 0.824522 12.8419 1.02777C12.7549 1.23101 12.7101 1.44901 12.7101 1.66919C12.7101 1.88937 12.7549 2.10737 12.8419 2.31061C12.9289 2.51386 13.0565 2.69833 13.2171 2.85338L18.8571 8.32398H1.71429C1.25963 8.32398 0.823594 8.49971 0.502103 8.81249C0.180612 9.12528 0 9.54951 0 9.99185C0 10.4342 0.180612 10.8584 0.502103 11.1712C0.823594 11.484 1.25963 11.6597 1.71429 11.6597H18.8571L13.2171 17.147C12.8943 17.4589 12.7121 17.8827 12.7105 18.3253C12.7089 18.7679 12.888 19.193 13.2086 19.507C13.5291 19.8211 13.9647 19.9984 14.4197 20C14.8746 20.0016 15.3115 19.8272 15.6343 19.5154L22.9886 12.3435C23.6324 11.7208 23.9962 10.8751 24 9.99185Z"
+                                fill="white" />
+                        </svg>
+                        <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            style="opacity:0.5;">
+                            <path
+                                d="M24 9.99185C23.9917 9.11438 23.6283 8.27544 22.9886 7.65684L15.6343 0.485004C15.3131 0.174362 14.8786 0 14.4257 0C13.9728 0 13.5383 0.174362 13.2171 0.485004C13.0565 0.640054 12.9289 0.824522 12.8419 1.02777C12.7549 1.23101 12.7101 1.44901 12.7101 1.66919C12.7101 1.88937 12.7549 2.10737 12.8419 2.31061C12.9289 2.51386 13.0565 2.69833 13.2171 2.85338L18.8571 8.32398H1.71429C1.25963 8.32398 0.823594 8.49971 0.502103 8.81249C0.180612 9.12528 0 9.54951 0 9.99185C0 10.4342 0.180612 10.8584 0.502103 11.1712C0.823594 11.484 1.25963 11.6597 1.71429 11.6597H18.8571L13.2171 17.147C12.8943 17.4589 12.7121 17.8827 12.7105 18.3253C12.7089 18.7679 12.888 19.193 13.2086 19.507C13.5291 19.8211 13.9647 19.9984 14.4197 20C14.8746 20.0016 15.3115 19.8272 15.6343 19.5154L22.9886 12.3435C23.6324 11.7208 23.9962 10.8751 24 9.99185Z"
+                                fill="white" />
+                        </svg>
+                        <div class="contact-modal__form-input-line"></div>
+                    </div>
+                    <span class="error-message" style="display: none; color: red;">This field is required.</span>
+                </div>
+
+                <!-- Submit Button -->
+                <button class="btn" type="submit" style="display: none; margin-top: 20px;"
+                    id="submit-btn">Submit</button>
+            </form>
+
+            <div class="contact-modal__close" id="contact-modal-close">
+                &times;
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- Preloader -->
     <div id="preloader">
@@ -437,8 +553,7 @@
         <section class="wptb-slider style19">
             <div class="localvideo-bg">
                 <video autoplay muted loop>
-                    <source src="/assets/images/video.mp4"
-                        type="video/mp4">
+                    <source src="/assets/images/video.mp4" type="video/mp4">
                 </video>
             </div>
         </section>
@@ -1333,7 +1448,7 @@
                     </div>
                     <div class="col-lg-6">
                         <img src="/assets/images/contactm.png">
-                        <a href="" class="btn cbtn">Connect
+                        <a id="contact-btn" href="" class="btn cbtn">Connect
                             Us</a>
                     </div>
 
@@ -1441,6 +1556,99 @@
         <div class="totop">
             <a href="#"><i class="bi bi-chevron-up"></i></a>
         </div>
+
+
+        <script>
+
+            const contactbtn = document.querySelector("#contact-btn")
+            const contactmodal = document.querySelector("#contact-modal")
+            const contactmodalclose = document.querySelector("#contact-modal-close")
+
+            console.log(contactbtn);
+            contactbtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                contactmodal.style.display = "block"
+                document.querySelector("body").classList.add("remove-scrolling")
+                showNextField("name-group")
+                document.querySelectorAll('.contact-modal__form-input-line').forEach(line => {
+                    line.style.width = 0 + '%';
+                });
+            })
+            contactmodalclose.addEventListener("click", (e) => {
+                e.preventDefault();
+                contactmodal.style.display = "none"
+                document.querySelector("body").classList.remove("remove-scrolling")
+            })
+            document.querySelectorAll('.contact-modal__form-input input, .contact-modal__form-input textarea').forEach(element => {
+                // Find the associated label
+                const label = element.closest('.contact-modal__form-group').querySelector('label');
+
+                element.addEventListener('focus', () => {
+                    label.style.transform = 'translateY(0px)';
+                });
+
+                element.addEventListener('blur', () => {
+                    if (element.value.trim() === "") {
+                        label.style.transform = 'translateY(50px)';
+                    }
+                });
+            });
+
+            function showNextField(nextFieldId) {
+                // Hide all form groups
+                const currentGroup = document.querySelector('.contact-modal__form-group:not([style*="display: none"])');
+                const input = currentGroup.querySelector('input, textarea');
+                const errorMessage = currentGroup.querySelector('.error-message');
+
+
+                if (input.value.trim() === "") {
+                    // Show the error message
+                    errorMessage.style.display = 'block';
+                    return; // Stop the function if there's an error
+                } else {
+                    // Hide the error message if there's input
+                    errorMessage.style.display = 'none';
+                }
+                currentGroup.style.display = 'none';
+                // Show the next field
+                var nextField = document.getElementById(nextFieldId);
+                if (nextField) {
+                    nextField.style.display = 'block';
+                    updateProgress(); // Update progress bar when the field loses focus
+                }
+
+                // Show submit button after the message field
+                if (nextFieldId === 'message-group') {
+                    document.querySelectorAll(".contact-modal__form-input svg").forEach((el) => {
+                        el.style.display = "none"
+                    })
+                    document.getElementById('submit-btn').style.display = 'block';
+                }
+            }
+            function updateProgress(fieldId) {
+                const formGroups = document.querySelectorAll('.contact-modal__form-group');
+                let completedFields = 0;
+                const totalFields = formGroups.length;
+
+                formGroups.forEach(group => {
+                    const input = group.querySelector('input, textarea');
+                    if (input && input.value.trim() !== '') {
+                        completedFields++;
+                    }
+                });
+
+                const percentage = (completedFields / totalFields) * 100;
+                document.querySelectorAll('.contact-modal__form-input-line').forEach(line => {
+                    line.style.width = percentage + '%';
+                });
+            }
+
+            // document.querySelectorAll('.contact-modal__form-input input, .contact-modal__form-input textarea').forEach(input => {
+            //     input.addEventListener('blur', () => {
+            //         updateProgress(); // Update progress bar when the field loses focus
+            //     });
+            // });
+        </script>
 
 
         <!-- Core JS -->

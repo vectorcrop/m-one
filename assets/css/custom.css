@@ -1,0 +1,108 @@
+.contact-modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000000ec;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+}
+
+.contact-modal__content {
+    max-width: 50%;
+    margin: 1rem auto;
+    height: 100%;
+
+}
+
+.contact-modal__logo {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-modal__logo img {
+    width: 15rem;
+}
+
+.contact-modal__form {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-modal__form label {
+    transform: translateY(50px);
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-modal__form-input {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.contact-modal__form-input input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    padding-right: 72px;
+}
+
+.contact-modal__form-input svg {
+    z-index: 1;
+}
+
+.contact-modal__form-input .prev-svg {
+    margin-left: -65px;
+    margin-right: 11px;
+}
+
+.contact-modal__form-input-line {
+    position: absolute;
+    bottom: 0%;
+    height: 1px;
+    width: 0%;
+    background: red;
+    content: '';
+    left: 0;
+    z-index: 1;
+}
+
+.remove-scrolling {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.contact-modal__close {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 2rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 3px 7px;
+}
+
+
+.contact-modal__close:hover {
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:600px) {
+    .contact-modal__close {
+        top: auto;
+        bottom: 20%;
+        right: 50%;
+    }
+
+    .contact-modal__content {
+        max-width: 80%;
+        height: 70%;
+
+    }
+}
