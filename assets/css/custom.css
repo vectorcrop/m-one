@@ -6,7 +6,7 @@
     top: 0;
     left: 0;
     z-index: 100;
-    display: none;
+    /* display: none; */
 }
 
 .contact-modal__content {
@@ -105,6 +105,17 @@
         height: 70%;
 
     }
+
+    .contact-modal__form-input {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-end;
+    }
+
+    .contact-modal__form-input input {
+        padding-right: 10px;
+    }
+
 }
 
 /* /////////////////////////

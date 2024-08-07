@@ -209,21 +209,23 @@
                     <label for="name">Your Good Name</label>
                     <div class="contact-modal__form-input">
                         <input type="text" id="name" name="name">
-                        <svg class="prev-svg" width="24" height="20" viewBox="0 0 24 20" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-180deg);opacity: 0.5;">
-                            <path
-                                d="M24 9.99185C23.9917 9.11438 23.6283 8.27544 22.9886 7.65684L15.6343 0.485004C15.3131 0.174362 14.8786 0 14.4257 0C13.9728 0 13.5383 0.174362 13.2171 0.485004C13.0565 0.640054 12.9289 0.824522 12.8419 1.02777C12.7549 1.23101 12.7101 1.44901 12.7101 1.66919C12.7101 1.88937 12.7549 2.10737 12.8419 2.31061C12.9289 2.51386 13.0565 2.69833 13.2171 2.85338L18.8571 8.32398H1.71429C1.25963 8.32398 0.823594 8.49971 0.502103 8.81249C0.180612 9.12528 0 9.54951 0 9.99185C0 10.4342 0.180612 10.8584 0.502103 11.1712C0.823594 11.484 1.25963 11.6597 1.71429 11.6597H18.8571L13.2171 17.147C12.8943 17.4589 12.7121 17.8827 12.7105 18.3253C12.7089 18.7679 12.888 19.193 13.2086 19.507C13.5291 19.8211 13.9647 19.9984 14.4197 20C14.8746 20.0016 15.3115 19.8272 15.6343 19.5154L22.9886 12.3435C23.6324 11.7208 23.9962 10.8751 24 9.99185Z"
-                                fill="white" />
-                        </svg>
-                        <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            onclick="showNextField('email-group')">
-                            <path
-                                d="M24 9.99185C23.9917 9.11438 23.6283 8.27544 22.9886 7.65684L15.6343 0.485004C15.3131 0.174362 14.8786 0 14.4257 0C13.9728 0 13.5383 0.174362 13.2171 0.485004C13.0565 0.640054 12.9289 0.824522 12.8419 1.02777C12.7549 1.23101 12.7101 1.44901 12.7101 1.66919C12.7101 1.88937 12.7549 2.10737 12.8419 2.31061C12.9289 2.51386 13.0565 2.69833 13.2171 2.85338L18.8571 8.32398H1.71429C1.25963 8.32398 0.823594 8.49971 0.502103 8.81249C0.180612 9.12528 0 9.54951 0 9.99185C0 10.4342 0.180612 10.8584 0.502103 11.1712C0.823594 11.484 1.25963 11.6597 1.71429 11.6597H18.8571L13.2171 17.147C12.8943 17.4589 12.7121 17.8827 12.7105 18.3253C12.7089 18.7679 12.888 19.193 13.2086 19.507C13.5291 19.8211 13.9647 19.9984 14.4197 20C14.8746 20.0016 15.3115 19.8272 15.6343 19.5154L22.9886 12.3435C23.6324 11.7208 23.9962 10.8751 24 9.99185Z"
-                                fill="white" />
-                        </svg>
+                        <div class="prev-svg">
+                            <svg width="24" height="20" viewBox="0 0 24 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-180deg);opacity: 0.5;">
+                                <path
+                                    d="M24 9.99185C23.9917 9.11438 23.6283 8.27544 22.9886 7.65684L15.6343 0.485004C15.3131 0.174362 14.8786 0 14.4257 0C13.9728 0 13.5383 0.174362 13.2171 0.485004C13.0565 0.640054 12.9289 0.824522 12.8419 1.02777C12.7549 1.23101 12.7101 1.44901 12.7101 1.66919C12.7101 1.88937 12.7549 2.10737 12.8419 2.31061C12.9289 2.51386 13.0565 2.69833 13.2171 2.85338L18.8571 8.32398H1.71429C1.25963 8.32398 0.823594 8.49971 0.502103 8.81249C0.180612 9.12528 0 9.54951 0 9.99185C0 10.4342 0.180612 10.8584 0.502103 11.1712C0.823594 11.484 1.25963 11.6597 1.71429 11.6597H18.8571L13.2171 17.147C12.8943 17.4589 12.7121 17.8827 12.7105 18.3253C12.7089 18.7679 12.888 19.193 13.2086 19.507C13.5291 19.8211 13.9647 19.9984 14.4197 20C14.8746 20.0016 15.3115 19.8272 15.6343 19.5154L22.9886 12.3435C23.6324 11.7208 23.9962 10.8751 24 9.99185Z"
+                                    fill="white" />
+                            </svg>
+                            <svg width="24" height="20" viewBox="0 0 24 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" onclick="showNextField('email-group')">
+                                <path
+                                    d="M24 9.99185C23.9917 9.11438 23.6283 8.27544 22.9886 7.65684L15.6343 0.485004C15.3131 0.174362 14.8786 0 14.4257 0C13.9728 0 13.5383 0.174362 13.2171 0.485004C13.0565 0.640054 12.9289 0.824522 12.8419 1.02777C12.7549 1.23101 12.7101 1.44901 12.7101 1.66919C12.7101 1.88937 12.7549 2.10737 12.8419 2.31061C12.9289 2.51386 13.0565 2.69833 13.2171 2.85338L18.8571 8.32398H1.71429C1.25963 8.32398 0.823594 8.49971 0.502103 8.81249C0.180612 9.12528 0 9.54951 0 9.99185C0 10.4342 0.180612 10.8584 0.502103 11.1712C0.823594 11.484 1.25963 11.6597 1.71429 11.6597H18.8571L13.2171 17.147C12.8943 17.4589 12.7121 17.8827 12.7105 18.3253C12.7089 18.7679 12.888 19.193 13.2086 19.507C13.5291 19.8211 13.9647 19.9984 14.4197 20C14.8746 20.0016 15.3115 19.8272 15.6343 19.5154L22.9886 12.3435C23.6324 11.7208 23.9962 10.8751 24 9.99185Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
                         <div class="contact-modal__form-input-line"></div>
                     </div>
-                    <span class="error-message" style="display: none; color: red;">This field is required.</span>
+                    <span class="error-message mt-3" style="display: none; color: red;">This field is required.</span>
                 </div>
 
                 <!-- Email Field -->
@@ -247,7 +249,7 @@
                         </svg>
                         <div class="contact-modal__form-input-line"></div>
                     </div>
-                    <span class="error-message" style="display: none; color: red;">This field is required.</span>
+                    <span class="error-message mt-3" style="display: none; color: red;">This field is required.</span>
                 </div>
 
                 <!-- Phone Number Field -->
@@ -271,7 +273,7 @@
                         </svg>
                         <div class="contact-modal__form-input-line"></div>
                     </div>
-                    <span class="error-message" style="display: none; color: red;">This field is required.</span>
+                    <span class="error-message mt-3" style="display: none; color: red;">This field is required.</span>
                 </div>
 
                 <!-- Message Field -->
@@ -293,7 +295,7 @@
                         </svg>
                         <div class="contact-modal__form-input-line"></div>
                     </div>
-                    <span class="error-message" style="display: none; color: red;">This field is required.</span>
+                    <span class="error-message mt-3" style="display: none; color: red;">This field is required.</span>
                 </div>
 
                 <!-- Submit Button -->
@@ -1795,7 +1797,6 @@
             const contactmodal = document.querySelector("#contact-modal")
             const contactmodalclose = document.querySelector("#contact-modal-close")
 
-            console.log(contactbtn);
             contactbtn.addEventListener("click", (e) => {
                 e.preventDefault();
                 contactmodal.style.display = "block"
@@ -1832,8 +1833,26 @@
                 const errorMessage = currentGroup.querySelector('.error-message');
 
 
-                if (input.value.trim() === "") {
+                // Add your validation logic
+                if (nextFieldId === 'phone-group') {
+                    const email = input.value.trim();
+                    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailPattern.test(email)) {
+                        errorMessage.textContent = 'Please enter a valid email address.';
+                        errorMessage.style.display = 'block';
+                        return; // Stop the function if there's an error
+                    }
+                } else if (nextFieldId === 'message-group') {
+                    const phone = input.value.trim();
+                    const phonePattern = /^[0-9]{10}$/; // Adjust regex according to your phone number format
+                    if (!phonePattern.test(phone)) {
+                        errorMessage.textContent = 'Please enter a valid phone number.';
+                        errorMessage.style.display = 'block';
+                        return; // Stop the function if there's an error
+                    }
+                } else if (nextFieldId != "name-group" && input.value.trim() === "") {
                     // Show the error message
+                    errorMessage.textContent = 'This field is required.';
                     errorMessage.style.display = 'block';
                     return; // Stop the function if there's an error
                 } else {
