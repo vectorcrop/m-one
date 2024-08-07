@@ -8,6 +8,7 @@
   .wptb-slider.style20 {
     height: auto;
   }
+
   .wptb-slider .ytvideo-bg {
     padding-bottom: 52.25%;
   }
@@ -27,6 +28,7 @@
   .wptb-marquee {
     padding-bottom: 90px;
   }
+
   .wptb-text-marquee1 .wptb-item--text {
     font-size: 60px;
     line-height: 50px;
@@ -35,12 +37,14 @@
   .wptb-counter1 .wptb-item--holder {
     gap: 10px;
   }
+
   .wptb-counter1.mr-bottom-100 {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 991px) {
+
   .section,
   section,
   .wptb-about-two {
@@ -144,6 +148,7 @@
     font-size: 50px;
     line-height: 1.3em;
   }
+
   .swiper-gallery-two .wptb-swiper-navigation.style2 {
     width: 95%;
   }
@@ -158,6 +163,7 @@
 }
 
 @media screen and (max-width: 767px) {
+
   .h1,
   h1 {
     font-size: var(--fs-42);
@@ -192,6 +198,7 @@
     font-size: 40px;
     line-height: 1.3em;
   }
+
   .wptb-counter1 .wptb-item--text {
     font-size: 16px;
     line-height: 1.3em;
@@ -238,6 +245,7 @@
   .swiper-slide .grid-item .wptb-item--holder {
     padding: 20px;
   }
+
   .wptb-slider:not(.style11) {
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -265,9 +273,14 @@
     padding: 0px;
     height: calc(100vh - 215px);
   }
+
+  .wptb-slider .wptb-slider--image {
+    background-position: 5% 50%;
+  }
+
   .wptb-slider.style3 .wptb-slider--item {
     /* padding: 0px; */
-    height: calc(100vh - 215px);
+    height: calc(100vh - 10px);
   }
 
   .wptb-slider.style7 .wptb-slider--image {
@@ -288,6 +301,7 @@
 }
 
 @media screen and (max-width: 575px) {
+
   .h1,
   h1 {
     font-size: var(--fs-36);
