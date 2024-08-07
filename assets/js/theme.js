@@ -197,7 +197,7 @@ Description: Kimono - Photography Agency
 
         // Slider Three
         var SwiperSliderThree = new Swiper('.wptb-swiper-slider-three', {
-            loop: true,
+            loop: false,
             // autoplay: {
             //     delay: 3000,
             // },
