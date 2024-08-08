@@ -2329,10 +2329,14 @@ Ready Components Stylesheet
 
 @media screen and (max-width: 600px) {
   .wptb-slider .localvideo-bg {
-    height: 76vh;
+    height: 100vh;
   }
 
-  
+  .wptb-slider.style19 {
+    background: #000;
+  }
+
+
 }
 
 
