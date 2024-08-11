@@ -2028,7 +2028,7 @@
 
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-    <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
+    <!-- <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script> -->
     <!-- <script src="https://assets.codepen.io/16327/SplitText3.min.js"></script> -->
     <script src="plugins/cursor-effect/cursor-effect.js"></script>
 
@@ -2039,12 +2039,12 @@
     <script>
         gsap.config({ trialWarn: false });
         // console.clear();
-        gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-        let smoother = ScrollSmoother.create({
-            smooth: 2,
-            content: "#content", // Add this line, replace with your content selector
-            wrapper: "#wrapper"
-        });
+        // gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+        // let smoother = ScrollSmoother.create({
+        //     smooth: 2,
+        //     content: "#content", // Add this line, replace with your content selector
+        //     wrapper: "#wrapper"
+        // });
 
         // let split = new SplitText(".house-txt", { type: "lines" });
         const line = document.querySelector(".house-txt")
