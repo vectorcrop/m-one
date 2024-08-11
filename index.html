@@ -2005,7 +2005,7 @@
 
 
 
-    <script>
+    <!-- <script>
         window.addEventListener('scroll', function () {
             var section = document.querySelector('.section-with-bg');
             var sectionTop = section.offsetTop;
@@ -2019,7 +2019,7 @@
                 section.classList.remove('scrolled');
             }
         });
-    </script>
+    </script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
@@ -2029,7 +2029,7 @@
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
-    <script src="https://assets.codepen.io/16327/SplitText3.min.js"></script>
+    <!-- <script src="https://assets.codepen.io/16327/SplitText3.min.js"></script> -->
     <script src="plugins/cursor-effect/cursor-effect.js"></script>
 
     <!-- Theme Custom JS -->
@@ -2039,7 +2039,7 @@
     <script>
         gsap.config({ trialWarn: false });
         // console.clear();
-        gsap.registerPlugin(ScrollTrigger, SplitText, ScrollSmoother);
+        gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
         let smoother = ScrollSmoother.create({
             smooth: 2,
             content: "#content", // Add this line, replace with your content selector
