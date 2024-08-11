@@ -836,9 +836,16 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-12">
                                     <!-- <h6 class="wptb-item--subtitle"> About Agency</h6> -->
-                                    <h1 class="wptb-item--title house-txt">From the house of <span>&nbsp;<img
+                                    <!-- <h1 class="wptb-item--title house-txt">From the house of <span>&nbsp;<img
                                                 src="assets/images/media-one-logo.png"
-                                                style="max-width: 100px; margin-top: -10px;"></span></h1>
+                                                style="max-width: 100px; margin-top: -10px;"></span></h1> -->
+
+                                    <h1 class="wptb-item--title house-txt" style="">
+                                        <div style="display: block; text-align: start; position: relative;"
+                                            bis_skin_checked="1">From the house of <span> <img
+                                                    src="assets/images/media-one-logo.png"
+                                                    style="max-width: 100px; margin-top: -10px;"></span></div>
+                                    </h1>
                                     <!-- media-one-logo.png -->
                                 </div>
                                 <!-- <div class="col-lg-5 text-lg-end">
@@ -2031,7 +2038,7 @@
 
     <script>
         gsap.config({ trialWarn: false });
-        console.clear();
+        // console.clear();
         gsap.registerPlugin(ScrollTrigger, SplitText, ScrollSmoother);
         let smoother = ScrollSmoother.create({
             smooth: 2,
@@ -2039,29 +2046,31 @@
             wrapper: "#wrapper"
         });
 
-        let split = new SplitText(".house-txt", { type: "lines" });
+        // let split = new SplitText(".house-txt", { type: "lines" });
+        const line = document.querySelector(".house-txt")
+        // console.log(line);
         let masks;
         function makeItHappen() {
             masks = [];
-            split.lines.forEach((target) => {
-                let mask = document.createElement("span");
-                mask.className = "mask";
-                target.append(mask);
-                masks.push(mask);
-                gsap.to(mask, {
-                    scaleX: 0,
-                    transformOrigin: "right center",
-                    ease: "power2.inOut", // Changed from "none" to a smoother ease
-                    duration: 1,
-                    scrollTrigger: {
-                        trigger: target,
-                        markers: false,
-                        scrub: 1, // Changed from true to 1 for smoother scrubbing
-                        start: "top 80%", // Changed to reveal earlier
-                        end: "bottom 20%"
-                    }
-                });
+            // split.lines.forEach((target) => {
+            let mask = document.createElement("span");
+            mask.className = "mask";
+            line.append(mask);
+            masks.push(mask);
+            gsap.to(mask, {
+                scaleX: 0,
+                transformOrigin: "right center",
+                ease: "power2.inOut", // Changed from "none" to a smoother ease
+                duration: 1,
+                scrollTrigger: {
+                    trigger: line,
+                    markers: false,
+                    scrub: 1, // Changed from true to 1 for smoother scrubbing
+                    start: "top 80%", // Changed to reveal earlier
+                    end: "bottom 20%"
+                }
             });
+            // });
         }
 
         window.addEventListener("resize", newTriggers);
