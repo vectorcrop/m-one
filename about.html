@@ -23,7 +23,7 @@
     <link href="assets/images/fav.png" rel="apple-touch-icon" sizes="144x144">
 
     <!-- Page Title -->
-    <title>M One Business Solutions | Innovative Branding & Digital Marketing Solutions</title>
+    <title>About Us | M One Business Solutions | Innovative Branding & Digital Marketing Solutions</title>
 
 
 
@@ -35,7 +35,7 @@
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="M One Business Solutions | Imagine More">
+    <meta property="og:title" content="About Us | M One Business Solutions | Imagine More">
     <meta property="og:description"
         content="M One Business Solutions is an innovative force in the business world, turning ambitious ideas into reality with our expertise in branding and digital marketing. Discover how we push the boundaries of conventional thinking.">
     <meta property="og:url" content="https://M Onesolutions.com">
@@ -190,6 +190,216 @@
         #contact {
             padding: 30px 0;
         }
+    }
+
+    .wptb-heading .wptb-item--description {
+        font-size: var(--fs-18);
+        font-weight: var(--fw-light);
+        line-height: var(--fs-28);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display: inline-block;
+        transition: var(--transition-base);
+    }
+
+    .footer ul {
+        padding: 0;
+        margin-bottom: 0px;
+        list-style-type: none;
+    }
+
+    .footer .footer--inner {
+        position: relative;
+        padding-top: 155px;
+        padding-bottom: 100px;
+        overflow: hidden;
+    }
+
+    @media only screen and (max-width: 600px) {
+
+        .wptb-heading .wptb-item--description {
+            font-size: var(--fs-18);
+            font-weight: var(--fw-light);
+            line-height: var(--fs-28);
+            margin-top: 0px;
+            margin-bottom: 0px;
+            display: inline-block;
+            transition: var(--transition-base);
+            text-align: center;
+        }
+
+        .footer ul {
+            text-align: center;
+        }
+
+        .footer .footer--inner {
+            position: relative;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            overflow: hidden;
+        }
+    }
+
+    .wptb-slider--image img {
+        aspect-ratio: 1 / 1;
+    }
+
+    .wptb-item--subtitle2 {
+        color: var(--color-one);
+        background-color: rgba(var(--color-white-rgb), 0.2);
+        display: inline-block;
+        border-radius: 100px;
+        padding: 6px 30px;
+        font-family: var(--font-family-three);
+        font-size: var(--fs-16);
+        font-weight: var(--fw-normal);
+        line-height: var(--fs-30);
+        transition: var(--transition-base);
+    }
+
+    .wptb-page-heading .wptb-item-layer-one {
+        top: 142%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        z-index: 0;
+    }
+
+    .desc2 {
+        text-align: left;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .desc2 {
+            text-align: left;
+        }
+    }
+
+    /* From Uiverse.io by Spacious74 */
+    .outer {
+        width: 300px;
+        height: 250px;
+        border-radius: 10px;
+        padding: 1px;
+        background: radial-gradient(circle 230px at 0% 0%, #ffffff, #0c0d0d);
+        position: relative;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .outer {
+            width: 350px;
+
+        }
+
+        .wptb-item--description p {
+            text-align: center;
+        }
+    }
+
+    .dot {
+        width: 5px;
+        aspect-ratio: 1;
+        position: absolute;
+        background-color: #fff;
+        box-shadow: 0 0 10px #ffffff;
+        border-radius: 100px;
+        z-index: 2;
+        right: 10%;
+        top: 10%;
+        animation: moveDot 6s linear infinite;
+    }
+
+    @keyframes moveDot {
+
+        0%,
+        100% {
+            top: 10%;
+            right: 10%;
+        }
+
+        25% {
+            top: 10%;
+            right: calc(100% - 35px);
+        }
+
+        50% {
+            top: calc(100% - 30px);
+            right: calc(100% - 35px);
+        }
+
+        75% {
+            top: calc(100% - 30px);
+            right: 10%;
+        }
+    }
+
+    .card3 {
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        border-radius: 9px;
+        border: solid 1px #202222;
+        background-size: 20px 20px;
+        background: radial-gradient(circle 280px at 0% 0%, #444444, #0c0d0d);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        flex-direction: column;
+        color: #fff;
+    }
+
+    .ray {
+        width: 220px;
+        height: 45px;
+        border-radius: 100px;
+        position: absolute;
+        background-color: #c7c7c7;
+        opacity: 0.4;
+        box-shadow: 0 0 50px #fff;
+        filter: blur(10px);
+        transform-origin: 10%;
+        top: 0%;
+        left: 0;
+        transform: rotate(40deg);
+    }
+
+    .card3 .text3 {
+        font-weight: bolder;
+        font-size: 3rem;
+        background: linear-gradient(45deg, #000000 4%, #fff, #000);
+        background-clip: text;
+        color: transparent;
+        padding: 20px;
+    }
+
+    .line {
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        background-color: #2c2c2c;
+    }
+
+    .topl {
+        top: 10%;
+        background: linear-gradient(90deg, #888888 30%, #1d1f1f 70%);
+    }
+
+    .bottoml {
+        bottom: 10%;
+    }
+
+    .leftl {
+        left: 10%;
+        width: 1px;
+        height: 100%;
+        background: linear-gradient(180deg, #747474 30%, #222424 70%);
+    }
+
+    .rightl {
+        right: 10%;
+        width: 1px;
+        height: 100%;
     }
 </style>
 
@@ -346,10 +556,10 @@
                         <div class="mainnav">
                             <ul class="main-menu">
                                 <li class="menu-item"><a href="index.html">Home</a></li>
-                                <li class="menu-item"><a href="#/">About Us</a></li>
-                                <li class="menu-item"><a href="#/">Services</a></li>
-                                <li class="menu-item"><a href="#/">PORTFOLIO</a></li>
-                                <li class="menu-item"><a href="#/">Blog</a></li>
+                                <li class="menu-item"><a href="about.html">About Us</a></li>
+                                <li class="menu-item"><a href="services.html">Our Services</a></li>
+                                <li class="menu-item"><a href="portfolio.html">Our Portfolio</a></li>
+                                <li class="menu-item"><a href="contact.html">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -576,985 +786,416 @@
 
 
 
-    <style>
-        .wptb-slider--image img {
-            aspect-ratio: 1 / 1;
-        }
-
-        .wptb-item--subtitle {
-            color: var(--color-one);
-            background-color: rgba(var(--color-white-rgb), 0.2);
-            display: inline-block;
-            border-radius: 100px;
-            padding: 6px 30px;
-            font-family: var(--font-family-three);
-            font-size: var(--fs-16);
-            font-weight: var(--fw-normal);
-            line-height: var(--fs-30);
-            transition: var(--transition-base);
-        }
-
-        .wptb-item--title {
-            position: relative;
-            z-index: 1;
-            color: var(--color-white);
-            font-family: var(--font-family-three);
-            font-size: var(--fs-60);
-            font-weight: var(--fw-semibold);
-            line-height: var(--fs-74);
-            letter-spacing: 0px;
-            margin-top: 10px;
-            margin-bottom: 15px;
-            transition: var(--transition-base);
-        }
-    </style>
     <!------------------------------------------------------------------------------------------------------>
-
     <!-- Main Wrapper-->
     <main class="wrapper">
         <!-- Page Header -->
         <div class="wptb-page-heading">
             <div class="wptb-item--inner"
-                style="background-image: url('../assets/img/background/page-header-bg-4.jpg');">
+                style="background-image: url('assets/images/banner-4.png'); background-attachment: fixed; background-size: cover; border-radius: 20px;">
                 <div class="wptb-item-layer wptb-item-layer-one">
                     <img src="../assets/img/more/circle.png" alt="img">
                 </div>
-                <h2 class="wptb-item--title">About Us</h2>
+                <h2 class="">About Us</h2>
             </div>
         </div>
 
-
-        <section class="wptb-about-one bg-image-4 pb-0"
-            style="background-image: url('../assets/img/more/texture.png'); background-position: 80%;">
+        <!-- Details Content -->
+        <section class="blog-details">
             <div class="container">
-                <div class="wptb-heading">
-                    <div class="wptb-item--inner text-center">
-                        <h6 class="wptb-item--subtitle text-white">About M-One</h6>
-                        <h1 class="wptb-item--title">We don't do conventional<br> We imagine more
-
-                        </h1>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-xl-8">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="wptb-image-single wow fadeInUp"
-                                    style="visibility: visible; animation-name: fadeInUp;">
-                                    <div class="wptb-item--inner">
-                                        <div class="wptb-item--image mt-3">
-                                            <img src="../assets/img/more/1.jpg" alt="img">
-                                        </div>
+                <div class="blog-details-inner">
+                    <div class="wptb-heading">
+                        <div class="wptb-item--inner">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="wptb-item--inner ">
+                                        <h6 class="wptb-item--subtitle2 text-white">About</h6>
+                                        </h1>
                                     </div>
+                                    <img src="assets/images/logo.png" style="max-width: 300px;">
                                 </div>
-                            </div>
 
-                            <div class="col-md-6 ps-md-0 mt-5">
-                                <div class="wptb-about--text">
-                                    <p class="wptb-about--text-one mb-4">M One Business Solutions is an innovative force
-                                        in the business world, fueled by the mantra "Imagine More."</p>
-
-                                    <p>At M One Business Solutions, we challenge conventional thinking with our mantra,
+                                <div class="col-lg-7">
+                                    <p class="wptb-item--description desc1"><b>M One Business Solutions is an innovative
+                                            force
+                                            in the business world, fueled by the mantra "Imagine More."</b> At M One
+                                        Business
+                                        Solutions, we challenge conventional thinking with our mantra,
                                         "Imagine More." We are dedicated to pushing boundaries and transforming
                                         ambitious ideas into reality. Our expertise spans crafting unforgettable brands
                                         and executing impactful digital marketing strategies, ensuring we redefine
                                         what's possible for our clients.</p>
-
-                                    <!-- <div class="wptb-item--button round-button">
-                                        <a class="btn btn-two" href="about.html">
-                                            <span class="btn-wrap">
-                                                <span class="text-first">Explore Us</span>
-                                                <span class="text-second"> <i class="bi bi-arrow-up-right"></i> <i
-                                                        class="bi bi-arrow-up-right"></i> </span>
-                                            </span>
-                                        </a>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- <div class="row wptb-about-funfact">
-                            <div class="col-md-6 mb-4 mb-md-0">
-                                <div class="wptb-counter1 style1 pd-right-60 wow skewIn animated"
-                                    style="visibility: visible;">
-                                    <div class="wptb-item--inner">
-                                        <div class="wptb-item--holder d-flex align-items-center">
-                                            <div class="wptb-item--value"><span class="odometer odometer-auto-theme"
-                                                    data-count="100">
-                                                    <div class="odometer-inside"><span class="odometer-digit"><span
-                                                                class="odometer-digit-spacer">8</span><span
-                                                                class="odometer-digit-inner"><span
-                                                                    class="odometer-ribbon"><span
-                                                                        class="odometer-ribbon-inner"><span
-                                                                            class="odometer-value">1</span></span></span></span></span><span
-                                                            class="odometer-digit"><span
-                                                                class="odometer-digit-spacer">8</span><span
-                                                                class="odometer-digit-inner"><span
-                                                                    class="odometer-ribbon"><span
-                                                                        class="odometer-ribbon-inner"><span
-                                                                            class="odometer-value">0</span></span></span></span></span><span
-                                                            class="odometer-digit"><span
-                                                                class="odometer-digit-spacer">8</span><span
-                                                                class="odometer-digit-inner"><span
-                                                                    class="odometer-ribbon"><span
-                                                                        class="odometer-ribbon-inner"><span
-                                                                            class="odometer-value">0</span></span></span></span></span>
-                                                    </div>
-                                                </span><span class="suffix">%</span></div>
-                                            <div class="wptb-item--text">Customer Satisfaction</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="wptb-counter1 style1 pd-right-60 wow skewIn animated"
-                                    style="visibility: visible;">
-                                    <div class="wptb-item--inner">
-                                        <div class="wptb-item--holder d-flex align-items-center">
-                                            <div class="wptb-item--value flex-shrink-0"><span
-                                                    class="odometer odometer-auto-theme" data-count="350">
-                                                    <div class="odometer-inside"><span class="odometer-digit"><span
-                                                                class="odometer-digit-spacer">8</span><span
-                                                                class="odometer-digit-inner"><span
-                                                                    class="odometer-ribbon"><span
-                                                                        class="odometer-ribbon-inner"><span
-                                                                            class="odometer-value">3</span></span></span></span></span><span
-                                                            class="odometer-digit"><span
-                                                                class="odometer-digit-spacer">8</span><span
-                                                                class="odometer-digit-inner"><span
-                                                                    class="odometer-ribbon"><span
-                                                                        class="odometer-ribbon-inner"><span
-                                                                            class="odometer-value">5</span></span></span></span></span><span
-                                                            class="odometer-digit"><span
-                                                                class="odometer-digit-spacer">8</span><span
-                                                                class="odometer-digit-inner"><span
-                                                                    class="odometer-ribbon"><span
-                                                                        class="odometer-ribbon-inner"><span
-                                                                            class="odometer-value">0</span></span></span></span></span>
-                                                    </div>
-                                                </span><span class="suffix">+</span></div>
-                                            <div class="wptb-item--text">Photography Session</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
-
-                    <div class="col-xl-4 ps-xl-5 mt-5 mt-xl-0 d-none d-xl-block">
-                        <div class="wptb-image-single wow fadeInUp"
-                            style="visibility: visible; animation-name: fadeInUp;">
-                            <div class="wptb-item--inner">
-                                <div class="wptb-item--image mt-3">
-                                    <img src="../assets/img/more/2.jpg" alt="img">
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="wptb-item-layer wptb-item-layer-one">
-                    <img src="../assets/img/more/light-1.png" alt="img">
-                </div>
-                <div class="wptb-item-layer wptb-item-layer-two both-version">
-                    <img src="../assets/img/more/light-2.png" alt="img">
-                    <img src="../assets/img/more/light-2-light.png" alt="img">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8">
+                            <!-- Post Image -->
+                            <figure class="block-gallery mb-4">
+                                <img src="../assets/images/about1.png" style="border-radius: 10px;" alt="img">
+                            </figure>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4">
+                            <!-- Post Image -->
+                            <figure class="block-gallery mb-4">
+                                <img src="../assets/images/about2.png" style="border-radius: 10px;" alt="img">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="row mr-top-90">
+                        <div class="col-lg-8 col-md-8 pd-right-70">
+                            <div class="post-content">
+                                <div class="fulltext">
+                                    <!-- Start Section -->
+                                    <h4 class="widget-title mt-0">Our Heritage</h4>
+                                    <h6 class="mb-3">Excellence inherited, innovation ignited, success
+                                        envisioned</h6>
+                                    <p class="desc2">M One Business Solutions, from the house of
+                                        MediaOne, is built on a legacy of excellence and
+                                        innovation that defines the media landscape. MediaOne has been a beacon of
+                                        reliable
+                                        news and
+                                        dynamic programming since its inception in 2013. At M One Business Solutions, we
+                                        carry
+                                        forward this legacy of integrity, creativity, and excellence in everything we
+                                        do,
+                                        ensuring
+                                        that we not only meet but exceed the expectations of our clients and their
+                                        audiences. </p>
+
+                                    <ul class="point-order">
+                                        <li><i class="bi bi-check2-all"></i> Built on MediaOne's trusted legacy since
+                                            2013, driving excellence.
+                                        </li>
+                                        <li><i class="bi bi-check2-all"></i> Dedicated to upholding integrity and
+                                            fostering innovation.</li>
+                                        <li><i class="bi bi-check2-all"></i> Focused on exceeding client expectations
+                                            through creativity and quality.</li>
+                                    </ul>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 mt-5 mt-md-0">
+                            <div class="wptb-counter1 mr-bottom-70 style1 wow skewIn">
+                                <div class="wptb-item--inner">
+                                    <div class="wptb-item--holder d-flex align-items-center">
+                                        <div class="wptb-item--value flex-shrink-0"><span class="odometer"
+                                                data-count="5.39"></span><span class="suffix">M+</span></div>
+                                        <div class="wptb-item--text">users</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wptb-counter1 mr-bottom-70 style1 wow skewIn">
+                                <div class="wptb-item--inner">
+                                    <div class="wptb-item--holder d-flex align-items-center">
+                                        <div class="wptb-item--value"><span class="odometer"
+                                                data-count="100"></span><span class="suffix">%</span></div>
+                                        <div class="wptb-item--text">Customer Satisfaction</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wptb-counter1 style1 wow skewIn">
+                                <div class="wptb-item--inner">
+                                    <div class="wptb-item--holder d-flex align-items-center">
+                                        <div class="wptb-item--value flex-shrink-0"><span class="odometer"
+                                                data-count="200"></span><span class="suffix">K+</span></div>
+                                        <div class="wptb-item--text">Successful Events</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <!-- End Details Content -->
 
-        <section class="wptb-about-three">
-            <!-- Layer Image -->
-            <div class="wptb-item-layer wptb-item-layer-one both-version">
-                <img src="../assets/img/more/overlay-1.png" alt="img">
-                <img src="../assets/img/more/overlay-1-light.png" alt="img">
+        <section class="wptb-services-one bg-image-2" style="padding: 0px 0px 200px;">
+            <div class="wptb-item-layer both-version">
+                <img src="../assets/img/more/texture-2.png" alt="">
+                <img src="../assets/img/more/texture-2-light.png" alt="">
             </div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-7">
-                        <div class="wptb-heading-two">
-                            <div class="wptb-item--inner">
-                                <h6 class="wptb-item--subtitle text-white">Our Heritage</h6>
-                                <h1 class="wptb-item--title">Excellence inherited, innovation ignited, success
-                                    envisioned</h1>
-                                <div class="wptb-item--description">M One Business Solutions, from the house of
-                                    MediaOne, is built on a legacy of excellence and
-                                    innovation that defines the media landscape. MediaOne has been a beacon of reliable
-                                    news and
-                                    dynamic programming since its inception in 2013. At M One Business Solutions, we
-                                    carry
-                                    forward this legacy of integrity, creativity, and excellence in everything we do,
-                                    ensuring
-                                    that we not only meet but exceed the expectations of our clients and their
-                                    audiences.</div>
-                            </div>
-                        </div>
-
-
-
-
-                        <div class="mr-top-10 mr-bottom-50 d-inline-block w-100"></div>
-
-                        <h2 class="widget-title"><span>Our Heritage</h2>
-                        <h4 class="mb-4">Excellence inherited, innovation ignited, <br>success envisioned</h4>
-
-                        <p>M One Business Solutions, from the house of MediaOne, is built on a legacy of excellence and
-                            innovation that defines the media landscape. MediaOne has been a beacon of reliable news and
-                            dynamic programming since its inception in 2013. At M One Business Solutions, we carry
-                            forward this legacy of integrity, creativity, and excellence in everything we do, ensuring
-                            that we not only meet but exceed the expectations of our clients and their audiences.</p>
-
-
-                        <div class="mr-top-10 mr-bottom-50 d-inline-block w-100"></div>
-                        <div class="d-flex gap-5">
-                            <img src="assets/images/media-one-logo.png" style="max-width: 200px;">
-                            <h2 class="mt-4 "><b>ACHIEVEMENTS</b></h2>
-
-                        </div>
-
-                        <div class="row mt-5">
-                            <div class="col-md-4 mr-bottom-75 pe-md-5">
-                                <div class="wptb-counter1 style1 position-relative z-index-3 wow skewIn">
-                                    <div class="wptb-item--inner">
-                                        <div class="wptb-item--holder d-flex align-items-center">
-                                            <div class="wptb-item--value"><span class="odometer"
-                                                    data-count="5.39"></span><span class="suffix">M+</span></div>
-                                            <div class="wptb-item--text">Customer Satisfaction</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 mr-bottom-75 pe-md-5">
-                                <div class="wptb-counter1 style1 position-relative z-index-3 wow skewIn">
-                                    <div class="wptb-item--inner">
-                                        <div class="wptb-item--holder d-flex align-items-center">
-                                            <div class="wptb-item--value flex-shrink-0"><span class="odometer"
-                                                    data-count="350"></span><span class="suffix">+</span></div>
-                                            <div class="wptb-item--text">Photography Session</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 mr-bottom-75 mb-md-0 pe-md-5">
-                                <div class="wptb-counter1 style1 position-relative z-index-3 wow skewIn">
-                                    <div class="wptb-item--inner">
-                                        <div class="wptb-item--holder d-flex align-items-center">
-                                            <div class="wptb-item--value"><span class="odometer"
-                                                    data-count="50"></span><span class="suffix">+</span></div>
-                                            <div class="wptb-item--text">Experienced Photographers</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 mr-bottom-75 mb-md-0 pe-md-5">
-                                <div class="wptb-counter1 style1 position-relative z-index-3 wow skewIn">
-                                    <div class="wptb-item--inner">
-                                        <div class="wptb-item--holder d-flex align-items-center">
-                                            <div class="wptb-item--value flex-shrink-0"><span class="odometer"
-                                                    data-count="250"></span><span class="suffix">+</span></div>
-                                            <div class="wptb-item--text">Event Covered</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 offset-xl-1">
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- Layer Image -->
-            <div class="wptb-item-layer wptb-item-layer-two both-version">
-                <img src="../assets/img/more/overlay-2.png" alt="img">
-                <img src="../assets/img/more/overlay-2-light.png" alt="img">
-            </div>
-        </section>
-
-
-        <!-- About Kimono -->
-        <section class="wptb-about-one bg-image-2" style="background-image: url('../assets/img/more/texture.png');">
-            <div class="container">
-                <div class="wptb-image-single mr-bottom-90 wow fadeInUp">
+            <div class="container-md">
+                <div class="wptb-heading">
                     <div class="wptb-item--inner">
-                        <div class="wptb-item--image">
-                            <img src="../assets/img/background/bg-6.jpg" alt="img">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <img src="assets/images/media-one-logo.png" style="max-width: 200px;">
+                                <h1 class="wptb-item--title">Achievements <br>
+
+                                </h1>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <!-- <p class="wptb-item--description">we’re deeply passionate <span>catch your lovely
+                                        memories in cameras</span>
+                                    and Convey your love for every moment of life as a whole.</p> -->
+                            </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="row">
-                    <div class="col-xl-8">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="wptb-image-single wow fadeInUp">
-                                    <div class="wptb-item--inner">
-                                        <div class="wptb-item--image">
-                                            <img src="../assets/img/more/1.jpg" alt="img">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 ps-md-0 mt-5">
-                                <div class="wptb-about--text">
-                                    <p class="wptb-about--text-one mb-4">Kimono photography Agency runs wide and deep.
-                                        Across many markets, geographies & typologies, our team members</p>
-                                    <p>The talent at kimono runs wide range of services. Across many markets,
-                                        geographies & typologies, our team members are some of the finest people of
-                                        photographers in the industry wide and deep. From Across many markets,
-                                        geographies & boundaries. Hire Kimono in your event.</p>
-                                </div>
+                    <div class="col-lg-3 col-sm-2 col-md-2">
+                        <div class="outer">
+                            <div class="dot"></div>
+                            <div class="card3">
+                                <div class="ray"></div>
+                                <div class="text3">5.39M+</div>
+                                <div>Youtube Viewers</div>
+                                <div class="line topl"></div>
+                                <div class="line leftl"></div>
+                                <div class="line bottoml"></div>
+                                <div class="line rightl"></div>
                             </div>
                         </div>
-
-                        <div class="row wptb-about-funfact">
-                            <div class="col-md-6 mb-4 mb-md-0">
-                                <div class="wptb-counter1 style1 pd-right-60 wow skewIn">
-                                    <div class="wptb-item--inner">
-                                        <div class="wptb-item--holder d-flex align-items-center">
-                                            <div class="wptb-item--value"><span class="odometer"
-                                                    data-count="100"></span><span class="suffix">%</span></div>
-                                            <div class="wptb-item--text">Customer Satisfaction</div>
-                                        </div>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-2 col-md-2">
+                        <div class="outer">
+                            <div class="dot"></div>
+                            <div class="card3">
+                                <div class="ray"></div>
+                                <div class="text3">3.3M+</div>
+                                <div>Facebook Followers</div>
+                                <div class="line topl"></div>
+                                <div class="line leftl"></div>
+                                <div class="line bottoml"></div>
+                                <div class="line rightl"></div>
                             </div>
-
-                            <div class="col-md-6">
-                                <div class="wptb-counter1 style1 pd-right-60 wow skewIn">
-                                    <div class="wptb-item--inner">
-                                        <div class="wptb-item--holder d-flex align-items-center">
-                                            <div class="wptb-item--value flex-shrink-0"><span class="odometer"
-                                                    data-count="350"></span><span class="suffix">+</span></div>
-                                            <div class="wptb-item--text">Photography Session</div>
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-2 col-md-2">
+                        <div class="outer">
+                            <div class="dot"></div>
+                            <div class="card3">
+                                <div class="ray"></div>
+                                <div class="text3">801k+</div>
+                                <div>Instagram Followers</div>
+                                <div class="line topl"></div>
+                                <div class="line leftl"></div>
+                                <div class="line bottoml"></div>
+                                <div class="line rightl"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-2 col-md-2">
+                        <div class="outer">
+                            <div class="dot"></div>
+                            <div class="card3">
+                                <div class="ray"></div>
+                                <div class="text3">3.2M+</div>
+                                <div>Audience Reaches</div>
+                                <div class="line topl"></div>
+                                <div class="line leftl"></div>
+                                <div class="line bottoml"></div>
+                                <div class="line rightl"></div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-xl-4 ps-xl-5 mt-5 mt-xl-0 d-none d-xl-block">
-                        <div class="wptb-image-single wow fadeInUp">
-                            <div class="wptb-item--inner">
-                                <div class="wptb-item--image">
-                                    <img src="../assets/img/more/2.jpg" alt="img">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
-                <div class="wptb-item-layer wptb-item-layer-one">
-                    <img src="../assets/img/more/light-1.png" alt="img">
-                </div>
+
+
             </div>
         </section>
-
-        <!-- FAQ -->
-        <section class="wptb-faq-one bg-image pb-0" style="background-image: url('../assets/img/background/bg-8.jpg');">
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="wptb-heading">
-                            <div class="wptb-item--inner">
-                                <h1 class="wptb-item--title mb-lg-0">Why Choose Us</h1>
-                            </div>
-                        </div>
-
-                        <div class="wptb-accordion wptb-accordion2 wow fadeInUp">
-                            <div class="wptb--item active">
-                                <h6 class="wptb-item-title"><span>Kimono Missions</span> <i class="plus bi bi-plus"></i>
-                                    <i class="minus bi bi-dash"></i>
-                                </h6>
-                                <div class="wptb-item--content">
-                                    Our business consulting programs helps to break the performance of your business
-                                    down into customers and product groups so you know exactly which customers or
-                                    product groups are working.
-                                </div>
-                            </div>
-
-                            <div class="wptb--item">
-                                <h6 class="wptb-item-title"><span>Kimono Photography Features</span> <i
-                                        class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
-                                <div class="wptb-item--content">
-                                    Our business consulting programs helps to break the performance of your business
-                                    down into customers and product groups so you know exactly which customers or
-                                    product groups are working.
-                                </div>
-                            </div>
-
-                            <div class="wptb--item">
-                                <h6 class="wptb-item-title"><span>Why We are Best Photographers</span> <i
-                                        class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
-                                <div class="wptb-item--content">
-                                    Our business consulting programs helps to break the performance of your business
-                                    down into customers and product groups so you know exactly which customers or
-                                    product groups are working.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="wptb-agency-experience--item">
-                            <span>15+</span> Years Experience
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="wptb-image-single wow fadeInUp">
-                            <div class="wptb-item--inner">
-                                <div class="wptb-item--image">
-                                    <img src="../assets/img/more/3.png" alt="img">
-                                </div>
-                            </div>
-                        </div>
+        <!-- Why Choose -->
+        <!-- <section class="wptb-album-one" style="padding: 72px 0px;">
+            <div class="container-full">
+                <div class="wptb-heading mb-0">
+                    <div class="wptb-item--inner text-center">
+                        <h6 class="wptb-item--subtitle2 text-white">Works</h6>
+                        <h1 class="wptb-item--title lg">How We Work
+                        </h1>
+                        <p>At M One, we're more than just dreamers—we're doers. Here's how we turn your imagination
+                            into<br>
+                            reality, step by step: Imagine more, and watch as we bring your ideas to life with a
+                            blend<br>
+                            of creativity, strategy, and a touch of magic.</p>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Text Marquee -->
-        <div class="wptb-marquee pd-top-80">
-            <div class="wptb-text-marquee1 wptb-slide-to-left">
-                <div class="wptb-item--container">
-                    <div class="wptb-item--inner">
-                        <h4 class="wptb-item--text">
-                            <span class="wptb-text-backdrop">Kimono</span>
-                            <span class="wptb-item-layer both-version position-relative">
-                                <img src="../assets/img/more/star.png" alt="img">
-                                <img src="../assets/img/more/star-dark.png" alt="img">
-                            </span>
-                        </h4>
-                        <h4 class="wptb-item--text text-outline">
-                            <span class="wptb-text-backdrop">Photography</span>
-                            <span class="wptb-item-layer both-version position-relative">
-                                <img src="../assets/img/more/star.png" alt="img">
-                                <img src="../assets/img/more/star-dark.png" alt="img">
-                            </span>
-                        </h4>
-                        <h4 class="wptb-item--text">
-                            <span class="wptb-text-backdrop">Studio</span>
-                            <span class="wptb-item-layer both-version position-relative">
-                                <img src="../assets/img/more/star.png" alt="img">
-                                <img src="../assets/img/more/star-dark.png" alt="img">
-                            </span>
-                        </h4>
-                        <h4 class="wptb-item--text text-outline">
-                            <span class="wptb-text-backdrop">Agency</span>
-                            <span class="wptb-item-layer both-version position-relative">
-                                <img src="../assets/img/more/star.png" alt="img">
-                                <img src="../assets/img/more/star-dark.png" alt="img">
-                            </span>
-                        </h4>
-                        <h4 class="wptb-item--text">
-                            <span class="wptb-text-backdrop">Kimono</span>
-                            <span class="wptb-item-layer both-version position-relative">
-                                <img src="../assets/img/more/star.png" alt="img">
-                                <img src="../assets/img/more/star-dark.png" alt="img">
-                            </span>
-                        </h4>
-                    </div>
+                <div
+                    class="swiper-container swiper-gallery-two has-radius swiper-initialized swiper-horizontal swiper-backface-hidden">
+                    <div class="swiper-wrapper" id="swiper-wrapper-5f17eaed1c50e81a" aria-live="polite"
+                        style="transition-duration: 0ms; transform: translate3d(-610px, 0px, 0px); transition-delay: 0ms;">
+                      
+                        <div class="swiper-slide" role="group" aria-label="1 / 6"
+                            style="width: 275px; margin-right: 30px;" data-swiper-slide-index="0">
+                            <div class="grid-item">
+                                <div class="wptb-item--inner">
+                                    <div class="wptb-item--image">
+                                        <img src="assets/images/services/strategy.png" alt="img">
 
-                    <div class="wptb-item--inner">
-                        <h4 class="wptb-item--text text-outline">
-                            <span class="wptb-text-backdrop">Photography</span>
-                            <span class="wptb-item-layer both-version position-relative">
-                                <img src="../assets/img/more/star.png" alt="img">
-                                <img src="../assets/img/more/star-dark.png" alt="img">
-                            </span>
-                        </h4>
-                        <h4 class="wptb-item--text">
-                            <span class="wptb-text-backdrop">Studio</span>
-                            <span class="wptb-item-layer both-version position-relative">
-                                <img src="../assets/img/more/star.png" alt="img">
-                                <img src="../assets/img/more/star-dark.png" alt="img">
-                            </span>
-                        </h4>
-                        <h4 class="wptb-item--text text-outline">
-                            <span class="wptb-text-backdrop">Agency</span>
-                            <span class="wptb-item-layer both-version position-relative">
-                                <img src="../assets/img/more/star.png" alt="img">
-                                <img src="../assets/img/more/star-dark.png" alt="img">
-                            </span>
-                        </h4>
-                        <h4 class="wptb-item--text">
-                            <span class="wptb-text-backdrop">Kimono</span>
-                            <span class="wptb-item-layer both-version position-relative">
-                                <img src="../assets/img/more/star.png" alt="img">
-                                <img src="../assets/img/more/star-dark.png" alt="img">
-                            </span>
-                        </h4>
-                        <h4 class="wptb-item--text text-outline">
-                            <span class="wptb-text-backdrop">Photography</span>
-                            <span class="wptb-item-layer both-version position-relative">
-                                <img src="../assets/img/more/star.png" alt="img">
-                                <img src="../assets/img/more/star-dark.png" alt="img">
-                            </span>
-                        </h4>
+                                    </div>
+
+                                    <div class="wptb-item--holder">
+                                        <div class="wptb-item--meta">
+                                            <h4 class="mb-2"><a href="#!">Strategy</a></h4>
+                                            <p>We dive deep into your vision and map out a<br> game plan to achieve your
+                                                goals.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-prev" role="group" aria-label="2 / 6"
+                            style="width: 275px; margin-right: 30px;" data-swiper-slide-index="1">
+                            <div class="grid-item">
+                                <div class="wptb-item--inner">
+                                    <div class="wptb-item--image">
+                                        <img src="assets/images/services/creative.png" alt="img">
+
+                                    </div>
+
+                                    <div class="wptb-item--holder">
+                                        <div class="wptb-item--meta">
+                                            <h4 class="mb-2"><a href="#!">Creatives</a></h4>
+                                            <p>Our team of designers and writers breathe life<br> into your brand with
+                                                innovative and captivating.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-active" role="group" aria-label="3 / 6"
+                            style="width: 275px; margin-right: 30px;" data-swiper-slide-index="2">
+                            <div class="grid-item">
+                                <div class="wptb-item--inner">
+                                    <div class="wptb-item--image">
+                                        <img src="assets/images/services/tech.png" alt="img">
+
+                                    </div>
+
+                                    <div class="wptb-item--holder">
+                                        <div class="wptb-item--meta">
+                                            <h4 class="mb-2"><a href="#!">Technology</a></h4>
+                                            <p>We leverage cutting-edge technology to build sleek websites,<br> optimize
+                                                for search engines, and automate your marketing.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-next" role="group" aria-label="4 / 6"
+                            style="width: 275px; margin-right: 30px;" data-swiper-slide-index="3">
+                            <div class="grid-item">
+                                <div class="wptb-item--inner">
+                                    <div class="wptb-item--image">
+                                        <img src="assets/images/services/market.png" alt="img">
+
+                                    </div>
+
+                                    <div class="wptb-item--holder">
+                                        <div class="wptb-item--meta">
+                                            <h4 class="mb-2"><a href="#!">Marketing</a></h4>
+                                            <p>Our experts craft and execute campaigns that get your <br>message in
+                                                front of the right people at the right time.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" role="group" aria-label="5 / 6"
+                            style="width: 275px; margin-right: 30px;" data-swiper-slide-index="4">
+                            <div class="grid-item">
+                                <div class="wptb-item--inner">
+                                    <div class="wptb-item--image">
+                                        <img src="assets/images/services/analyse.png" alt="img">
+
+                                    </div>
+
+                                    <div class="wptb-item--holder">
+                                        <div class="wptb-item--meta">
+                                            <h4 class="mb-2"><a href="#!">Analysis</a></h4>
+                                            <p>We keep a close eye on the numbers, using data-driven<br> insights to
+                                                fine-tune our approach and maximize your ROl.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" role="group" aria-label="6 / 6"
+                            style="width: 275px; margin-right: 30px;" data-swiper-slide-index="4">
+                            <div class="grid-item">
+                                <div class="wptb-item--inner">
+                                    <div class="wptb-item--image">
+                                        <img src="assets/images/services/relation.png" alt="img">
+
+                                    </div>
+
+                                    <div class="wptb-item--holder">
+                                        <div class="wptb-item--meta">
+                                            <h4 class="mb-2"><a href="#!">Relationship Builders</a></h4>
+                                            <p>From media relations to influencer partnerships, we foster
+                                                <br>connections that elevate your brand & expand your reach.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="wptb-swiper-navigation style2">
+                        <div class="wptb-swiper-arrow swiper-button-prev" tabindex="0" role="button"
+                            aria-label="Previous slide" aria-controls="swiper-wrapper-5f17eaed1c50e81a"></div>
+                        <div class="wptb-swiper-arrow swiper-button-next" tabindex="0" role="button"
+                            aria-label="Next slide" aria-controls="swiper-wrapper-5f17eaed1c50e81a"></div>
                     </div>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                </div>
+
+                <div class="shadow-heading">
+                    <h1 class="wptb-item--title">M-ONE</h1>
                 </div>
             </div>
-        </div>
+        </section>-->
+
+
+
 
         <!-- BG Video -->
-        <div class="container">
-            <div class="wptb-video-player1 wow zoomIn"
-                style="background-image: url('../assets/img/background/bg-7.jpg');">
-                <div class="wptb-item--inner">
-                    <div class="wptb-item--holder">
-                        <div class="wptb-item--video-button">
-                            <a class="btn" data-fancybox href="https://www.youtube.com/watch?v=SF4aHwxHtZ0">
-                                <span class="text-second"> <i class="bi bi-play-fill"></i> </span>
-                                <span class="line-video-animation line-video-1"></span>
-                                <span class="line-video-animation line-video-2"></span>
-                                <span class="line-video-animation line-video-3"></span>
-                            </a>
+        <div class="wptb-video-player1 wow zoomIn mr-bottom-70 bg-image"
+            style="background-image: url('../assets/images/video-bg.png'); background-attachment: fixed;">
+            <div class="wptb-item--inner">
+                <div class="wptb-item--holder">
+                    <div class="wptb-item--video-button">
+                        <a class="btn" data-fancybox href="https://youtu.be/IAe9vzrbne8?si=qh4g-CP0p8SreEql">
+                            <span class="text-second"> <i class="bi bi-play-fill"></i> </span>
+                            <span class="line-video-animation line-video-1"></span>
+                            <span class="line-video-animation line-video-2"></span>
+                            <span class="line-video-animation line-video-3"></span>
+                        </a>
 
-                        </div>
                     </div>
                 </div>
-                <div class="wptb-item-layer wptb-item-layer-one">
-                    <img src="../assets/img/more/light-3.png" alt="img">
-                </div>
+            </div>
+            <div class="wptb-item-layer wptb-item-layer-one">
+                <img src="../assets/img/more/light-3.png" alt="img">
             </div>
         </div>
 
-        <div class="divider-line-hr mr-top-100"></div>
-
-        <!-- Team -->
-        <section class="wptb-team-one pd-top-90">
-            <div class="container">
-                <div class="wptb-heading">
-                    <div class="wptb-item--inner">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <h6 class="wptb-item--subtitle"><span>01 //</span> Our Team</h6>
-                                <h1 class="wptb-item--title mb-lg-0">Our Core Team of<br>
-                                    <span>Photographers</span>
-                                </h1>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <p class="wptb-item--description">we’re deeply passionate <span>catch your lovely
-                                        memories in cameras</span>
-                                    and Convey your love for every moment of life as a whole.</p>
 
 
-                                <!-- Swiper Navigation -->
-                                <div class="wptb-swiper-navigation style1">
-                                    <div class="wptb-swiper-arrow swiper-button-prev"></div>
-                                    <div class="wptb-swiper-arrow swiper-button-next"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="swiper-container swiper-team">
-                    <div class="swiper-wrapper">
-                        <!-- Team Block -->
-                        <div class="swiper-slide">
-                            <div class="wptb-team-grid1">
-                                <div class="wptb-item--inner">
-                                    <div class="wptb-item--image">
-                                        <img src="../assets/img/team/1.jpg" alt="img">
-                                    </div>
 
-                                    <div class="wptb-item--holder">
-                                        <div class="wptb-item--meta">
-                                            <h5 class="wptb-item--title">Maxim Alexhander</h5>
-                                            <p class="wptb-item--position">CEO, Kimono Agency</p>
-                                        </div>
-                                        <div class="wptb-item--social">
-                                            <a href="#">FB</a>
-                                            <a href="#">IG</a>
-                                            <a href="#">YT</a>
-                                            <a href="#">DR</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- Team Block -->
-                        <div class="swiper-slide">
-                            <div class="wptb-team-grid1">
-                                <div class="wptb-item--inner">
-                                    <div class="wptb-item--image">
-                                        <img src="../assets/img/team/2.jpg" alt="img">
-                                    </div>
 
-                                    <div class="wptb-item--holder">
-                                        <div class="wptb-item--meta">
-                                            <h5 class="wptb-item--title">Nelson Jameson</h5>
-                                            <p class="wptb-item--position">Photographer</p>
-                                        </div>
-                                        <div class="wptb-item--social">
-                                            <a href="#">FB</a>
-                                            <a href="#">IG</a>
-                                            <a href="#">YT</a>
-                                            <a href="#">DR</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- Team Block -->
-                        <div class="swiper-slide">
-                            <div class="wptb-team-grid1">
-                                <div class="wptb-item--inner">
-                                    <div class="wptb-item--image">
-                                        <img src="../assets/img/team/3.jpg" alt="img">
-                                    </div>
-
-                                    <div class="wptb-item--holder">
-                                        <div class="wptb-item--meta">
-                                            <h5 class="wptb-item--title">Ellie Duncan</h5>
-                                            <p class="wptb-item--position">Photographer</p>
-                                        </div>
-                                        <div class="wptb-item--social">
-                                            <a href="#">FB</a>
-                                            <a href="#">IG</a>
-                                            <a href="#">YT</a>
-                                            <a href="#">DR</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Team Block -->
-                        <div class="swiper-slide">
-                            <div class="wptb-team-grid1">
-                                <div class="wptb-item--inner">
-                                    <div class="wptb-item--image">
-                                        <img src="../assets/img/team/4.jpg" alt="img">
-                                    </div>
-
-                                    <div class="wptb-item--holder">
-                                        <div class="wptb-item--meta">
-                                            <h5 class="wptb-item--title">Harold Earls</h5>
-                                            <p class="wptb-item--position">Photographer</p>
-                                        </div>
-                                        <div class="wptb-item--social">
-                                            <a href="#">FB</a>
-                                            <a href="#">IG</a>
-                                            <a href="#">YT</a>
-                                            <a href="#">DR</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Team Block -->
-                        <div class="swiper-slide">
-                            <div class="wptb-team-grid1">
-                                <div class="wptb-item--inner">
-                                    <div class="wptb-item--image">
-                                        <img src="../assets/img/team/5.jpg" alt="img">
-                                    </div>
-
-                                    <div class="wptb-item--holder">
-                                        <div class="wptb-item--meta">
-                                            <h5 class="wptb-item--title">Nelson Jameson</h5>
-                                            <p class="wptb-item--position">Photographer</p>
-                                        </div>
-                                        <div class="wptb-item--social">
-                                            <a href="#">FB</a>
-                                            <a href="#">IG</a>
-                                            <a href="#">YT</a>
-                                            <a href="#">DR</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Team Block -->
-                        <div class="swiper-slide">
-                            <div class="wptb-team-grid1">
-                                <div class="wptb-item--inner">
-                                    <div class="wptb-item--image">
-                                        <img src="../assets/img/team/6.jpg" alt="img">
-                                    </div>
-
-                                    <div class="wptb-item--holder">
-                                        <div class="wptb-item--meta">
-                                            <h5 class="wptb-item--title">Ellie Duncan</h5>
-                                            <p class="wptb-item--position">Photographer</p>
-                                        </div>
-                                        <div class="wptb-item--social">
-                                            <a href="#">FB</a>
-                                            <a href="#">IG</a>
-                                            <a href="#">YT</a>
-                                            <a href="#">DR</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Team Block -->
-                        <div class="swiper-slide">
-                            <div class="wptb-team-grid1">
-                                <div class="wptb-item--inner">
-                                    <div class="wptb-item--image">
-                                        <img src="../assets/img/team/4.jpg" alt="img">
-                                    </div>
-
-                                    <div class="wptb-item--holder">
-                                        <div class="wptb-item--meta">
-                                            <h5 class="wptb-item--title">Harold Earls</h5>
-                                            <p class="wptb-item--position">Photographer</p>
-                                        </div>
-                                        <div class="wptb-item--social">
-                                            <a href="#">FB</a>
-                                            <a href="#">IG</a>
-                                            <a href="#">YT</a>
-                                            <a href="#">DR</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonial -->
-        <section class="wptb-testimonial-one testimonial-colored bg-image"
-            style="background-image: url('../assets/img/background/bg-2.jpg');">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="swiper-container swiper-testimonial">
-                            <!-- swiper slides -->
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="wptb-testimonial1">
-                                        <div class="wptb-item--inner">
-                                            <div class="wptb-item--holder">
-                                                <div
-                                                    class="d-flex align-items-center justify-content-between mr-bottom-25">
-                                                    <div class="wptb-item--meta-rating">
-                                                        <i class="bi bi-star-fill"></i>
-                                                        <i class="bi bi-star-fill"></i>
-                                                        <i class="bi bi-star-fill"></i>
-                                                        <i class="bi bi-star-fill"></i>
-                                                        <i class="bi bi-star-fill"></i>
-                                                    </div>
-
-                                                    <div class="wptb-item--icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="57" height="45"
-                                                            viewBox="0 0 57 45" fill="none">
-                                                            <path
-                                                                d="M51.5137 38.5537C56.8209 32.7938 56.2866 25.3969 56.2697 25.3125V2.8125C56.2697 2.06658 55.9734 1.35121 55.4459 0.823763C54.9185 0.296317 54.2031 0 53.4572 0H36.5822C33.48 0 30.9572 2.52281 30.9572 5.625V25.3125C30.9572 26.0584 31.2535 26.7738 31.781 27.3012C32.3084 27.8287 33.0238 28.125 33.7697 28.125H42.4266C42.3671 29.5155 41.9517 30.8674 41.22 32.0513C39.7913 34.3041 37.0997 35.8425 33.2156 36.6188L30.9572 37.0688V45H33.7697C41.5969 45 47.5678 42.8316 51.5137 38.5537ZM20.5566 38.5537C25.8666 32.7938 25.3294 25.3969 25.3125 25.3125V2.8125C25.3125 2.06658 25.0162 1.35121 24.4887 0.823763C23.9613 0.296317 23.2459 0 22.5 0H5.625C2.52281 0 0 2.52281 0 5.625V25.3125C0 26.0584 0.296316 26.7738 0.823762 27.3012C1.35121 27.8287 2.06658 28.125 2.8125 28.125H11.4694C11.41 29.5155 10.9945 30.8674 10.2628 32.0513C8.83406 34.3041 6.1425 35.8425 2.25844 36.6188L0 37.0688V45H2.8125C10.6397 45 16.6106 42.8316 20.5566 38.5537Z"
-                                                                fill="#D70006" />
-                                                        </svg>
-                                                    </div>
-                                                </div>
-
-                                                <p class="wptb-item--description"> “I have an amazing photography
-                                                    session with team
-                                                    kimono photography agency, highly recommended.
-                                                    They have amazing atmosphere in their studio. Iw’d
-                                                    love to visit again”</p>
-                                                <div class="wptb-item--meta">
-                                                    <div class="wptb-item--image">
-                                                        <img src="../assets/img/testimonial/1.jpg" alt="img">
-                                                    </div>
-                                                    <div class="wptb-item--meta-left">
-                                                        <h4 class="wptb-item--title">Rachel Jackson</h4>
-                                                        <h6 class="wptb-item--designation">New York</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div class="wptb-testimonial1">
-                                        <div class="wptb-item--inner">
-                                            <div class="wptb-item--holder">
-                                                <div
-                                                    class="d-flex align-items-center justify-content-between mr-bottom-25">
-                                                    <div class="wptb-item--meta-rating">
-                                                        <i class="bi bi-star-fill"></i>
-                                                        <i class="bi bi-star-fill"></i>
-                                                        <i class="bi bi-star-fill"></i>
-                                                        <i class="bi bi-star-fill"></i>
-                                                        <i class="bi bi-star-fill"></i>
-                                                    </div>
-
-                                                    <div class="wptb-item--icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="57" height="45"
-                                                            viewBox="0 0 57 45" fill="none">
-                                                            <path
-                                                                d="M51.5137 38.5537C56.8209 32.7938 56.2866 25.3969 56.2697 25.3125V2.8125C56.2697 2.06658 55.9734 1.35121 55.4459 0.823763C54.9185 0.296317 54.2031 0 53.4572 0H36.5822C33.48 0 30.9572 2.52281 30.9572 5.625V25.3125C30.9572 26.0584 31.2535 26.7738 31.781 27.3012C32.3084 27.8287 33.0238 28.125 33.7697 28.125H42.4266C42.3671 29.5155 41.9517 30.8674 41.22 32.0513C39.7913 34.3041 37.0997 35.8425 33.2156 36.6188L30.9572 37.0688V45H33.7697C41.5969 45 47.5678 42.8316 51.5137 38.5537ZM20.5566 38.5537C25.8666 32.7938 25.3294 25.3969 25.3125 25.3125V2.8125C25.3125 2.06658 25.0162 1.35121 24.4887 0.823763C23.9613 0.296317 23.2459 0 22.5 0H5.625C2.52281 0 0 2.52281 0 5.625V25.3125C0 26.0584 0.296316 26.7738 0.823762 27.3012C1.35121 27.8287 2.06658 28.125 2.8125 28.125H11.4694C11.41 29.5155 10.9945 30.8674 10.2628 32.0513C8.83406 34.3041 6.1425 35.8425 2.25844 36.6188L0 37.0688V45H2.8125C10.6397 45 16.6106 42.8316 20.5566 38.5537Z"
-                                                                fill="#D70006" />
-                                                        </svg>
-                                                    </div>
-                                                </div>
-
-                                                <p class="wptb-item--description"> “I have an amazing photography
-                                                    session with team
-                                                    kimono photography agency, highly recommended.
-                                                    They have amazing atmosphere in their studio. Iw’d
-                                                    love to visit again”</p>
-                                                <div class="wptb-item--meta">
-                                                    <div class="wptb-item--image">
-                                                        <img src="../assets/img/testimonial/2.jpg" alt="img">
-                                                    </div>
-                                                    <div class="wptb-item--meta-left">
-                                                        <h4 class="wptb-item--title">Helen Jordan</h4>
-                                                        <h6 class="wptb-item--designation">Chicago</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div class="wptb-testimonial1">
-                                        <div class="wptb-item--inner">
-                                            <div class="wptb-item--holder">
-                                                <div
-                                                    class="d-flex align-items-center justify-content-between mr-bottom-25">
-                                                    <div class="wptb-item--meta-rating">
-                                                        <i class="bi bi-star-fill"></i>
-                                                        <i class="bi bi-star-fill"></i>
-                                                        <i class="bi bi-star-fill"></i>
-                                                        <i class="bi bi-star-fill"></i>
-                                                        <i class="bi bi-star-fill"></i>
-                                                    </div>
-
-                                                    <div class="wptb-item--icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="57" height="45"
-                                                            viewBox="0 0 57 45" fill="none">
-                                                            <path
-                                                                d="M51.5137 38.5537C56.8209 32.7938 56.2866 25.3969 56.2697 25.3125V2.8125C56.2697 2.06658 55.9734 1.35121 55.4459 0.823763C54.9185 0.296317 54.2031 0 53.4572 0H36.5822C33.48 0 30.9572 2.52281 30.9572 5.625V25.3125C30.9572 26.0584 31.2535 26.7738 31.781 27.3012C32.3084 27.8287 33.0238 28.125 33.7697 28.125H42.4266C42.3671 29.5155 41.9517 30.8674 41.22 32.0513C39.7913 34.3041 37.0997 35.8425 33.2156 36.6188L30.9572 37.0688V45H33.7697C41.5969 45 47.5678 42.8316 51.5137 38.5537ZM20.5566 38.5537C25.8666 32.7938 25.3294 25.3969 25.3125 25.3125V2.8125C25.3125 2.06658 25.0162 1.35121 24.4887 0.823763C23.9613 0.296317 23.2459 0 22.5 0H5.625C2.52281 0 0 2.52281 0 5.625V25.3125C0 26.0584 0.296316 26.7738 0.823762 27.3012C1.35121 27.8287 2.06658 28.125 2.8125 28.125H11.4694C11.41 29.5155 10.9945 30.8674 10.2628 32.0513C8.83406 34.3041 6.1425 35.8425 2.25844 36.6188L0 37.0688V45H2.8125C10.6397 45 16.6106 42.8316 20.5566 38.5537Z"
-                                                                fill="#D70006" />
-                                                        </svg>
-                                                    </div>
-                                                </div>
-
-                                                <p class="wptb-item--description"> “I have an amazing photography
-                                                    session with team
-                                                    kimono photography agency, highly recommended.
-                                                    They have amazing atmosphere in their studio. Iw’d
-                                                    love to visit again”</p>
-                                                <div class="wptb-item--meta">
-                                                    <div class="wptb-item--image">
-                                                        <img src="../assets/img/testimonial/3.jpg" alt="img">
-                                                    </div>
-                                                    <div class="wptb-item--meta-left">
-                                                        <h4 class="wptb-item--title">Helen Jordan</h4>
-                                                        <h6 class="wptb-item--designation">New York</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Swiper Navigation -->
-                            <div class="wptb-swiper-navigation style1">
-                                <div class="wptb-swiper-arrow swiper-button-prev"></div>
-                                <div class="wptb-swiper-arrow swiper-button-next"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Awards -->
-        <section class="bg-dark-200 pd-bottom-80">
-            <div class="container">
-                <div class="wptb-heading">
-                    <div class="wptb-item--inner">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <h6 class="wptb-item--subtitle"><span>02 //</span> Our Awards</h6>
-                                <h1 class="wptb-item--title mb-0">Our Photography<br>
-                                    <span>Awards</span>
-                                </h1>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <p class="wptb-item--description">we’re deeply passionate <span>catch your lovely
-                                        memories in cameras</span>
-                                    and Convey your love for every moment of life as a whole.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <ol class="wptb-award-list">
-                    <li class="wptb-item">
-                        <div class="wptb-item--inner">
-                            <div class="wptb-item--holder">
-                                <a href="project-details.html">Photography Team of the Year 2023</a>
-                            </div>
-                            <div class="wptb-item--image">
-                                <img src="../assets/img/more/4.jpg" alt="img">
-                                <div class="wptb-item--button">
-                                    <a href="project-details.html" class="btn">View</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="wptb-item active highlight">
-                        <div class="wptb-item--inner">
-                            <div class="wptb-item--holder">
-                                <a href="project-details.html">Best Wedding Photographer 2022</a>
-                            </div>
-                            <div class="wptb-item--image">
-                                <img src="../assets/img/more/5.jpg" alt="img">
-                                <div class="wptb-item--button">
-                                    <a href="project-details.html" class="btn">View</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="wptb-item">
-                        <div class="wptb-item--inner">
-                            <div class="wptb-item--holder">
-                                <a href="project-details.html">Photography Team of the Year 2019</a>
-                            </div>
-                            <div class="wptb-item--image">
-                                <img src="../assets/img/more/6.jpg" alt="img">
-                                <div class="wptb-item--button">
-                                    <a href="project-details.html" class="btn">View</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ol>
-            </div>
-        </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer style1 bg-image-2" style="background-image: url('../assets/img/background/bg-5.png');">
+    <footer class="footer style1 bg-image-2" style="background-image: url('assets/img/background/bg-5.png');">
         <div class="footer-top">
             <div class="container">
                 <div class="footer--inner">
@@ -1563,11 +1204,11 @@
                             <div class="footer-widget">
                                 <div class="footer-nav">
                                     <ul>
+                                        <li class="menu-item"><a href="index.html">Home</a></li>
                                         <li class="menu-item"><a href="about.html">About Us</a></li>
-                                        <li class="menu-item"><a href="team-1.html">Our Team</a></li>
-                                        <li class="menu-item"><a href="packages.html">Packages</a></li>
-                                        <li class="menu-item"><a href="project-general.html">Gallery</a></li>
-                                        <li class="menu-item"><a href="services-1.html">Services</a></li>
+                                        <li class="menu-item"><a href="services.html">Our Services</a></li>
+                                        <li class="menu-item"><a href="portfolio.html">Our Portfolio</a></li>
+                                        <li class="menu-item"><a href="contact.html">Contact Us</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1576,25 +1217,23 @@
                         <div class="col-lg-4 col-md-4 mb-5 mb-md-0 order-1 order-md-0">
                             <div class="footer-widget text-center">
                                 <div class="logo mr-bottom-55">
-                                    <a href="index.html" class=""><img
-                                            src="https://wpthemebooster.com/demo/themeforest/html/kimono/assets/img/logo.svg"
-                                            alt="logo"></a>
+                                    <a href="index.html" class=""><img src="assets/images/logo.png" alt="logo"></a>
                                 </div>
 
-                                <h6 class="widget-title">Sign up for all the latest <br> news and offers </h6>
-                                <form class="newsletter-form" method="post">
-                                    <div class="form-group">
-                                        <input type="email" name="email" class="form-control"
-                                            placeholder="Enter your email" required>
-                                    </div>
-                                    <button type="submit" class="btn btn-two">
-                                        <span class="btn-wrap">
-                                            <span class="text-first">Subscribe</span>
-                                            <span class="text-second"><i class="bi bi-arrow-up-right"></i> <i
-                                                    class="bi bi-arrow-up-right"></i></span>
-                                        </span>
-                                    </button>
-                                </form>
+                                <!-- <h6 class="widget-title">Sign up for all the latest <br> news and offers </h6>
+                                    <form class="newsletter-form" method="post">
+                                        <div class="form-group">
+                                            <input type="email" name="email" class="form-control"
+                                                placeholder="Enter your email" required>
+                                        </div>
+                                        <button type="submit" class="btn btn-two">
+                                            <span class="btn-wrap">
+                                                <span class="text-first">Subscribe</span>
+                                                <span class="text-second"><i class="bi bi-arrow-up-right"></i> <i
+                                                        class="bi bi-arrow-up-right"></i></span>
+                                            </span>
+                                        </button>
+                                    </form> -->
                             </div>
                         </div>
 
@@ -1603,10 +1242,10 @@
                                 <div class="footer-nav">
                                     <ul>
                                         <li class="menu-item"><a href="#">Booking</a></li>
-                                        <li class="menu-item"><a href="shop.html">Products</a></li>
-                                        <li class="menu-item"><a href="blog-grid.html">Recent Posts</a></li>
-                                        <li class="menu-item"><a href="blog-grid.html">Latest News</a></li>
-                                        <li class="menu-item"><a href="contact-1.html">Contact Us</a></li>
+                                        <li class="menu-item"><a href="#/">Products</a></li>
+                                        <li class="menu-item"><a href="#/">Recent Posts</a></li>
+                                        <li class="menu-item"><a href="#/">Latest News</a></li>
+                                        <li class="menu-item"><a href="#/">Contact Us</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1621,15 +1260,21 @@
             <div class="container">
                 <div class="footer-bottom-inner">
                     <div class="copyright">
-                        <p><a href="https://themeforest.net/user/wpthemebooster">kimono</a> photography, All Rights
+                        <p><a href="#/">M One</a> Business Solutions, All
+                            Rights
                             Reserved</p>
                     </div>
                     <div class="social-box style-oval">
                         <ul>
-                            <li><a href="https://www.facebook.com/" class="bi bi-facebook"></a></li>
-                            <li><a href="https://www.instagram.com/" class="bi bi-instagram"></a></li>
-                            <li><a href="https://www.linkedin.com/" class="bi bi-linkedin"></a></li>
-                            <li><a href="https://www.behance.com/" class="bi bi-behance"></a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/" class="bi bi-facebook"></a>
+                            </li>
+                            <li><a target="_blank"
+                                    href="https://www.instagram.com/monebusinesssolutions?igsh=YjBlNXF0NGt2czAw"
+                                    class="bi bi-instagram"></a></li>
+                            <li><a target="_blank" href="https://www.linkedin.com/" class="bi bi-linkedin"></a>
+                            </li>
+                            <li><a target="_blank" href="https://www.behance.com/" class="bi bi-behance"></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -1641,50 +1286,79 @@
         <a href="#"><i class="bi bi-chevron-up"></i></a>
     </div>
 
+    </div>
+    </main>
+
 
     <!-- Core JS -->
-    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
 
     <!-- Framework -->
-    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 
     <!-- WOW Scroll Effect -->
-    <script src="../plugins/wow/wow.min.js"></script>
+    <script src="plugins/wow/wow.min.js"></script>
 
     <!-- Swiper Slider -->
-    <script src="../plugins/swiper/swiper-bundle.min.js"></script>
-    <script src="../plugins/swiper/swiper-gl.min.js"></script>
+    <script src="plugins/swiper/swiper-bundle.min.js"></script>
+    <script src="plugins/swiper/swiper-gl.min.js"></script>
 
     <!-- Odometer Counter -->
-    <script src="../plugins/odometer/appear.js"></script>
-    <script src="../plugins/odometer/odometer.js"></script>
+    <script src="plugins/odometer/appear.js"></script>
+    <script src="plugins/odometer/odometer.js"></script>
 
     <!-- Projects -->
-    <script src="../plugins/isotope/isotope.pkgd.min.js"></script>
-    <script src="../plugins/isotope/imagesloaded.pkgd.min.js"></script>
-    <!-- <script src="../plugins/isotope/jquery.hoverdir.js"></script>-->
-    <script src="../plugins/isotope/tilt.jquery.js"></script>
-    <script src="../plugins/isotope/isotope-init.js"></script>
+    <script src="plugins/isotope/isotope.pkgd.min.js"></script>
+    <script src="plugins/isotope/imagesloaded.pkgd.min.js"></script>
+    <!-- <script src="plugins/isotope/jquery.hoverdir.js"></script>-->
+    <script src="plugins/isotope/tilt.jquery.js"></script>
+    <script src="plugins/isotope/isotope-init.js"></script>
 
     <!-- Fancybox -->
-    <script src="../plugins/fancybox/jquery.fancybox.min.js"></script>
+    <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
 
     <!-- Flatpickr -->
-    <script src="../plugins/flatpickr/flatpickr.min.js"></script>
+    <script src="plugins/flatpickr/flatpickr.min.js"></script>
 
     <!-- Nice Select -->
-    <script src="../plugins/nice-select/jquery.nice-select.min.js"></script>
+    <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
 
 
+
+    <!-- <script>
+        window.addEventListener('scroll', function () {
+            var section = document.querySelector('.section-with-bg');
+            var sectionTop = section.offsetTop;
+            var sectionHeight = section.offsetHeight;
+            var windowHeight = window.innerHeight;
+            var scrollPosition = window.pageYOffset;
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight - windowHeight) {
+                section.classList.add('scrolled');
+            } else {
+                section.classList.remove('scrolled');
+            }
+        });
+    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
     <!-- Cursor Effect -->
-    <script src="../plugins/cursor-effect/cursor-effect.js"></script>
+
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <!-- <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script> -->
+    <!-- <script src="https://assets.codepen.io/16327/SplitText3.min.js"></script> -->
+    <script src="plugins/cursor-effect/cursor-effect.js"></script>
 
     <!-- Theme Custom JS -->
-    <script src="../assets/js/theme.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+
+
+
 
 </body>
-
-<!-- Mirrored from wpthemebooster.com/demo/themeforest/html/kimono/dark/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Jul 2024 04:35:49 GMT -->
 
 </html>
