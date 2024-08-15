@@ -289,25 +289,37 @@
   --gradient-color-center: #ffb84d;
   --gradient-color-to: #ff0080;
 
-  --gradient-one: linear-gradient(90deg,
-      rgba(var(--color-black-rgb), 0) 50%,
-      rgba(var(--color-one-rgb), 1) 100%);
-  --gradient-one-180: linear-gradient(180deg,
-      rgba(var(--color-black-rgb), 0) 50%,
-      rgb(105 0 0) 100%);
+  --gradient-one: linear-gradient(
+    90deg,
+    rgba(var(--color-black-rgb), 0) 50%,
+    rgba(var(--color-one-rgb), 1) 100%
+  );
+  --gradient-one-180: linear-gradient(
+    180deg,
+    rgba(var(--color-black-rgb), 0) 50%,
+    rgb(105 0 0) 100%
+  );
 
-  --gradient-two: linear-gradient(90deg,
-      var(--color-dark-thirteen) 0%,
-      var(--color-dark-one) 100%);
-  --gradient-two-alt: linear-gradient(90deg,
-      var(--color-dark-one) 0%,
-      var(--color-dark-thirteen) 100%);
-  --gradient-two-180: linear-gradient(180deg,
-      var(--color-dark-thirteen) 0%,
-      var(--color-dark-one) 100%);
-  --gradient-two-180-alt: linear-gradient(180deg,
-      var(--color-dark-one) 0%,
-      var(--color-dark-thirteen) 100%);
+  --gradient-two: linear-gradient(
+    90deg,
+    var(--color-dark-thirteen) 0%,
+    var(--color-dark-one) 100%
+  );
+  --gradient-two-alt: linear-gradient(
+    90deg,
+    var(--color-dark-one) 0%,
+    var(--color-dark-thirteen) 100%
+  );
+  --gradient-two-180: linear-gradient(
+    180deg,
+    var(--color-dark-thirteen) 0%,
+    var(--color-dark-one) 100%
+  );
+  --gradient-two-180-alt: linear-gradient(
+    180deg,
+    var(--color-dark-one) 0%,
+    var(--color-dark-thirteen) 100%
+  );
 
   /* --gradient-three: linear-gradient(
     90deg,
@@ -316,22 +328,24 @@
     #ff0080 100%
   ); */
   /* --gradient-three: linear-gradient(90deg, #ff0000 0%, #b30000 100%); */
-  --gradient-three: linear-gradient(90deg,
-      #ff9999 0%,
-      /* Light Pink */
-      #ff4d4d 50%,
-      /* Light Red */
-      #cc0000 100%
-      /* Dark Red */
-    );
-  --gradient-three-180: linear-gradient(180deg,
-      #43ffec 0%,
-      #ffb84d 50%,
-      #ff0080 100%);
-  --gradient-three-alt: linear-gradient(90deg,
-      #ff0080 0%,
-      #ffb84d 50%,
-      #43ffec 100%);
+  --gradient-three: linear-gradient(
+    90deg,
+    #ff9999 0%,
+    /* Light Pink */ #ff4d4d 50%,
+    /* Light Red */ #cc0000 100% /* Dark Red */
+  );
+  --gradient-three-180: linear-gradient(
+    180deg,
+    #43ffec 0%,
+    #ffb84d 50%,
+    #ff0080 100%
+  );
+  --gradient-three-alt: linear-gradient(
+    90deg,
+    #ff0080 0%,
+    #ffb84d 50%,
+    #43ffec 100%
+  );
 
   /* Responsive Breakdown */
   --breakpoint-extralargedesktop: 1399.98px;
@@ -884,11 +898,11 @@ input[type='submit'],
   transition: var(--transition-base);
 }
 
-.btn>* {
+.btn > * {
   z-index: 1;
 }
 
-.btn-check:focus+.btn,
+.btn-check:focus + .btn,
 .btn:focus,
 .btn.active {
   background-color: var(--color-white-fixed);
@@ -1028,8 +1042,8 @@ input[type='submit']:hover {
   transition: transform 0.5s linear;
 }
 
-.btn-two .text-second i+i,
-.btn-two .text-second svg+svg {
+.btn-two .text-second i + i,
+.btn-two .text-second svg + svg {
   position: absolute;
   left: 0;
   top: 0;
@@ -1042,8 +1056,8 @@ input[type='submit']:hover {
   transform: translate(30px, -30px);
 }
 
-.btn-two:hover .text-second i+i,
-.btn-two:hover .text-second svg+svg {
+.btn-two:hover .text-second i + i,
+.btn-two:hover .text-second svg + svg {
   transform: translate(0px, 0px);
 }
 
@@ -1208,7 +1222,7 @@ input[type='submit']:hover {
   transition: var(--transition-base);
 }
 
-.btn-check:focus+.btn-four,
+.btn-check:focus + .btn-four,
 .btn-four:focus {
   color: var(--color-one);
 }
@@ -2446,6 +2460,11 @@ body::-webkit-scrollbar-thumb {
 
 .pd-right-70 {
   padding-right: 70px;
+}
+@media only screen and (max-width: 600px) {
+  .pd-right-70 {
+    padding: 20px;
+  }
 }
 
 .pd-right-75 {
