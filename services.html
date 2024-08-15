@@ -13,6 +13,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
 
     <!-- Favicon and touch Icons -->
@@ -796,11 +797,11 @@
     <main class="wrapper">
         <div class="wptb-page-heading">
             <div class="wptb-item--inner"
-                style="background-image: url('assets/images/services/sbg.png'); background-attachment: fixed; border-radius: 20px;">
+                style="background-image: url('assets/images/background/service.png'); background-attachment: fixed; border-radius: 20px;">
                 <div class="wptb-item-layer wptb-item-layer-one">
                     <img src="../assets/img/more/circle.png" alt="img">
                 </div>
-                <h2 class="wptb-item--title ">Services</h2>
+                <h2 class="wptb-item--title wow animate__fadeInUp" data-wow-duration="3s">Services</h2>
             </div>
         </div>
 
@@ -809,7 +810,8 @@
                 <div class="wptb-pricing--inner">
                     <div class="wptb-heading">
                         <div class="wptb-item--inner text-center">
-                            <h1 class="wptb-item--title">Let's See Our Brand Services</h1>
+                            <h1 class="wptb-item--title wow animate__fadeIn" data-wow-duration="3s">Let's See Our
+                                Brand Services</h1>
                         </div>
                     </div>
 
@@ -829,7 +831,7 @@
                         <!-- Wedding Packages -->
                         <div class="grid-item wedding">
                             <!-- Package 1 -->
-                            <div class="wptb-packages2">
+                            <div class="wptb-packages2 wow animate__fadeInLeft" data-wow-duration="5s">
                                 <div class="wptb-item--inner">
                                     <div class="wptb-item--image">
                                         <img src="assets/images/services/bd.png"
@@ -944,7 +946,7 @@
                             </div>
 
                             <!-- Package 2 -->
-                            <div class="wptb-packages2">
+                            <div class="wptb-packages2 wow animate__fadeInRight" data-wow-duration="5s">
                                 <div class="wptb-item--inner">
                                     <div class="wptb-item--image order-2">
                                         <img src="assets/images/services/dm.png"
@@ -1080,7 +1082,7 @@
                             </div>
 
                             <!-- Package 3 -->
-                            <div class="wptb-packages2">
+                            <div class="wptb-packages2 wow animate__fadeInLeft" data-wow-duration="5s">
                                 <div class="wptb-item--inner">
                                     <div class="wptb-item--image">
                                         <img src="assets/images/services/tm.png"
@@ -1173,7 +1175,7 @@
                             </div>
 
                             <!-- Package 4 -->
-                            <div class="wptb-packages2">
+                            <div class="wptb-packages2 wow animate__fadeInRight" data-wow-duration="5s">
                                 <div class="wptb-item--inner">
                                     <div class="wptb-item--image order-2">
                                         <img src="assets/images/services/pr.png"
@@ -1291,7 +1293,7 @@
                         <!-- Outdoor Packages -->
                         <div class="grid-item outdoor">
                             <!-- Package 1 -->
-                            <div class="wptb-packages2">
+                            <div class="wptb-packages2 wow animate__fadeInLeft" data-wow-duration="5s">
                                 <div class="wptb-item--inner">
                                     <div class="wptb-item--image">
                                         <img src="assets/images/services/im.png"
@@ -1408,7 +1410,7 @@
                             </div>
 
                             <!-- Package 2 -->
-                            <div class="wptb-packages2">
+                            <div class="wptb-packages2 wow animate__fadeInRight" data-wow-duration="5s">
                                 <div class="wptb-item--inner">
                                     <div class="wptb-item--image order-2">
                                         <img src="assets/images/services/vd.png"
@@ -1526,7 +1528,7 @@
                             </div>
 
                             <!-- Package 3 -->
-                            <div class="wptb-packages2">
+                            <div class="wptb-packages2 wow animate__fadeInLeft" data-wow-duration="5s">
                                 <div class="wptb-item--inner">
                                     <div class="wptb-item--image">
                                         <img src="assets/images/services/ooh2.png"
@@ -1643,7 +1645,7 @@
                             </div>
 
                             <!-- Package 4 -->
-                            <div class="wptb-packages2">
+                            <div class="wptb-packages2 wow animate__fadeInRight" data-wow-duration="5s">
                                 <div class="wptb-item--inner">
                                     <div class="wptb-item--image order-2">
                                         <img src="assets/images/services/em.png"
@@ -1763,7 +1765,7 @@
                         <!-- Newborn Packages -->
                         <div class="grid-item newborn">
                             <!-- Package 1 -->
-                            <div class="wptb-packages2">
+                            <div class="wptb-packages2 wow animate__fadeInLeft" data-wow-duration="5s">
                                 <div class="wptb-item--inner">
                                     <div class="wptb-item--image">
                                         <img src="assets/images/services/web.png"
@@ -1983,6 +1985,11 @@
     </div>
     </main>
 
+    <script>
+        new WOW().init();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wowjs/1.1.2/wow.min.js"></script>
 
     <!-- Core JS -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
