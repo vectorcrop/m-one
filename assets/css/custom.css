@@ -155,8 +155,13 @@ banner */
     opacity: 0.8;
 }
 
-.aside_info_wrapper{
+.aside_info_wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+
+.breadcrumb--inner {
+    padding: 170px 0px 170px 0px !important;
 }
