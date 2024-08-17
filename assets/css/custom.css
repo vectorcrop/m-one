@@ -154,3 +154,9 @@ banner */
     top: 0;
     opacity: 0.8;
 }
+
+.aside_info_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
