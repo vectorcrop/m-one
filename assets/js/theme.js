@@ -1,44 +1,37 @@
-/*
-Theme Name: Kimono - Photography Agency
-Version: 1.0
-Author: WPThemeBooster
-Author URL: 
-Description: Kimono - Photography Agency
-*/
-/*	IE 10 Fix*/
+
 
 (function ($) {
-	'use strict';
-	
-	jQuery(document).ready(function () {
+    'use strict';
+
+    jQuery(document).ready(function () {
 
         // Preloader
-        setTimeout(function() {
+        setTimeout(function () {
             $('#preloader').addClass('hide');
         }, 1000);
 
         // Add Menu Item Current Class Auto
         function dynamicCurrentMenuClass(selector) {
             let FileName = window.location.href.split("/").reverse()[0];
-  
+
             selector.find("li").each(function () {
-              let anchor = $(this).find("a");
-              if ($(anchor).attr("href") == FileName) {
-                $(this).addClass("active");
-              }
+                let anchor = $(this).find("a");
+                if ($(anchor).attr("href") == FileName) {
+                    $(this).addClass("active");
+                }
             });
             // if any li has .current elmnt add class
             selector.children("li").each(function () {
-              if ($(this).find(".active").length) {
-                $(this).addClass("active");
-              }
+                if ($(this).find(".active").length) {
+                    $(this).addClass("active");
+                }
             });
             // if no file name return
             if ("" == FileName) {
-              selector.find("li").eq(0).addClass("active");
+                selector.find("li").eq(0).addClass("active");
             }
         }
-          
+
         if ($('.mainnav .main-menu').length) {
             dynamicCurrentMenuClass($('.mainnav .main-menu'));
         }
@@ -46,25 +39,25 @@ Description: Kimono - Photography Agency
         // Mobile Responsive Menu 
         var mobileLogoContent = $('header .logo').html();
         var mobileMenuContent = $('.mainnav').html();
-		$('.mr_menu .logo').append(mobileLogoContent);
-		$('.mr_menu .mr_navmenu').append(mobileMenuContent);
-        $('.mr_menu .mr_navmenu ul.main-menu li.menu-item-has-children').append( $( "<span class='submenu_opener'><i class='bi bi-chevron-right'></i></span>" ) );
+        $('.mr_menu .logo').append(mobileLogoContent);
+        $('.mr_menu .mr_navmenu').append(mobileMenuContent);
+        $('.mr_menu .mr_navmenu ul.main-menu li.menu-item-has-children').append($("<span class='submenu_opener'><i class='bi bi-chevron-right'></i></span>"));
 
         // Sub-Menu Open On-Click
-        $('.mr_menu ul.main-menu li.menu-item-has-children .submenu_opener').on("click", function(e){
+        $('.mr_menu ul.main-menu li.menu-item-has-children .submenu_opener').on("click", function (e) {
             $(this).parent().toggleClass('nav_open');
             $(this).siblings('ul').slideToggle();
             e.stopPropagation();
             e.preventDefault();
         });
-        
+
         // Active Mobile Responsive Menu : Add Class in body tag
-        $('.mr_menu_toggle').on('click', function(e) {
+        $('.mr_menu_toggle').on('click', function (e) {
             $('body').addClass('mr_menu_active');
             e.stopPropagation();
             e.preventDefault();
         });
-        $('.mr_menu_close').on('click', function(e) {
+        $('.mr_menu_close').on('click', function (e) {
             $('body').removeClass('mr_menu_active');
             e.stopPropagation();
             e.preventDefault();
@@ -72,10 +65,10 @@ Description: Kimono - Photography Agency
 
         // Overlay Navigation
         $('.overlay_menu .overlay_navmenu').append(mobileMenuContent);
-        $('.overlay_menu .overlay_navmenu ul.main-menu li.menu-item-has-children').append( $( "<span class='submenu_opener'><i class='bi bi-chevron-right'></i></span>" ) );
+        $('.overlay_menu .overlay_navmenu ul.main-menu li.menu-item-has-children').append($("<span class='submenu_opener'><i class='bi bi-chevron-right'></i></span>"));
 
         // Sub-Menu Open On-Click
-        $('.overlay_menu ul.main-menu li.menu-item-has-children .submenu_opener').on("click", function(e){
+        $('.overlay_menu ul.main-menu li.menu-item-has-children .submenu_opener').on("click", function (e) {
             $(this).parent().toggleClass('nav_open');
             $(this).siblings('ul').slideToggle();
             e.stopPropagation();
@@ -83,18 +76,18 @@ Description: Kimono - Photography Agency
         });
 
         // Active Mobile Responsive Menu : Add Class in body tag
-        $('.overlay_menu_toggle').on('click', function(e) {
+        $('.overlay_menu_toggle').on('click', function (e) {
             $('body').addClass('overlay_menu_active');
             e.stopPropagation();
             e.preventDefault();
         });
 
-        $('.overlay_menu_close').on('click', function(e) {
+        $('.overlay_menu_close').on('click', function (e) {
             $('body').removeClass('overlay_menu_active');
             e.stopPropagation();
             e.preventDefault();
         });
-        
+
         // $('body').on('click', function(e) {
         //     $('body').removeClass('mr_menu_active');
         //     e.stopPropagation();
@@ -103,25 +96,25 @@ Description: Kimono - Photography Agency
 
 
         // Aside info bar
-        $('.aside_open').on("click", function(e) {
+        $('.aside_open').on("click", function (e) {
             e.preventDefault();
             $(this).addClass('close');
             $('.aside_info_wrapper').addClass('show');
         });
-        $('.aside_close').on("click", function(e) {
+        $('.aside_close').on("click", function (e) {
             e.preventDefault();
             $('.aside_open').removeClass('close');
             $('.aside_info_wrapper').removeClass('show');
         });
 
         // Toggle Header Search
-        $('.header_search .form-control-submit').on("click", function() {
+        $('.header_search .form-control-submit').on("click", function () {
             $('.open_search').toggleClass('active');
         });
 
         // Sticky Header
         var header = $("header");
-        $(window).scroll(function() {
+        $(window).scroll(function () {
             var scroll = $(window).scrollTop();
 
             if (scroll >= 50) {
@@ -134,9 +127,9 @@ Description: Kimono - Photography Agency
 
         // WOW Init
         new WOW().init();
-        
+
         /* FULLSCREEN SWIPER*/
-        $(window).resize(function(){
+        $(window).resize(function () {
             var height = $(window).height();
             // var width  = $(window).width();
             $(' .wptb-slider.style2 .swiper-container, .wptb-slider.style3 .swiper-container,.wptb-slider.style5 .swiper-container').height(height);
@@ -144,14 +137,14 @@ Description: Kimono - Photography Agency
             // $('.wptb-slider .swiper-container, .wptb-slider .swiper-slide').width(width);
 
         })
-        $(window).resize(); 
+        $(window).resize();
 
 
         // Main Slider One
         var SwiperSliderOne = new Swiper('.wptb-swiper-slider-one', {
             loop: true,
             autoplay: {
-                delay: 3000,
+                delay: 5000,
             },
             effect: 'fade',
             autoHeight: true,
@@ -175,7 +168,7 @@ Description: Kimono - Photography Agency
         var SwiperSliderTwo = new Swiper('.wptb-swiper-slider-two', {
             loop: true,
             autoplay: {
-                delay: 3000,
+                delay: 5000,
             },
             effect: 'fade',
             autoHeight: true,
@@ -198,9 +191,9 @@ Description: Kimono - Photography Agency
         // Slider Three
         var SwiperSliderThree = new Swiper('.wptb-swiper-slider-three', {
             loop: false,
-            // autoplay: {
-            //     delay: 3000,
-            // },
+            autoplay: {
+                delay: 5000,
+            },
             effect: 'fade',
             autoHeight: true,
             speed: 2500,
@@ -240,13 +233,13 @@ Description: Kimono - Photography Agency
             },
             breakpoints: {
                 600: {
-                  slidesPerView: 2,
+                    slidesPerView: 2,
                 },
                 991: {
                     slidesPerView: 3,
                 },
                 1400: {
-                  slidesPerView: 4,
+                    slidesPerView: 4,
                 },
             }
         });
@@ -338,7 +331,7 @@ Description: Kimono - Photography Agency
                 prevEl: '.swiper-button-prev',
                 clickable: true,
             },
-            
+
             thumbs: {
                 swiper: SwiperSliderSevenThumbs,
             },
@@ -347,15 +340,15 @@ Description: Kimono - Photography Agency
         // $('.swiper-pagination-bullet').on('mouseover', function() {
         //     $(this).trigger( "click" );
         // });
-        
+
         // SwiperSliderSeven.controller.control = SwiperSliderSevenThumbs;
         // SwiperSliderSevenThumbs.controller.control = SwiperSliderSeven;
-        
+
         // $('.wptb-swiper-slider-seven-thumbs .swiper-slide:not(".swiper-slide-active") .wptb-slider--item .wptb-item--title span').on('mouseover', function() {
         //     // SwiperSliderSeven.slideTo($(this).index());
         //     $( '.swiper-pagination-bullet' ).trigger( "click" );
         // })
-        
+
 
         // Slider Eight
         var SwiperSliderEight = new Swiper('.wptb-swiper-slider-eight', {
@@ -408,13 +401,13 @@ Description: Kimono - Photography Agency
             },
             breakpoints: {
                 600: {
-                  slidesPerView: 2,
+                    slidesPerView: 2,
                 },
                 991: {
                     slidesPerView: 3,
                 },
                 1200: {
-                  slidesPerView: 3,
+                    slidesPerView: 3,
                 },
             }
         });
@@ -441,15 +434,15 @@ Description: Kimono - Photography Agency
             },
             breakpoints: {
                 600: {
-                  slidesPerView: 3,
+                    slidesPerView: 3,
                 },
                 992: {
-                  slidesPerView: 4,
+                    slidesPerView: 4,
                 },
                 1200: {
-                  slidesPerView: 5,
+                    slidesPerView: 5,
                 },
-                
+
                 1400: {
                     slidesPerView: 7,
                 },
@@ -504,13 +497,13 @@ Description: Kimono - Photography Agency
             },
             breakpoints: {
                 600: {
-                  slidesPerView: 1.5,
+                    slidesPerView: 1.5,
                 },
                 991: {
                     slidesPerView: 2,
                 },
                 1200: {
-                  slidesPerView: 3,
+                    slidesPerView: 3,
                 },
             }
         });
@@ -535,7 +528,7 @@ Description: Kimono - Photography Agency
                     translate: ["5%", 0, -200],
                     rotate: [0, -100, 0],
                 },
-              },
+            },
             speed: 2500,
             slidesPerView: 1,
             spaceBetween: 35,
@@ -607,13 +600,13 @@ Description: Kimono - Photography Agency
             },
             breakpoints: {
                 600: {
-                  slidesPerView: 2,
+                    slidesPerView: 2,
                 },
                 991: {
                     slidesPerView: 3,
                 },
                 1400: {
-                  slidesPerView: 4,
+                    slidesPerView: 4,
                 },
             }
         });
@@ -692,9 +685,9 @@ Description: Kimono - Photography Agency
             },
             on: {
                 init: function () {
-                  console.log('swiper initialized');
-                  var currentVideo =  $("[data-swiper-slide-index=" + this.realIndex + "]").find("video");
-                  currentVideo.trigger('play');
+                    console.log('swiper initialized');
+                    var currentVideo = $("[data-swiper-slide-index=" + this.realIndex + "]").find("video");
+                    currentVideo.trigger('play');
                 },
             },
         });
@@ -705,18 +698,18 @@ Description: Kimono - Photography Agency
         SwiperSliderTwentyOne.on('slideChange', function () {
             console.log('slide changed');
             /* stop all videos  */
-            sliderVideos.each(function( index ) {
+            sliderVideos.each(function (index) {
                 this.currentTime = 0;
             });
 
             /* SWIPER GET CURRENT AND PREV SLIDE (AND The VIDEO INSIDE) */
-            var prevVideo =  $(`[data-swiper-slide-index="${this.previousIndex}]"`).find("video");
-            var currentVideo =  $(`[data-swiper-slide-index="${this.realIndex}"]`).find("video");
+            var prevVideo = $(`[data-swiper-slide-index="${this.previousIndex}]"`).find("video");
+            var currentVideo = $(`[data-swiper-slide-index="${this.realIndex}"]`).find("video");
             prevVideo.trigger('stop');
             currentVideo.trigger('play');
         });
 
-        
+
         // Imagebox One
         var SwiperImagebox = new Swiper('.swiper-imagebox', {
             loop: true,
@@ -725,7 +718,7 @@ Description: Kimono - Photography Agency
             },
             speed: 1500,
             slidesPerView: 1,
-            spaceBetween: 0,            
+            spaceBetween: 0,
             // navigation: {
             //     nextEl: '.swiper-button-next',
             //     prevEl: '.swiper-button-prev',
@@ -736,13 +729,13 @@ Description: Kimono - Photography Agency
             },
             breakpoints: {
                 600: {
-                  slidesPerView: 2,
+                    slidesPerView: 2,
                 },
                 992: {
-                  slidesPerView: 3,
+                    slidesPerView: 3,
                 },
                 1400: {
-                  slidesPerView: 4,
+                    slidesPerView: 4,
                 },
             }
         });
@@ -755,7 +748,7 @@ Description: Kimono - Photography Agency
             },
             speed: 1500,
             slidesPerView: 1,
-            spaceBetween: 30,            
+            spaceBetween: 30,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -766,7 +759,7 @@ Description: Kimono - Photography Agency
             },
             breakpoints: {
                 768: {
-                  slidesPerView: 1,
+                    slidesPerView: 1,
                 },
             }
         });
@@ -779,7 +772,7 @@ Description: Kimono - Photography Agency
             },
             speed: 1500,
             slidesPerView: 1,
-            spaceBetween: 30,            
+            spaceBetween: 30,
             // navigation: {
             //     nextEl: '.swiper-button-next',
             //     prevEl: '.swiper-button-prev',
@@ -790,12 +783,12 @@ Description: Kimono - Photography Agency
             },
             breakpoints: {
                 768: {
-                  slidesPerView: 1,
+                    slidesPerView: 1,
                 },
 
                 1200: {
                     slidesPerView: 3,
-                  },
+                },
             }
         });
 
@@ -807,7 +800,7 @@ Description: Kimono - Photography Agency
             },
             speed: 1500,
             slidesPerView: 1,
-            spaceBetween: 30,            
+            spaceBetween: 30,
             // navigation: {
             //     nextEl: '.swiper-button-next',
             //     prevEl: '.swiper-button-prev',
@@ -818,7 +811,7 @@ Description: Kimono - Photography Agency
             },
             breakpoints: {
                 400: {
-                  slidesPerView: 2,
+                    slidesPerView: 2,
                 },
                 576: {
                     slidesPerView: 3,
@@ -837,7 +830,7 @@ Description: Kimono - Photography Agency
             },
             speed: 1500,
             slidesPerView: 1,
-            spaceBetween: 0,            
+            spaceBetween: 0,
             // navigation: {
             //     nextEl: '.swiper-button-next',
             //     prevEl: '.swiper-button-prev',
@@ -848,7 +841,7 @@ Description: Kimono - Photography Agency
             },
             breakpoints: {
                 400: {
-                  slidesPerView: 2,
+                    slidesPerView: 2,
                 },
                 576: {
                     slidesPerView: 3,
@@ -870,7 +863,7 @@ Description: Kimono - Photography Agency
             },
             speed: 1500,
             slidesPerView: 2,
-            spaceBetween: 50,            
+            spaceBetween: 50,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -884,14 +877,14 @@ Description: Kimono - Photography Agency
                     slidesPerView: 3,
                 },
                 768: {
-                  slidesPerView: 4,
+                    slidesPerView: 4,
                 },
                 992: {
-                  slidesPerView: 5,
+                    slidesPerView: 5,
                 },
             }
         });
-        
+
         // Blog
         var SwiperBlog = new Swiper('.swiper-blog', {
             loop: true,
@@ -900,7 +893,7 @@ Description: Kimono - Photography Agency
             },
             speed: 1500,
             slidesPerView: 1,
-            spaceBetween: 30,            
+            spaceBetween: 30,
             // navigation: {
             //     nextEl: '.swiper-button-next',
             //     prevEl: '.swiper-button-prev',
@@ -911,10 +904,10 @@ Description: Kimono - Photography Agency
             },
             breakpoints: {
                 768: {
-                  slidesPerView: 2,
+                    slidesPerView: 2,
                 },
                 992: {
-                  slidesPerView: 2,
+                    slidesPerView: 2,
                 },
             }
         });
@@ -929,7 +922,7 @@ Description: Kimono - Photography Agency
             slidesPerView: 3,
             direction: 'vertical',
             mousewheel: false,
-            spaceBetween: 30,            
+            spaceBetween: 30,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -950,7 +943,7 @@ Description: Kimono - Photography Agency
             centeredSlides: true,
             direction: 'vertical',
             mousewheel: false,
-            spaceBetween: 30,            
+            spaceBetween: 30,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -970,7 +963,7 @@ Description: Kimono - Photography Agency
             speed: 1500,
             slidesPerView: 1,
             spaceBetween: 25,
-            centeredSlides: true,       
+            centeredSlides: true,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -980,7 +973,7 @@ Description: Kimono - Photography Agency
                 clickable: true
             },
         });
-        
+
         // Gallery
         var SwiperGalleryTwo = new Swiper('.swiper-gallery-two', {
             loop: true,
@@ -990,7 +983,7 @@ Description: Kimono - Photography Agency
             speed: 1500,
             slidesPerView: 1,
             spaceBetween: 30,
-            centeredSlides: false,       
+            centeredSlides: false,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -1001,15 +994,15 @@ Description: Kimono - Photography Agency
             },
             breakpoints: {
                 992: {
-                  slidesPerView: 2,
-                  spaceBetween: 30,
-                  centeredSlides: false, 
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                    centeredSlides: false,
                 },
                 1200: {
                     slidesPerView: 2,
                     spaceBetween: 85,
-                    centeredSlides: true, 
-                  },
+                    centeredSlides: true,
+                },
             }
         });
 
@@ -1021,18 +1014,18 @@ Description: Kimono - Photography Agency
             },
             speed: 1500,
             slidesPerView: 1,
-            spaceBetween: 0, 
+            spaceBetween: 0,
             breakpoints: {
                 600: {
-                  slidesPerView: 2,
+                    slidesPerView: 2,
                 },
                 992: {
-                  slidesPerView: 3,
-                  spaceBetween: 30, 
+                    slidesPerView: 3,
+                    spaceBetween: 30,
                 },
                 1400: {
-                  slidesPerView: 4,
-                  spaceBetween: 40, 
+                    slidesPerView: 4,
+                    spaceBetween: 40,
                 },
             }
         });
@@ -1045,13 +1038,13 @@ Description: Kimono - Photography Agency
         //     image2: '../img/slider/11.jpg',
         //     displacementImage: '../img/slider/displacement/1.jpg'
         // });
-        
+
 
         // Odometer
         $('.odometer').appear();
-        $('.odometer').appear(function(){
+        $('.odometer').appear(function () {
             var odo = $(".odometer");
-            odo.each(function() {
+            odo.each(function () {
                 var countNumber = $(this).attr("data-count");
                 $(this).html(countNumber);
             });
@@ -1062,48 +1055,48 @@ Description: Kimono - Photography Agency
 
 
         // Alternate Hover/Active
-        $('.wptb-image-box1, .wptb-image-box2, .wptb-blog-grid1, .wptb-packages1, .wptb-icon-box2, .wptb-icon-box5, .wptb-icon-box7, .wptb-award-list .wptb-item, .wptb-features .wptb-item').on("mouseenter", function(){     
-            $('.wptb-image-box1, .wptb-image-box2, .wptb-blog-grid1, .wptb-packages1, .wptb-icon-box2, .wptb-icon-box5, .wptb-icon-box7, .wptb-award-list .wptb-item, .wptb-features .wptb-item').removeClass('active');    
-        }).on('mouseleave',  function(){ 
-            $('.wptb-image-box1.highlight, .wptb-image-box2.highlight, .wptb-blog-grid1.highlight, .wptb-packages1.highlight, .wptb-icon-box2.highlight, .wptb-icon-box5.highlight, .wptb-icon-box7.highlight, .wptb-award-list .wptb-item.highlight, .wptb-features .wptb-item.highlight').addClass('active');     
+        $('.wptb-image-box1, .wptb-image-box2, .wptb-blog-grid1, .wptb-packages1, .wptb-icon-box2, .wptb-icon-box5, .wptb-icon-box7, .wptb-award-list .wptb-item, .wptb-features .wptb-item').on("mouseenter", function () {
+            $('.wptb-image-box1, .wptb-image-box2, .wptb-blog-grid1, .wptb-packages1, .wptb-icon-box2, .wptb-icon-box5, .wptb-icon-box7, .wptb-award-list .wptb-item, .wptb-features .wptb-item').removeClass('active');
+        }).on('mouseleave', function () {
+            $('.wptb-image-box1.highlight, .wptb-image-box2.highlight, .wptb-blog-grid1.highlight, .wptb-packages1.highlight, .wptb-icon-box2.highlight, .wptb-icon-box5.highlight, .wptb-icon-box7.highlight, .wptb-award-list .wptb-item.highlight, .wptb-features .wptb-item.highlight').addClass('active');
         });
 
         // accordion
-        $(".wptb-accordion").on("click",".wptb-item-title", function () {
+        $(".wptb-accordion").on("click", ".wptb-item-title", function () {
             $(this).next().slideDown();
             $(".wptb-item--content").not($(this).next()).slideUp();
         });
 
-        $(".wptb-accordion").on("click",".wptb--item", function () {
+        $(".wptb-accordion").on("click", ".wptb--item", function () {
             $(this).addClass("active").siblings().removeClass("active");
         });
 
 
         // Radial Progressbar
-        function radial_animate() { 
-            $('svg.radial-progress').each(function( index, value ) { 
-  
-                $(this).find($('circle.bar--animated')).removeAttr( 'style' );    
+        function radial_animate() {
+            $('svg.radial-progress').each(function (index, value) {
+
+                $(this).find($('circle.bar--animated')).removeAttr('style');
                 // Get element in Veiw port
                 var elementTop = $(this).offset().top;
                 var elementBottom = elementTop + $(this).outerHeight();
                 var viewportTop = $(window).scrollTop();
                 var viewportBottom = viewportTop + $(window).height();
-                
-                if(elementBottom > viewportTop && elementTop < viewportBottom) {
+
+                if (elementBottom > viewportTop && elementTop < viewportBottom) {
                     var percent = $(value).data('countervalue');
                     var radius = $(this).find($('circle.bar--animated')).attr('r');
                     var circumference = 2 * Math.PI * radius;
                     var strokeDashOffset = circumference - ((percent * circumference) / 100);
-                    $(this).find($('circle.bar--animated')).animate({'stroke-dashoffset': strokeDashOffset}, 2800);
+                    $(this).find($('circle.bar--animated')).animate({ 'stroke-dashoffset': strokeDashOffset }, 2800);
                 }
             });
         }
         // To check If it is in Viewport 
         var $window = $(window);
-        function check_if_in_view() {    
-            $('.countervalue').each(function(){
-                if ($(this).hasClass('start')){
+        function check_if_in_view() {
+            $('.countervalue').each(function () {
+                if ($(this).hasClass('start')) {
                     var elementTop = $(this).offset().top;
                     var elementBottom = elementTop + $(this).outerHeight();
 
@@ -1120,8 +1113,8 @@ Description: Kimono - Photography Agency
                             }, {
                                 duration: 2800,
                                 easing: 'swing',
-                                step: function(now) {
-                                    $(this).text(Math.ceil(now)  + '%');                                
+                                step: function (now) {
+                                    $(this).text(Math.ceil(now) + '%');
                                 }
                             });
                         } else {
@@ -1130,8 +1123,8 @@ Description: Kimono - Photography Agency
                             }, {
                                 duration: 2800,
                                 easing: 'swing',
-                                step: function(now) {                                
-                                    $(this).text(now.toFixed(2)  + '$'); 
+                                step: function (now) {
+                                    $(this).text(now.toFixed(2) + '$');
                                 }
                             });
                         }
@@ -1146,91 +1139,91 @@ Description: Kimono - Photography Agency
 
         // Fancybox
         $('[data-fancybox]').fancybox({
-			arrows: true,
-			animationEffect: [
-			//"false",            - disable
-			//"fade",
-			//"slide",
-			//"circular",
-			// "tube",
-			"zoom-in-out",
-			// "rotate"
-			],
-			transitionEffect: [
-			//"false",            - disable
-			"fade",
-			//"slide",
-			// "circular",
-			//"tube",
-			//"zoom-in-out",
-			//"rotate"
-			],
-			buttons: [
-			"zoom",
-			//"share",
-			//"slideShow",
-			"fullScreen",
-			//"download",
-			//"thumbs",
-			"close"
-			],
-			infobar: false,
-		});
+            arrows: true,
+            animationEffect: [
+                //"false",            - disable
+                //"fade",
+                //"slide",
+                //"circular",
+                // "tube",
+                "zoom-in-out",
+                // "rotate"
+            ],
+            transitionEffect: [
+                //"false",            - disable
+                "fade",
+                //"slide",
+                // "circular",
+                //"tube",
+                //"zoom-in-out",
+                //"rotate"
+            ],
+            buttons: [
+                "zoom",
+                //"share",
+                //"slideShow",
+                "fullScreen",
+                //"download",
+                //"thumbs",
+                "close"
+            ],
+            infobar: false,
+        });
 
         // Youtube
         var $ytvideoTrigger = $(".ytplay-btn");
-        $ytvideoTrigger.on("click", function(evt) {  
+        $ytvideoTrigger.on("click", function (evt) {
             $(".ytube-video").addClass("play");
             $("#ytvideo")[0].src += "?autoplay=1";
         });
 
         // Vertical Accordion
-          $('.wptb-country-tab--title').on('click', function () {
+        $('.wptb-country-tab--title').on('click', function () {
             $('.wptb-country-tab--item').removeClass('active');
             $(this).parent('.wptb-country-tab--item').addClass('active');
         });
 
         // Time Counter
         function makeTimer() {
-            var endTime = new Date("14 March 2026");      
+            var endTime = new Date("14 March 2026");
             endTime = (Date.parse(endTime) / 1000);
-    
+
             var now = new Date();
             now = (Date.parse(now) / 1000);
-    
+
             var timeLeft = endTime - now;
-    
-            var days = Math.floor(timeLeft / 86400); 
+
+            var days = Math.floor(timeLeft / 86400);
             var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
-            var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+            var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
             var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
-        
+
             if (hours < "10") { hours = "0" + hours; }
             if (minutes < "10") { minutes = "0" + minutes; }
             if (seconds < "10") { seconds = "0" + seconds; }
-    
+
             $("#days").html(days);
             $("#hours").html(hours);
             $("#minutes").html(minutes);
-            $("#seconds").html(seconds);   
+            $("#seconds").html(seconds);
         }
-        setInterval(function() { makeTimer(); }, 1000);
+        setInterval(function () { makeTimer(); }, 1000);
 
 
         // Shop
         // Product Zoom
-        $('.product_zoom_button_group > li > a').eq(0).addClass( "selected" );
-        $('.product_zoom_container > .product_zoom_info').eq(0).css('display','block');
-        $('.product_zoom_button_group').on("click",function(e){
-            if($(e.target).is("a")){
+        $('.product_zoom_button_group > li > a').eq(0).addClass("selected");
+        $('.product_zoom_container > .product_zoom_info').eq(0).css('display', 'block');
+        $('.product_zoom_button_group').on("click", function (e) {
+            if ($(e.target).is("a")) {
 
                 /*Handle Tab Nav*/
-                $('.product_zoom_button_group > li > a').removeClass( "selected");
-                $(e.target).addClass( "selected");
-                
+                $('.product_zoom_button_group > li > a').removeClass("selected");
+                $(e.target).addClass("selected");
+
                 /*Handles Tab Content*/
-                var clicked_index = $("a",this).index(e.target);
-                $('.product_zoom_container > .product_zoom_info').css('display','none');
+                var clicked_index = $("a", this).index(e.target);
+                $('.product_zoom_container > .product_zoom_info').css('display', 'none');
                 $('.product_zoom_container > .product_zoom_info').eq(clicked_index).fadeIn();
             }
             $(this).blur();
@@ -1238,10 +1231,10 @@ Description: Kimono - Photography Agency
         });
 
         // Header Cart open
-		$('a.wptb-cart-icon').on('click', function (e) {
-			e.preventDefault();
-			$('.wptb-cart-box').toggleClass('active');
-		});
+        $('a.wptb-cart-icon').on('click', function (e) {
+            e.preventDefault();
+            $('.wptb-cart-box').toggleClass('active');
+        });
 
         // Datepickr / Flatpicker
         $(".flatpickr").flatpickr({
@@ -1250,19 +1243,19 @@ Description: Kimono - Photography Agency
             minDate: "today",
         });
         $(".flatpickr-time").flatpickr({
-			enableTime: true,
+            enableTime: true,
             noCalendar: true,
             dateFormat: 'h:i K'
-		});
+        });
 
         // Nice Select
         $('select').niceSelect();
-        
+
 
         // Totop Button
-        $('.totop a').on('click', function(e) {
+        $('.totop a').on('click', function (e) {
             e.preventDefault();
-            $('html, body').animate({scrollTop: 0}, '300');
+            $('html, body').animate({ scrollTop: 0 }, '300');
         });
 
         // Day-Night Mode Switcher
@@ -1309,7 +1302,7 @@ Description: Kimono - Photography Agency
         //     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
         //     smooth: true,
         // });
-        
+
         // function raf(time) {
         //     lenis.raf(time)
         //     requestAnimationFrame(raf)
@@ -1317,7 +1310,7 @@ Description: Kimono - Photography Agency
         // requestAnimationFrame(raf);
 
 
-    });      
+    });
 })(jQuery);
 
 // Hide header on scroll down
@@ -1332,7 +1325,7 @@ window.addEventListener("scroll", () => {
         $('.totop').removeClass('show');
         return;
     }
-    
+
     if (currentScroll > lastScroll) {
         // down
         nav.classList.add(scrollUp);
