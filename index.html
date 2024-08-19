@@ -172,7 +172,7 @@
         border-radius: 500px;
         width: 300px;
         height: 300px;
-        margin-top: -380px;
+        /* margin-top: -380px; */
         margin-left: 150px;
     }
 
@@ -343,14 +343,14 @@
 
 
     <!-- Preloader -->
-    <!-- <div id="preloader">
+    <div id="preloader">
         <div class="preloader-inner">
             <div class="spinner">
                 <img src="assets/images/logo.png" style="max-width: 150px;" alt="img">
             </div>
 
         </div>
-    </div> -->
+    </div>
 
     <!-- pointer start -->
     <div class="pointer bnz-pointer" id="bnz-pointer"></div>
@@ -1813,7 +1813,7 @@
                             <h1 class="wptb-item--title">Feel Free To <span>Ask</span> <br> Us Anything</h1>
                         </div>
                         <div class="col-lg-6">
-                            <img src="/assets/images/contactm.png">
+                            <!-- <img src="/assets/images/contactm.png"> -->
                             <a id="contact-btn" href="" class="btn cbtn">Connect
                                 Us</a>
                         </div>
@@ -1954,62 +1954,6 @@
 
     <script src="assets/js/contact.js"></script>
 
-    <script>
-        gsap.config({ trialWarn: false });
-        // console.clear();
-        // gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-        // let smoother = ScrollSmoother.create({
-        //     smooth: 2,
-        //     content: "#content", // Add this line, replace with your content selector
-        //     wrapper: "#wrapper"
-        // });
-
-        // let split = new SplitText(".house-txt", { type: "lines" });
-        const line = document.querySelector(".house-txt")
-        // console.log(line);
-        let masks;
-        function makeItHappen() {
-            masks = [];
-            // split.lines.forEach((target) => {
-            let mask = document.createElement("span");
-            mask.className = "mask";
-            line.append(mask);
-            masks.push(mask);
-            gsap.to(mask, {
-                scaleX: 0,
-                transformOrigin: "right center",
-                ease: "power2.inOut", // Changed from "none" to a smoother ease
-                duration: 1,
-                scrollTrigger: {
-                    trigger: line,
-                    markers: false,
-                    scrub: 1, // Changed from true to 1 for smoother scrubbing
-                    start: "top 80%", // Changed to reveal earlier
-                    end: "bottom 20%"
-                }
-            });
-            // });
-        }
-
-        window.addEventListener("resize", newTriggers);
-
-        function newTriggers() {
-            ScrollTrigger.getAll().forEach((trigger, i) => {
-                trigger.kill();
-                masks[i].remove();
-            });
-            split.split();
-            makeItHappen();
-        }
-
-        makeItHappen();
-    </script>
-
-
-    <!-- <script src="https://code.nath.co/src/jQuery.min.js"></script> -->
-    <script src="https://code.nath.co/src/jQuery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
-    <!-- <script src="assets/js/smoothscroll.js"></script> -->
 </body>
 
 </html>
