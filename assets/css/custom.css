@@ -52,7 +52,9 @@
 }
 
 .contact-modal__form-input svg {
-    z-index: 1;
+    z-index: 4;
+    cursor: pointer;
+    position: relative;
 }
 
 .contact-modal__form-input .prev-svg {
