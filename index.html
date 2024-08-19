@@ -63,6 +63,10 @@
 
 </head>
 <style>
+    body {
+        background-color: black !important;
+    }
+
     .social-box.style-oval ul li a {
         font-size: 13px;
         line-height: 15px;
@@ -339,15 +343,14 @@
 
 
     <!-- Preloader -->
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div class="preloader-inner">
             <div class="spinner">
                 <img src="assets/images/logo.png" style="max-width: 150px;" alt="img">
-                <!-- <img src="assets/images/logo.png" alt="img" class="wheel"> -->
             </div>
 
         </div>
-    </div>
+    </div> -->
 
     <!-- pointer start -->
     <div class="pointer bnz-pointer" id="bnz-pointer"></div>
@@ -862,6 +865,28 @@
                     transform: scale(1.1);
                     /* Scale up the image when scrolled */
                 }
+
+                .btn2 {
+                    background-color: transparent;
+                    border: 1px solid #ffffff;
+                    /* Adjust the border color as needed */
+                    border-radius: 100px;
+                    padding: 10px 20px;
+                    color: #ffffff;
+                    /* Text color */
+                    font-size: 13px;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+                }
+
+                .btn2:hover {
+                    background-color: rgb(205, 0, 0);
+                    /* Background color on hover */
+                    border-color: rgb(205, 0, 0);
+                    /* Border color on hover */
+                    color: #fff;
+                    /* Text color on hover */
+                }
             </style>
 
             <section class="section-with-bg">
@@ -871,7 +896,7 @@
                 </div>
             </section>
 
-            <section class="wptb-about-two  pt-5 mt-5 " style="background: #151515;z-index: 1;" id="section2">
+            <section class="wptb-about-two  pt-5 mt-5 " style="background: #000000;z-index: 1;" id="section2">
                 <div class="container">
                     <div class="wptb-heading">
                         <div class="wptb-item--inner">
@@ -904,13 +929,13 @@
                         </div>
                     </div>
                     <!-- https://krucialthemes.com/eigency/wp-content/uploads/2024/01/faq.jpg -->
-                    <div class="row">
+                    <div class="row p-4">
                         <div class="col-md-6">
-                            <div class="wptb-image-single wow fadeInUp">
-                                <div class="wptb-item--inner">
+                            <div class="wptb-image-single wow fadeInLeft" data-wow-duration="4s">
+                                <div class="wptb-item--inner" style="margin-top: -100px;">
                                     <div class="wptb-item--image position-relative">
 
-                                        <img src="assets/images/about-1.jpg" alt="img" style="border-radius: 7px;">
+                                        <img src="assets/new-img/about-1.png" alt="img" style="border-radius: 7px;">
 
                                         <!-- <div class="wptb-item--button round-button">
                                         <a class="btn btn-two" href="about.html">
@@ -924,21 +949,24 @@
                                     </div>
                                 </div>
 
-                                <div class="wptb-item-layer wptb-item-layer-one both-version">
+                                <!-- <div class="wptb-item-layer wptb-item-layer-one both-version">
                                     <img src="assets/img/more/light-2.png" alt="img">
                                     <img src="assets/img/more/light-2-light.png" alt="img">
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
                         <div class="col-md-6 ps-md-5  mt-md-0">
                             <div class="wptb-about--text ps-md-5">
-                                <h3 style="font-size: 16px;">About us</h3>
+                                <h3 style="font-size: 16px;" class="wow fadeInRight" data-wow-duration="4s">About us
+                                </h3>
                                 <!-- <img src="assets/images/logo.png"
                                 style="max-width: 100px;"> -->
-                                <p class="wptb-about--text-one">M One Business Solutions is an innovative force in the
+                                <p class="wptb-about--text-one wow fadeInRight" data-wow-duration="5s">M One Business
+                                    Solutions is an innovative force in the
                                     business world, fueled by the mantra "Imagine More."</p>
-                                <p>At M One Business Solutions, we challenge conventional thinking with our mantra,
+                                <p class="wow fadeInRight" data-wow-duration="6s">At M One Business Solutions, we
+                                    challenge conventional thinking with our mantra,
                                     "Imagine
                                     More." We are dedicated to pushing boundaries and transforming ambitious ideas into
                                     reality. Our expertise spans crafting unforgettable brands and executing impactful
@@ -946,8 +974,7 @@
                                 </p>
 
 
-                                <a href="/about.html" class="btn btn-sm btn-outline-light"
-                                    style="border-radius: 10px;">Read
+                                <a href="/about.html" class="btn2  wow fadeInRight" data-wow-duration="6s">Read
                                     More </a>
 
                             </div>
@@ -1239,6 +1266,14 @@
         </section> -->
 
             <!-- services -->
+            <style>
+                .r-btn {
+                    color: #d1d1d1;
+                    cursor: pointer;
+                    font-weight: 700;
+                }
+            </style>
+
 
 
             <section class="wptb-services-one pd-bottom-80 bg-image-4"
@@ -1268,9 +1303,8 @@
                                         <p class="wptb-item--description truncated-description">Dream up your ideal
                                             brend-we'll bring it to life
                                             with flair
-                                            and finesse. As experts in branding, we are the orchitects of your
-                                            brand, creating identities that stick in people's minds and convey your
-                                            message clearly. and powerfully.</p>
+                                            and finesse. As experts in branding, we are the orchitects... <b
+                                                class="r-btn">Read More</b></p>
                                         <h6 class="wptb-item--count text-outline">01</h6>
                                     </div>
                                 </div>
@@ -1291,9 +1325,8 @@
                                             to
                                             SEO that sours, our
                                             digital magic
-                                            drives your business success with tailor-made solutions. Our approach is
-                                            based on a deep understanding of your goals, environment, business
-                                            model, and customers</p>
+                                            drives your business success with tailor-made... <b class="r-btn">Read
+                                                More</b></p>
                                         <h6 class="wptb-item--count text-outline">02</h6>
                                     </div>
                                 </div>
@@ -1315,9 +1348,7 @@
                                             wherever
                                             they are with our
                                             strategic OOH
-                                            morketing solutions. We leverage high impact outdoor advertising
-                                            channels such as billboards, transit ads, and street furniture to
-                                            maximize your brand's visibility.</p>
+                                            morketing solutions. We leverage high... <b class="r-btn">Read More</b></p>
                                         <h6 class="wptb-item--count text-outline">03</h6>
                                     </div>
                                 </div>
@@ -1337,9 +1368,8 @@
                                         <p class="wptb-item--description truncated-description">We'll get people talking
                                             about you for all the
                                             right
-                                            reasons. Our team of savvy PR and communications professionals bring
-                                            diverse yet complementary skills and experience to deliver fast,
-                                            flexible, and effective results</p>
+                                            reasons. Our team of savvy PR and communications professionals... <b
+                                                class="r-btn">Read More</b></p>
                                         <h6 class="wptb-item--count text-outline">04</h6>
                                     </div>
                                 </div>
@@ -1360,8 +1390,8 @@
                                             connecting
                                             your brand with
                                             influential
-                                            voices that resonate deeply with your target audience, ensuring maximum
-                                            impact and engagement across global markets. </p>
+                                            voices that resonate deeply with your target audience... <b
+                                                class="r-btn">Read More</b></p>
                                         </p>
                                         <h6 class="wptb-item--count text-outline">05</h6>
                                     </div>
@@ -1383,10 +1413,8 @@
                                             of
                                             an ad-saturated market
                                             with
-                                            engaging visuals that leave a lasting impression. By collaborating
-                                            closely with our clients, we develop video marketing strategies that
-                                            deliver real results-increasing soles, boosting brand recognition, and
-                                            engaging users</p>
+                                            engaging visuals that leave a lasting impression... <b class="r-btn">Read
+                                                More</b></p>
                                         <h6 class="wptb-item--count text-outline">06</h6>
                                     </div>
                                 </div>
@@ -1406,8 +1434,8 @@
                                             still
                                             cherish the classics.
                                             Believing
-                                            that advertising must be impactful & straightforward, we captivate
-                                            audiences with proven tactics that resonate deeply. </p>
+                                            that advertising must be impactful & straightforward... <b
+                                                class="r-btn">Read More</b> </p>
                                         </p>
                                         <h6 class="wptb-item--count text-outline">07</h6>
                                     </div>
@@ -1427,8 +1455,7 @@
                                         <p class="wptb-item--description truncated-description">Create unforgettable
                                             experiences with our expert
                                             event
-                                            management services. From corporate events to product launches, we
-                                            handle every deta I to ensure your event is a resounding success. </p>
+                                            management services. From corporate... <b class="r-btn">Read More</b> </p>
                                         </p>
                                         <h6 class="wptb-item--count text-outline">08</h6>
                                     </div>
@@ -1448,8 +1475,8 @@
                                         <p class="wptb-item--description truncated-description">Transform your online
                                             presence into a digital
                                             sensation. We
-                                            offer expert website solutions, including custom web design, e-commerce
-                                            integration, SEO optimization, and responsive design. </p>
+                                            offer expert website solutions, including custom web... <b
+                                                class="r-btn">Read More</b> </p>
                                         </p>
                                         <h6 class="wptb-item--count text-outline">09</h6>
                                     </div>
@@ -1810,93 +1837,45 @@
 
 
             <!-- Footer -->
-            <footer class="footer style1 bg-image-2" style="background-image: url('assets/img/background/bg-5.png');">
+            <footer class="footer style1 bg-image-2"
+                style="background-image: url('assets/img/background/bg-5.png'); border-radius: 50px 50px 0px 0;">
                 <div class="footer-top">
                     <div class="container">
                         <div class="footer--inner">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-6 mb-5 mb-md-0">
-                                    <div class="footer-widget">
-                                        <div class="footer-nav">
-                                            <ul>
-                                                <li class="menu-item"><a href="index.html">Home</a></li>
-                                                <li class="menu-item"><a href="about.html">About Us</a></li>
-                                                <li class="menu-item"><a href="services.html">Our Services</a></li>
+                            <center>
+                                <img src="assets/images/logo.png" style="max-width: 20%;">
+                            </center>
+                        </div>
+                    </div>
 
-                                                <li class="menu-item"><a href="contact.html">Contact Us</a></li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
+                    <!-- Footer Bottom Part -->
+                    <div class="footer-bottom">
+                        <div class="container">
+                            <div class="footer-bottom-inner">
+                                <div class="copyright">
+                                    <p><a href="#/">M One</a> Business Solutions, All
+                                        Rights
+                                        Reserved</p>
                                 </div>
-
-                                <div class="col-lg-4 col-md-4 mb-5 mb-md-0 order-1 order-md-0">
-                                    <div class="footer-widget text-center">
-                                        <div class="logo mr-bottom-55">
-                                            <a href="index.html" class=""><img src="assets/images/logo.png"
-                                                    alt="logo"></a>
-                                        </div>
-
-                                        <!-- <h6 class="widget-title">Sign up for all the latest <br> news and offers </h6>
-                                    <form class="newsletter-form" method="post">
-                                        <div class="form-group">
-                                            <input type="email" name="email" class="form-control"
-                                                placeholder="Enter your email" required>
-                                        </div>
-                                        <button type="submit" class="btn btn-two">
-                                            <span class="btn-wrap">
-                                                <span class="text-first">Subscribe</span>
-                                                <span class="text-second"><i class="bi bi-arrow-up-right"></i> <i
-                                                        class="bi bi-arrow-up-right"></i></span>
-                                            </span>
-                                        </button>
-                                    </form> -->
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-md-4 col-sm-6 mb-5 mb-md-0">
-                                    <div class="footer-widget text-md-end">
-                                        <div class="footer-nav">
-                                            <ul>
-                                                <li class="menu-item"><a href="#">Booking</a></li>
-                                                <li class="menu-item"><a href="#/">Products</a></li>
-                                                <li class="menu-item"><a href="#/">Recent Posts</a></li>
-                                                <li class="menu-item"><a href="#/">Latest News</a></li>
-                                                <li class="menu-item"><a href="#/">Contact Us</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                <div class="social-box style-oval">
+                                    <ul>
+                                        <li><a target="_blank" href="https://www.facebook.com/"
+                                                class="bi bi-facebook"></a>
+                                        </li>
+                                        <li><a target="_blank"
+                                                href="https://www.instagram.com/monebusinesssolutions?igsh=YjBlNXF0NGt2czAw"
+                                                class="bi bi-instagram"></a></li>
+                                        <li><a target="_blank" href="https://www.linkedin.com/"
+                                                class="bi bi-linkedin"></a>
+                                        </li>
+                                        <li><a target="_blank" href="https://www.behance.com/"
+                                                class="bi bi-behance"></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Footer Bottom Part -->
-                <div class="footer-bottom">
-                    <div class="container">
-                        <div class="footer-bottom-inner">
-                            <div class="copyright">
-                                <p><a href="#/">M One</a> Business Solutions, All
-                                    Rights
-                                    Reserved</p>
-                            </div>
-                            <div class="social-box style-oval">
-                                <ul>
-                                    <li><a target="_blank" href="https://www.facebook.com/" class="bi bi-facebook"></a>
-                                    </li>
-                                    <li><a target="_blank"
-                                            href="https://www.instagram.com/monebusinesssolutions?igsh=YjBlNXF0NGt2czAw"
-                                            class="bi bi-instagram"></a></li>
-                                    <li><a target="_blank" href="https://www.linkedin.com/" class="bi bi-linkedin"></a>
-                                    </li>
-                                    <li><a target="_blank" href="https://www.behance.com/" class="bi bi-behance"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </footer>
 
             <div class="totop">
@@ -2030,7 +2009,7 @@
     <!-- <script src="https://code.nath.co/src/jQuery.min.js"></script> -->
     <script src="https://code.nath.co/src/jQuery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
-    <script src="assets/js/smoothscroll.js"></script>
+    <!-- <script src="assets/js/smoothscroll.js"></script> -->
 </body>
 
 </html>
