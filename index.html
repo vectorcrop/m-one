@@ -612,6 +612,9 @@
     </style>
 
 
+    <div id="dummy-div" style="width: 100v;height: 100vh;"></div>
+
+
     <!-- Main Wrapper-->
     <main class="wrapper" id="wrapper">
         <div id="content">
@@ -971,8 +974,8 @@
 
                         <div class="col-md-12 ps-md-5  mt-md-0">
                             <div class="wptb-about--text ps-md-5">
-                                <h3 style="font-size: 16px;" class="wow fadeInRight" data-wow-duration="4s">About us
-                                </h3>
+                                <!-- <h3 style="font-size: 16px;" class="">About us
+                                </h3> -->
                                 <!-- <img src="assets/images/logo.png"
                                 style="max-width: 100px;"> -->
                                 <p class="wptb-about--text-one">M One Business Solutions, born from MediaOne's legacy of
@@ -986,7 +989,7 @@
                                 </p>
 
 
-                                <a href="/about.html" class="btn2">Read
+                                <a href="/about.html" class="btn2" id="read-more-about">Read
                                     More </a>
 
                             </div>
@@ -998,7 +1001,7 @@
 
             <style>
                 .text-reveal {
-                    font-size: 5rem;
+                    font-size: 4rem;
                     font-weight: bold;
                     overflow: hidden;
                     display: flex;
@@ -1006,6 +1009,7 @@
                     padding: 1rem;
                     flex-wrap: wrap;
                     align-items: center;
+                    justify-content: center;
                 }
 
                 .text-reveal span {
@@ -1019,8 +1023,23 @@
                 .text-reveal img {
                     opacity: 0;
                     transform: translateY(100%);
-                    width: 16rem;
+                    width: 10rem;
                 }
+
+
+                .word-inner {
+                    opacity: 0;
+                    transform: translateY(100%), rotateX(40deg);
+                    transform-origin: "0% 50% -50";
+                }
+
+                #read-more-about{
+                    opacity: 0;
+                    transform: translateY(100%);
+
+                }
+
+                
 
                 @media screen and (max-width:600px) {
 
@@ -1033,11 +1052,6 @@
                         font-size: 2.6rem;
                         row-gap: 8px;
                     }
-                }
-
-                .word-inner {
-                    opacity: 0;
-                    transform: translateY(100%)
                 }
             </style>
 
@@ -1057,7 +1071,8 @@
                 let tl = gsap.timeline({
                     scrollTrigger: {
                         trigger: "#about",  // The section to watch
-                        start: "top 80%",   // Start the animation when the top of #about hits 80% of the viewport height
+                        start: "top 200%",
+                        once: true,      // Start the animation when the top of #about hits 80% of the viewport height
                     }
                 });
 
@@ -1090,9 +1105,10 @@
                 // Create the animation
                 const tl2 = gsap.timeline({
                     scrollTrigger: {
-                        trigger: "#about",
-                        start: "top 50%",
-                        toggleActions: "play none none reverse"
+                        trigger: paragraph,
+                        start: "top 140%",
+                        toggleActions: "play none none reverse",
+                        once: true,
                     }
                 });
 
@@ -1106,7 +1122,7 @@
 
                 // Animate to revealed state
                 tl2.to('.word-inner', {
-                    duration: 1.2,
+                    duration: 3,
                     opacity: 1,
                     y: 0,
                     rotationX: 0,
@@ -1114,8 +1130,13 @@
                     stagger: {
                         amount: 0.8
                     }
-                });
-
+                })
+                    .to("#read-more-about", {
+                        duration: 1,
+                        opacity: 1,
+                        y: 0,
+                        ease: "power2.out"
+                    },"-=2.5");
             </script>
             <!-- Text Marquee -->
             <div class="wptb-marquee">

@@ -8,6 +8,7 @@
         // Preloader
         setTimeout(function () {
             $('#preloader').addClass('hide');
+            $('#dummy-div').hide();
         }, 1000);
 
         // Add Menu Item Current Class Auto
