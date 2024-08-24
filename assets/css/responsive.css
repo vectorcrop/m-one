@@ -250,8 +250,24 @@
     font-size: 16px;
   }
 
+  .wptb-item--image.order-2 {
+    order: 1 !important;
+  }
+
+  .wptb-packages2 {
+    border-bottom: 1px solid #aaa;
+  }
+
+  .wptb-packages2 .wptb-item--holder {
+    padding: 20px;
+  }
+
+  .wptb-packages2:nth-child(even) .wptb-item--holder {
+    padding: 20px;
+  }
+
   .wptb-about--text {
-    padding: 20px; 
+    padding: 20px;
   }
 
   .wptb-slider:not(.style11) {
