@@ -972,8 +972,8 @@
                         <!-- </div>
                         </div> -->
 
-                        <div class="col-md-12 ps-md-5  mt-md-0">
-                            <div class="wptb-about--text ps-md-5">
+                        <div class="col-md-12  mt-md-0">
+                            <div class="wptb-about--text">
                                 <!-- <h3 style="font-size: 16px;" class="">About us
                                 </h3> -->
                                 <!-- <img src="assets/images/logo.png"
@@ -989,7 +989,7 @@
                                 </p>
 
 
-                                <a href="/about.html" class="btn2" id="read-more-about">Read
+                                <a href="/about.html" class="btn btn-two creative small-btn" id="read-more-about">Read
                                     More </a>
 
                             </div>
@@ -1006,10 +1006,11 @@
                     overflow: hidden;
                     display: flex;
                     /* white-space: nowrap; */
-                    padding: 1rem;
+                    /* padding: 1rem; */
+                    margin-bottom: 1rem;
                     flex-wrap: wrap;
                     align-items: center;
-                    justify-content: center;
+                    /* justify-content: center; */
                 }
 
                 .text-reveal span {
@@ -1037,6 +1038,20 @@
                     opacity: 0;
                     transform: translateY(100%);
 
+                }
+
+                .small-btn {
+                    padding: 5px 13px;
+                    height: auto;
+                    min-width: 0px;
+                    border-radius: 7px;
+                    font-family: 'Hind';
+                }
+
+
+                .small-btn::before,
+                .small-btn::after {
+                    display: none;
                 }
 
 
@@ -1107,7 +1122,7 @@
                     scrollTrigger: {
                         trigger: paragraph,
                         start: "top 140%",
-                        toggleActions: "play none none reverse",
+                        // toggleActions: "play none none reverse",
                         once: true,
                     }
                 });
@@ -1804,7 +1819,7 @@
 
 
             <section id="contact" class="wptb-testimonial-one testimonial-colored bg-image"
-                style="background-image: url('../assets/images/contactbg.png');">
+                style="background-image: url('https://i.pinimg.com/originals/a3/f3/ab/a3f3abe546f87d7bceb19ff1f3eea602.gif');">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 d-flex flex-column justify-content-center">
@@ -1813,7 +1828,7 @@
                         </div>
                         <div class="col-lg-6">
                             <!-- <img src="/assets/images/contactm.png"> -->
-                            <a id="contact-btn" href="" class="btn cbtn">Connect
+                            <a id="contact-btn" href="" class="btn cbtn ">Connect
                                 Us</a>
                         </div>
 
