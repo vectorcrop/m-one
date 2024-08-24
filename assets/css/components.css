@@ -157,11 +157,13 @@ Ready Components Stylesheet
 }
 
 .wptb-heading-two .wptb-item--title span {
-  background: var(--gradient-three);
+  /* background: var(--gradient-three); */
   /* background: linear-gradient(90deg, (var(--gradient-color-from), var(--gradient-color-center), var(--gradient-color-to))); */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: var(--transition-base);
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  /* transition: var(--transition-base); */
+
+  color: var(--color-one);
 }
 
 .wptb-heading-two .wptb-item--description {

@@ -246,6 +246,14 @@
     padding: 20px;
   }
 
+  .wptb-about-two .wptb-about--text .wptb-about--text-one {
+    font-size: 16px;
+  }
+
+  .wptb-about--text {
+    padding: 20px; 
+  }
+
   .wptb-slider:not(.style11) {
     padding-left: 0px !important;
     padding-right: 0px !important;
