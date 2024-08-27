@@ -1,7 +1,6 @@
 const contactbtns = document.querySelectorAll(".contactbtn")
 const contactmodal = document.querySelector("#contact-modal")
 const contactmodalclose = document.querySelector("#contact-modal-close")
-console.log(contactbtns);
 contactbtns.forEach((btn) => {
     btn.addEventListener("click", (e) => {
         e.preventDefault();
