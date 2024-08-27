@@ -17,10 +17,11 @@ revealContainers.forEach((container) => {
     // [container, image, subtitle, desc, ...textItems].forEach(element => {
     //     element.style.opacity = 0;
     // });
-
     let isRight = container.classList.contains('order-2');
-    let xPercentImage = !isRight ? 100 : -100;
-    let xPercentContainer = !isRight ? -100 : 100;
+    let isWideScreen = window.matchMedia('(max-width: 600px)').matches;
+
+    let xPercentImage = (!isRight || isWideScreen) ? 100 : -100;
+    let xPercentContainer = (!isRight || isWideScreen) ? -100 : 100;
 
     let tl = gsap.timeline({
         scrollTrigger: {
