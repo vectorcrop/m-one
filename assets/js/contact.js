@@ -17,6 +17,7 @@ contactmodalclose.addEventListener("click", (e) => {
     e.preventDefault();
     contactmodal.style.display = "none"
     document.querySelector("body").classList.remove("remove-scrolling")
+    window.scrollTo(0, document.body.scrollHeight - 350);
 })
 document.querySelectorAll('.contact-modal__form-input input, .contact-modal__form-input textarea').forEach(element => {
     // Find the associated label
