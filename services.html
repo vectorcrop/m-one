@@ -207,8 +207,8 @@
         transition: var(--transition-base);
     }
 
-   
-    
+
+
 
     @media only screen and (max-width: 600px) {
 
@@ -834,7 +834,7 @@
                         <!-- Wedding Packages -->
                         <div class=" wedding">
                             <!-- Package 1 -->
-                            <div class="wptb-packages2 wow animate__fadeInLeft" data-wow-duration="5s">
+                            <div class="wptb-packages2 ">
                                 <div class="wptb-item--inner">
                                     <div class="wptb-item--image">
                                         <img src="assets/new-img/icons/brand.png"
@@ -842,7 +842,7 @@
                                     </div>
 
                                     <div class="wptb-item--holder">
-                                        <h6 class="wptb-item--subtitle">Brand Development</h6>
+                                        <div class="wptb-item--subtitle">Brand Development</div>
                                         <h6 class="wptb-item desc">Dream up your ideal brand —wel'l bring it to
                                             life with flair and finesse. As experts in branding, we are the architects
                                             of your brand, creating identities that stick in people's minds and convey
@@ -949,7 +949,7 @@
                             </div>
 
                             <!-- Package 2 -->
-                            <div class="wptb-packages2 wow animate__fadeInRight" data-wow-duration="5s">
+                            <div class="wptb-packages2 ">
                                 <div class="wptb-item--inner">
                                     <div class="wptb-item--image order-2">
                                         <img src="assets/new-img/icons/digitsl.png"
@@ -957,7 +957,7 @@
                                     </div>
 
                                     <div class="wptb-item--holder">
-                                        <h6 class="wptb-item--subtitle">Digital Marketing</h6>
+                                        <div class="wptb-item--subtitle">Digital Marketing</div>
                                         <h6 class="wptb-item desc">From websites that wow to SEO that soars, our
                                             digital magic drives your business success with tailor-made solutions. Our
                                             approach is based on a deep understanding of your goals, environment,
@@ -1085,7 +1085,7 @@
                             </div>
 
                             <!-- Package 3 -->
-                            <div class="wptb-packages2 wow animate__fadeInLeft" data-wow-duration="5s">
+                            <div class="wptb-packages2 ">
                                 <div class="wptb-item--inner">
                                     <div class="wptb-item--image">
                                         <img src="assets/new-img/icons/tm.png"
@@ -1093,7 +1093,7 @@
                                     </div>
 
                                     <div class="wptb-item--holder">
-                                        <h6 class="wptb-item--subtitle">Traditional Marketing</h6>
+                                        <div class="wptb-item--subtitle">Traditional Marketing</div>
                                         <h6 class="wptb-item desc">In a digital age, we still cherish the classics.
                                             Believing that advertising must be impactful & straightforward, we captivate
                                             audiences with proven tactics that resonate deeply.</h6>
@@ -1178,7 +1178,7 @@
                             </div>
 
                             <!-- Package 4 -->
-                            <div class="wptb-packages2 wow animate__fadeInRight" data-wow-duration="5s">
+                            <div class="wptb-packages2 ">
                                 <div class="wptb-item--inner">
                                     <div class="wptb-item--image order-2">
                                         <img src="assets/new-img/icons/public.png"
@@ -1186,7 +1186,7 @@
                                     </div>
 
                                     <div class="wptb-item--holder">
-                                        <h6 class="wptb-item--subtitle">Public Relations</h6>
+                                        <div class="wptb-item--subtitle">Public Relations</div>
                                         <h6 class="wptb-item desc">We'll get people talking about you-for all the right
                                             reasons. Our team of savvy PR and communications professionals bring diverse
                                             yet complementary skills and experience to deliver fast, flexible, and
@@ -1295,7 +1295,7 @@
 
                             <!-- Outdoor Packages -->
                             <!-- Package 1 -->
-                            <div class="wptb-packages2 wow animate__fadeInLeft" data-wow-duration="5s">
+                            <div class="wptb-packages2 ">
                                 <div class="wptb-item--inner">
                                     <div class="wptb-item--image">
                                         <img src="assets/new-img/icons/influencer.png"
@@ -1303,7 +1303,7 @@
                                     </div>
 
                                     <div class="wptb-item--holder">
-                                        <h6 class="wptb-item--subtitle">Influencer Marketing</h6>
+                                        <div class="wptb-item--subtitle">Influencer Marketing</div>
                                         <h6 class="wptb-item desc">We specialize in connecting your brand with
                                             influential voices that resonate deeply with your target audience, ensuring
                                             maximum impact and engagement across global markets.</h6>
@@ -1413,7 +1413,7 @@
 
 
                             <!-- Package 3 -->
-                            <div class="wptb-packages2 wow animate__fadeInLeft" data-wow-duration="5s">
+                            <div class="wptb-packages2 ">
                                 <div class="wptb-item--inner">
                                     <div class="wptb-item--image order-2">
                                         <img src="assets/new-img/icons/ooh-2.png"
@@ -1421,7 +1421,7 @@
                                     </div>
 
                                     <div class="wptb-item--holder">
-                                        <h6 class="wptb-item--subtitle">ООН Services</h6>
+                                        <div class="wptb-item--subtitle">ООН Services</div>
                                         <h6 class="wptb-item desc">
                                             Reach your audience wherever they are with our strategic OOH marketing
                                             solutions. We leverage high-impact outdoor advertising channels such as
@@ -1528,9 +1528,58 @@
                                     </div>
                                 </div>
                             </div>
+                            <style>
+                                .wptb-packages2 .wptb-item--image {
+                                    position: relative;
+                                    overflow: hidden;
+                                    max-width: 500px;
 
+
+                                }
+
+                                .wptb-item--image,
+                                .wptb-item--subtitle,
+                                .wptb-item.desc,
+                                .wptb--item {
+                                    opacity: 0;
+                                    visibility: hidden;
+                                }
+
+
+                                /* .wptb-item--subtitle,
+                                .wptb-item.desc,
+                                .wptb--item {
+                                    opacity: 0;
+                                } */
+
+                                /* .wptb-packages2 .wptb-item--image img {
+                                    width: 100%;
+                                    opacity: 0;
+                                }
+
+                                .wptb-packages2 .wptb-item--image::before {
+                                    content: "";
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                    top: 0;
+                                    left: 0;
+                                    background: #000000;
+                                    transform: scaleX(0);
+                                    transform-origin: left;
+                                }
+
+                                .wptb-packages2 .wptb-item--image::before {
+                                    transform: scaleX(var(--scaleX, 0));
+                                } */
+                            </style>
+                            <!-- 
+                            <figure class="img-container">
+                                <img src="https://images.unsplash.com/photo-1594903057066-3c2abea0f9cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                                    alt="overlay-image">
+                            </figure> -->
                             <!-- Package 2 -->
-                            <div class="wptb-packages2 wow animate__fadeInRight" data-wow-duration="5s">
+                            <div class="wptb-packages2 ">
                                 <div class="wptb-item--inner">
                                     <div class="wptb-item--image">
                                         <img src="assets/new-img/icons/video.png"
@@ -1538,8 +1587,8 @@
                                     </div>
 
                                     <div class="wptb-item--holder">
-                                        <h6 class="wptb-item--subtitle">Video & Multimedia
-                                            Production</h6>
+                                        <div class="wptb-item--subtitle">Video & Multimedia
+                                            Production</div>
                                         <h6 class="wptb-item desc">We cut through the noise of an ad-saturated market
                                             with engaging visuals that leave a lasting impression.
                                             By collaborating closely with our clients, we develop video marketing
@@ -1651,7 +1700,7 @@
 
 
 
-                            <div class="wptb-packages2 wow animate__fadeInLeft" data-wow-duration="5s">
+                            <div class="wptb-packages2 ">
                                 <div class="wptb-item--inner">
                                     <div class="wptb-item--image order-2">
                                         <img src="assets/new-img/icons/website.png"
@@ -1659,8 +1708,8 @@
                                     </div>
 
                                     <div class="wptb-item--holder">
-                                        <h6 class="wptb-item--subtitle">Website
-                                            Solutions</h6>
+                                        <div class="wptb-item--subtitle">Website
+                                            Solutions</div>
                                         <h6 class="wptb-item desc">Transform your online presence into a digital
                                             sensation. We offer expert website solutions, including custom web design,
                                             e-commerce integration, SEO optimization, and responsive design. With our
@@ -1772,7 +1821,7 @@
 
 
                             <!-- Package 4 -->
-                            <div class="wptb-packages2 wow animate__fadeInRight" data-wow-duration="5s">
+                            <div class="wptb-packages2 ">
                                 <div class="wptb-item--inner">
                                     <div class="wptb-item--image">
                                         <img src="assets/new-img/icons/event.png"
@@ -1780,8 +1829,8 @@
                                     </div>
 
                                     <div class="wptb-item--holder">
-                                        <h6 class="wptb-item--subtitle">Event
-                                            Management</h6>
+                                        <div class="wptb-item--subtitle">Event
+                                            Management</div>
                                         <h6 class="wptb-item desc">Create unforgettable experiences with our expert
                                             event management services. From corporate events to product launches, we
                                             handle every detail to ensure your event is a resounding success.</h6>
@@ -2116,6 +2165,15 @@
     <script src="assets/js/theme.js"></script>
 
     <script src="assets/js/contact.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/CSSRulePlugin.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+
+    <script src="assets/js/image-reveal.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
 
 
 
