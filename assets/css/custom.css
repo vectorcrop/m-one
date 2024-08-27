@@ -167,3 +167,327 @@ banner */
 .breadcrumb--inner {
     padding: 170px 0px 170px 0px !important;
 }
+
+
+
+
+/* //////////////////////////
+custom */
+/* Container and Header Styles */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1150px;
+    }
+}
+
+.header .logo a img {
+    width: 70%;
+    transition: var(--transition-base);
+}
+
+.header .mainnav ul.main-menu>li+li {
+    margin-left: 36px;
+}
+
+@media screen and (max-width: 1366px) {
+    .header .mainnav ul.main-menu>li+li {
+        margin-left: 40px;
+    }
+}
+
+/* Button Styles */
+.button-two {
+    background-color: rgba(0, 0, 0, 0.378);
+    padding: 7px 20px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.button-two:hover {
+    background-color: rgba(255, 255, 255, 0.378);
+    color: rgb(255, 255, 255);
+}
+
+/* Social Box Styles */
+.social-box.style-oval ul li a {
+    font-size: 20px;
+    line-height: 15px;
+    width: 41px;
+    height: 27px;
+    border-radius: 14%;
+    background-color: transparent;
+    border: 1px solid var(--color-white);
+}
+
+.footer .social-box.style-oval ul li a:not(:hover) {
+    border-color: #ffffff00;
+    color: var(--color-white-fixed);
+}
+
+/* About Section Styles */
+.wptb-about-two .wptb-about--text h3::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: calc(104% + 98px);
+    display: block;
+    width: 150px;
+    height: 1px;
+    background-color: var(--color-dark-seven);
+}
+
+.img2 {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+    aspect-ratio: 1 / 1;
+}
+
+.cbtn {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 500px;
+    width: 300px;
+    height: 300px;
+    margin-top: -380px;
+    margin-left: 150px;
+}
+
+/* Heading and Description Styles */
+.wptb-heading .wptb-item--description {
+    font-size: var(--fs-18);
+    font-weight: var(--fw-light);
+    line-height: var(--fs-28);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: inline-block;
+    transition: var(--transition-base);
+}
+
+.wptb-item--subtitle2 {
+    color: var(--color-one);
+    background-color: rgba(var(--color-white-rgb), 0.2);
+    display: inline-block;
+    border-radius: 100px;
+    padding: 6px 30px;
+    font-family: var(--font-family-three);
+    font-size: var(--fs-16);
+    font-weight: var(--fw-normal);
+    line-height: var(--fs-30);
+    transition: var(--transition-base);
+}
+
+.wptb-page-heading .wptb-item-layer-one {
+    top: 142%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.desc2 {
+    text-align: left;
+}
+
+/* Card Styles */
+.outer {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    padding: 1px;
+    background: radial-gradient(circle 230px at 0% 0%, #ffffff, #0c0d0d);
+    position: relative;
+}
+
+.dot {
+    width: 5px;
+    aspect-ratio: 1;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px #ffffff;
+    border-radius: 100px;
+    z-index: 2;
+    right: 10%;
+    top: 10%;
+    animation: moveDot 6s linear infinite;
+}
+
+@keyframes moveDot {
+
+    0%,
+    100% {
+        top: 10%;
+        right: 10%;
+    }
+
+    25% {
+        top: 10%;
+        right: calc(100% - 35px);
+    }
+
+    50% {
+        top: calc(100% - 30px);
+        right: calc(100% - 35px);
+    }
+
+    75% {
+        top: calc(100% - 30px);
+        right: 10%;
+    }
+}
+
+.card3 {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    border: solid 1px #202222;
+    background-size: 20px 20px;
+    background: radial-gradient(circle 280px at 0% 0%, #444444, #0c0d0d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    color: #fff;
+}
+
+.ray {
+    width: 220px;
+    height: 45px;
+    border-radius: 100px;
+    position: absolute;
+    background-color: #c7c7c7;
+    opacity: 0.4;
+    box-shadow: 0 0 50px #fff;
+    filter: blur(10px);
+    transform-origin: 10%;
+    top: 0%;
+    left: 0;
+    transform: rotate(40deg);
+}
+
+.card3 .text3 {
+    font-weight: bolder;
+    font-size: 3rem;
+    background: linear-gradient(45deg, #000000 4%, #fff, #000);
+    background-clip: text;
+    color: transparent;
+    padding: 20px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #2c2c2c;
+}
+
+.topl {
+    top: 10%;
+    background: linear-gradient(90deg, #888888 30%, #1d1f1f 70%);
+}
+
+.bottoml {
+    bottom: 10%;
+}
+
+.leftl {
+    left: 10%;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg, #747474 30%, #222424 70%);
+}
+
+.rightl {
+    right: 10%;
+    width: 1px;
+    height: 100%;
+}
+
+.desc {
+    margin-top: 15px;
+    font-weight: 300;
+}
+
+/* Package Styles */
+.wptb-packages2 .wptb-item--inner {
+    position: relative;
+    overflow: hidden;
+    padding: 0px;
+    background: transparent;
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+}
+
+.wptb-item--image img {
+    border-radius: 12px;
+    width: 400px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .cbtn {
+        width: auto;
+        height: auto;
+        margin-top: 0px;
+        margin-left: 0%;
+        padding: 20px;
+        position: absolute;
+        bottom: 19%;
+        left: 26%;
+    }
+
+    #contact {
+        padding: 30px 0;
+    }
+
+    .wptb-heading .wptb-item--description {
+        text-align: center;
+    }
+
+    .footer .footer--inner {
+        position: relative;
+        padding: 0 30px;
+        overflow: hidden;
+    }
+
+    .footer-widget {
+        margin-top: 0 !important;
+    }
+
+    .outer {
+        width: 350px;
+    }
+
+    .wptb-item--description p {
+        text-align: center;
+    }
+}
+
+/* /////////////////////////////
+/// services page */
+
+.wptb-packages2 .wptb-item--image {
+    position: relative;
+    overflow: hidden;
+    max-width: 500px;
+
+
+}
+
+.wptb-item--image,
+.wptb-item--subtitle,
+.wptb-item.desc,
+.wptb--item {
+    opacity: 0;
+    visibility: hidden;
+}

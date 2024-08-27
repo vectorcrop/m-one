@@ -5276,7 +5276,7 @@ Ready Components Stylesheet
 @media screen and (max-width: 991px) {
   .wptb-packages2 .wptb-item--inner {
     flex-wrap: wrap;
-    gap: 50px;
+    /* gap: 50px; */
   }
 
   .wptb-packages2 .wptb-item--image,
