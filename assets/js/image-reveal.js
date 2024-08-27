@@ -25,7 +25,7 @@ revealContainers.forEach((container) => {
     let tl = gsap.timeline({
         scrollTrigger: {
             trigger: container,
-            start: "top 50%", // Adjust this as needed
+            start: "top 80%", // Adjust this as needed
             toggleActions: "restart none none reset",
             once: true // Ensure animation runs only once
         }

@@ -1,6 +1,6 @@
 SmoothScroll({
     // Scrolling Core
-    animationTime: 2000, // [ms]
+    animationTime: 1500, // [ms]
     stepSize: 100, // [px]
 
     // Acceleration
