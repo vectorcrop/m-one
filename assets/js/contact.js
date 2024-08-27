@@ -1,15 +1,17 @@
-const contactbtn = document.querySelector("#contact-btn")
+const contactbtns = document.querySelectorAll(".contactbtn")
 const contactmodal = document.querySelector("#contact-modal")
 const contactmodalclose = document.querySelector("#contact-modal-close")
-
-contactbtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    contactmodal.style.display = "block"
-    document.querySelector("body").classList.add("remove-scrolling")
-    showNextField("name-group")
-    document.querySelectorAll('.contact-modal__form-input-line').forEach(line => {
-        line.style.width = 0 + '%';
-    });
+console.log(contactbtns);
+contactbtns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        contactmodal.style.display = "block"
+        document.querySelector("body").classList.add("remove-scrolling")
+        showNextField("name-group")
+        document.querySelectorAll('.contact-modal__form-input-line').forEach(line => {
+            line.style.width = 0 + '%';
+        });
+    })
 })
 contactmodalclose.addEventListener("click", (e) => {
     e.preventDefault();

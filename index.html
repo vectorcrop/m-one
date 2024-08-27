@@ -25,8 +25,6 @@
     <!-- Page Title -->
     <title>M One Business Solutions | Innovative Branding & Digital Marketing Solutions</title>
 
-
-
     <!-- SEO Meta Tags -->
     <meta name="description"
         content="M One Business Solutions, fueled by the mantra 'Imagine More,' transforms ambitious ideas into reality with innovative branding and digital marketing strategies. Learn how we redefine possibilities for our clients.">
@@ -430,7 +428,7 @@
                 </div>
             </div>
 
-            <a href="#contact" class="btn w-100 mt-4" id="contact-btn"
+            <a href="#contact" class="btn w-100 mt-4 contactbtn"
                 style="border-radius: 50px; border: 1px solid red; background-color: transparent;">Connect Us Now</a>
         </div>
     </div>
@@ -875,50 +873,6 @@
                             ease: "power2.out"
                         }, "-=1");
 
-                    function wrapWords(element, className) {
-                        const words = element.textContent.split(' ');
-                        element.innerHTML = words.map(word => `<span class="word"><span class="${className}">${word}</span></span>`).join(' ');
-                    }
-
-                    // Select and wrap the paragraph
-                    const paragraph = document.querySelector('.wptb-about--text-one');
-                    wrapWords(paragraph, 'word-inner');
-
-                    // Create the animation
-                    const tl2 = gsap.timeline({
-                        scrollTrigger: {
-                            trigger: paragraph,
-                            start: "top 140%",
-                            // toggleActions: "play none none reverse",
-                            once: true,
-                        }
-                    });
-
-                    // Set initial state
-                    gsap.set('.word-inner', {
-                        opacity: 0,
-                        y: 100,
-                        rotationX: 40,
-                        transformOrigin: "0% 50% -50"
-                    });
-
-                    // Animate to revealed state
-                    tl2.to('.word-inner', {
-                        duration: 3,
-                        opacity: 1,
-                        y: 0,
-                        rotationX: 0,
-                        ease: "back.out(1.7)",
-                        stagger: {
-                            amount: 0.8
-                        }
-                    })
-                        .to("#read-more-about", {
-                            duration: 1,
-                            opacity: 1,
-                            y: 0,
-                            ease: "power2.out"
-                        }, "-=2.5");
                 </script>
                 <!-- Text Marquee -->
                 <div class="wptb-marquee">
@@ -1060,7 +1014,8 @@
                                             <p class="wptb-item--description truncated-description">We turn your vision
                                                 into a compelling brand story. From crafting a unique identity to
                                                 developing
-                                                a strategic presence, we build brands ... <b class="r-btn">Read More</b></p>
+                                                a strategic presence, we build brands ... <b class="r-btn">Read More</b>
+                                            </p>
                                             <h6 class="wptb-item--count text-outline">01</h6>
                                         </div>
                                     </div>
@@ -1202,7 +1157,8 @@
                                             <p class="wptb-item--description truncated-description">And what better way
                                                 to fit in than cherishing the classics. By embracing proven marketing
                                                 tactics
-                                                and combining them with modern innovations... <b class="r-btn">Read More</b> </p>
+                                                and combining them with modern innovations... <b class="r-btn">Read
+                                                    More</b> </p>
                                             </p>
                                             <h6 class="wptb-item--count text-outline">07</h6>
                                         </div>
@@ -1223,7 +1179,8 @@
                                             </h4>
                                             <p class="wptb-item--description truncated-description">Transform your
                                                 vision into an unforgettable experience with our expert event management
-                                                services. We handle every detail to ensure your event... <b class="r-btn">Read More</b>
+                                                services. We handle every detail to ensure your event... <b
+                                                    class="r-btn">Read More</b>
                                             </p>
                                             </p>
                                             <h6 class="wptb-item--count text-outline">08</h6>
@@ -1480,7 +1437,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <!-- <img src="/assets/images/contactm.png"> -->
-                                <a id="contact-btn" href="" class="btn cbtn ">Connect
+                                <a id="contact-btn" href="" class="btn cbtn contactbtn">Connect
                                     Us</a>
                             </div>
 
