@@ -431,20 +431,23 @@ custom */
     .cbtn {
         width: auto;
         height: auto;
-        margin-top: 0px;
+        margin-top: 50px;
         margin-left: 0%;
         padding: 20px;
-        position: absolute;
-        bottom: 19%;
-        left: 26%;
+        font-size: 17px;
     }
 
     #contact {
-        padding: 30px 0;
+        padding: 80px 0;
+        background: #000;
     }
 
     .wptb-heading .wptb-item--description {
-        text-align: center;
+        /* text-align: center; */
+    }
+
+    .wptb-testimonial1 .wptb-item--inner {
+        padding: 50px 30px;
     }
 
     .footer .footer--inner {
@@ -455,6 +458,10 @@ custom */
 
     .footer-widget {
         margin-top: 0 !important;
+    }
+
+    .footer ul {
+        margin-bottom: 20px;
     }
 
     .outer {
