@@ -307,7 +307,7 @@
                                     </ul>
 
                                 </li>
-                                
+
 
                             </ul>
                         </div>
@@ -341,7 +341,9 @@
             <ul class="wptb-item--locations-list">
                 <li class="active"
                     data-address="712, IT Plaza Building, Dubai Silicon Oasis, Dubai, United Arab Emirates">UAE</li>
-                <li data-address="MediaOne Office of Advertising & Advertising Services, 3613 Al Malik Faisal St, Rc 7095, Al Murabba Riyadh 12613, Saudi Arabia">SAUDI</li>
+                <li
+                    data-address="MediaOne Office of Advertising & Advertising Services, 3613 Al Malik Faisal St, Rc 7095, Al Murabba Riyadh 12613, Saudi Arabia">
+                    SAUDI</li>
                 <li data-address="
                 FLAT # 43; 3RD FLOOR
                 BAABOOD REAL ESTATE BLDG
@@ -454,7 +456,9 @@
             <ul class="wptb-item--locations-list">
                 <li class="active"
                     data-address="712, IT Plaza Building, Dubai Silicon Oasis, Dubai, United Arab Emirates">UAE</li>
-                <li data-address="MediaOne Office of Advertising & Advertising Services, 3613 Al Malik Faisal St, Rc 7095, Al Murabba Riyadh 12613, Saudi Arabia">SAUDI</li>
+                <li
+                    data-address="MediaOne Office of Advertising & Advertising Services, 3613 Al Malik Faisal St, Rc 7095, Al Murabba Riyadh 12613, Saudi Arabia">
+                    SAUDI</li>
                 <li data-address="
                 FLAT # 43; 3RD FLOOR
                 BAABOOD REAL ESTATE BLDG
@@ -554,6 +558,21 @@
         .wptb-slider--image img {
             aspect-ratio: 1 / 1;
         }
+
+        .wptb-item--title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 140px;
+            bottom: 0;
+            width: 50%;
+            height: 3px;
+            /* Adjust the thickness of the underline */
+            background-color: red;
+            /* Set the underline color */
+            transform: translateY(5px);
+            /* Adjust the underline position relative to the text */
+        }
     </style>
 
 
@@ -626,7 +645,7 @@
                                     <div class="col-lg-6 ">
                                         <li><i class="bi bi-check2-all"></i> <b>Social Media Marketing</b> <br> We are
                                             all about engaging and growing your audience with compelling social media
-                                            strategies that spark conversations and drive results.Through
+                                            strategies that spark conversations and drive results. Through
                                             tailored content, targeted campaigns, and insightful analytics, we connect
                                             your brand with the right audience at the right time.
                                         </li>
