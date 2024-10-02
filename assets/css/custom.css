@@ -218,6 +218,14 @@ custom */
   color: var(--color-white-fixed);
 }
 
+.wptb-about-two {
+  position: relative;
+  background-color: var(--color-dark-three);
+  overflow: hidden;
+  /* padding-bottom: 100px; */
+  padding: 50px 0;
+}
+
 /* About Section Styles */
 .wptb-about-two .wptb-about--text h3::after {
   content: '';
@@ -604,10 +612,25 @@ custom */
   text-transform: capitalize;
 }
 
-.menu-item.active a {
-  color: #b90808 !important;
+.menu-item.active:hover a {
+  color: #b90808;
 }
 
 .header.color-fixed .mainnav ul.main-menu > li.active > a::before {
   background-color: #b90808 !important;
+}
+
+.header.color-fixed .mainnav ul.main-menu > li > a:hover,
+.header.color-fixed .mr_menu_toggle,
+.header.color-fixed .modal_search_icon,
+.header.color-fixed .overlay_menu_toggle {
+  color: #b90808;
+}
+
+.header .mainnav ul.main-menu li ul li a:hover {
+  color: #b90808;
+}
+
+.button-two:hover {
+  background: #b90808 !important;
 }
