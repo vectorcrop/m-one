@@ -13,10 +13,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Update the address
                 const newAddress = e.target.getAttribute('data-address');
-                locationAddress.forEach((e) => {
-                    console.log(e);
-                    e.textContent = newAddress;
-                    e.href = "#contact"
+
+                console.log(locationAddress);
+                
+                locationAddress.forEach((n) => {
+                    console.log(newAddress);
+                    n.textContent = newAddress;
+                    console.log(n.textContent);
+                    
+                    n.href = "hello"
                 })
             }
         });
