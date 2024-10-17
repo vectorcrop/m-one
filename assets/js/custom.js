@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const locationsList = document.querySelectorAll('.wptb-item--locations-list');
     const locationAddress = document.querySelectorAll('.location-address');
+    const phoneNumbers = document.querySelectorAll('.sidebar_phonenumber');
 
     locationsList.forEach(el => {
         el.addEventListener('click', function (e) {
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Update the address
                 const newAddress = e.target.getAttribute('data-address');
+                const nenphone = e.target.getAttribute('data-phone');
 
                 console.log(locationAddress);
                 
@@ -22,6 +24,13 @@ document.addEventListener('DOMContentLoaded', function () {
                     console.log(n.textContent);
                     
                     n.href = "hello"
+                })
+                phoneNumbers.forEach((n) => {
+                    console.log(nenphone);
+                    n.textContent = nenphone;
+                    console.log(n.textContent);
+                    
+                    n.href = `tel:${nenphone.trim()}`
                 })
             }
         });
